@@ -3,101 +3,101 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://combinatorial.space/post/creating-a-new-theme/</loc>
+    <loc>/post/creating-a-new-theme/</loc>
     <lastmod>2014-09-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://combinatorial.space/post/migrate-from-jekyll/</loc>
+    <loc>/post/migrate-from-jekyll/</loc>
     <lastmod>2014-03-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://combinatorial.space/post/harmonic/</loc>
+    <loc>/post/harmonic/</loc>
     <lastmod>2017-06-07T11:29:36-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://combinatorial.space/notes/jukna/1_counting/</loc>
+    <loc>/notes/jukna/1_counting/</loc>
     <lastmod>2017-06-07T10:53:22-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://combinatorial.space/about/</loc>
+    <loc>/about/</loc>
     <lastmod>2017-04-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://combinatorial.space/post/goisforlovers/</loc>
+    <loc>/post/goisforlovers/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://combinatorial.space/post/hugoisforlovers/</loc>
+    <loc>/post/hugoisforlovers/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://combinatorial.space/tags/development/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://combinatorial.space/tags/go/</loc>
+    <loc>/tags/development/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://combinatorial.space/tags/golang/</loc>
+    <loc>/tags/go/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://combinatorial.space/tags/hugo/</loc>
+    <loc>/tags/golang/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://combinatorial.space/notes/</loc>
+    <loc>/tags/hugo/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/notes/</loc>
     <lastmod>2017-06-07T10:53:22-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://combinatorial.space/post/</loc>
+    <loc>/post/</loc>
     <lastmod>2017-06-07T11:29:36-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://combinatorial.space/tags/</loc>
+    <loc>/tags/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://combinatorial.space/tags/templates/</loc>
+    <loc>/tags/templates/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://combinatorial.space/tags/themes/</loc>
+    <loc>/tags/themes/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://combinatorial.space/topics/</loc>
+    <loc>/topics/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://combinatorial.space/</loc>
+    <loc>/</loc>
     <lastmod>2014-09-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
