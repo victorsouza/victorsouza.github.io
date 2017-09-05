@@ -22,5 +22,25 @@
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
     </item>
     
+    <item>
+      <title>Differential Calculus in Banach Spaces</title>
+      <link>/notes/cartan/1_banach/</link>
+      <pubDate>Wed, 07 Jun 2017 10:53:22 -0400</pubDate>
+      
+      <guid>/notes/cartan/1_banach/</guid>
+      <description>1 Notions about Banach spaces and linear continuous mappings 1.1 Norms on a vector space E  (Theorem 2.1) Let $(a_n)$ be a non-crescent real sequence such $\lim a_n = 0$. Then the alternate series as follows converges:  $$ \sum_{k=1}^{\infty}(-1)^k a_n $$ 
+ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</description>
+    </item>
+    
+    <item>
+      <title>Chapter</title>
+      <link>/notes/cartan/2_rd/</link>
+      <pubDate>Wed, 07 Jun 2017 10:53:22 -0400</pubDate>
+      
+      <guid>/notes/cartan/2_rd/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
+    </item>
+    
   </channel>
 </rss>

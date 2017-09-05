@@ -89,12 +89,7 @@ blockquote {
 
 
 .page-background {
-    background-image: url("/img/congruent_pentagon.png");
-    -webkit-filter: hue-rotate(90deg);
-    -moz-filter: hue-rotate(90deg);
-    -o-filter: hue-rotate(90deg);
-    -ms-filter: hue-rotate(90deg);
-    filter: hue-rotate(90deg);
+    background-image: url("/img/tiny_grid.png");
     position: fixed;
     width: 100%;
     height: 100%;
