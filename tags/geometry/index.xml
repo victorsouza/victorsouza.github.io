@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Geometry on combinatorial.space</title>
+    <link>/tags/geometry/</link>
+    <description>Recent content in Geometry on combinatorial.space</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017. All rights reserved.</copyright>
+    <lastBuildDate>Tue, 01 Aug 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/geometry/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The Birkhoff Polytope</title>
+      <link>/post/polytope/</link>
+      <pubDate>Tue, 01 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/post/polytope/</guid>
+      <description>This is my first post on combinatorial.space. What I have in mind for this page is to post short articles on mathematical topics that interest me, and sporadically, I&amp;rsquo;ll cover other topics.
+One aspect of mathematics that amazes me is the connection between seemingly unrelated concepts. For me, this is where true beauty lies, and what drives me to keep exploring all sorts of topics. We will see an interplay between graph theory and geometry by studying a class of matrices that arises in probability theory.</description>
+    </item>
+    
+  </channel>
+</rss>

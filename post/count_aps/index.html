@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="generator" content="Hugo 0.21" />
 
-  <title>Chapter &middot; combinatorial.space</title>
+  <title>Counting Arithmetic Progressions &middot; combinatorial.space</title>
 
   
   
@@ -213,7 +213,7 @@
 
 
 <div class="header">
-  <h1>Chapter 2 - Chapter</h1>
+  <h1>Counting Arithmetic Progressions</h1>
   <h2></h2>
 </div>
 <div class="content">
@@ -222,7 +222,7 @@
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
-    <time>07 Jun 2017</time>
+    <time>02 Aug 2017</time>
   </div>
 
   
@@ -233,21 +233,64 @@
 
 </div>
 
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>Let&rsquo;s count the number of $k$-term arithmetic progressions contained inside the
+interval <code>$[N]$</code>. Let <code>$A_k(N)$</code> denote such quantity. Intuitively, we expect roughly <code>$N^2$</code> such progressions, as we have order of <code>$N$</code> choices for the first term and order <code>$N$</code> choices for the common difference.</p>
 
-<p>Chegou a hora de usar algumas formulas, por exemplo, $x=1$.</p>
+<h1 id="estimating">Estimating</h1>
 
-<p>$$ (x+y)^n = \sum_{k=0}^n \binom{n}{k}x^ky^{n-k}.$$</p>
+<p>An arithmetic progression of length <code>$k$</code> inside <code>$[N]$</code> cannot have the first
+term bigger than <code>$N - k + 1$</code>. An progression <code>$\{an + b : 0 \leq n &lt; k\} \subset [N]$</code> has last term <code>$a(k-1) + b \leq N$</code>, therefore the common  difference is bounded above by <code>$\frac{N-b}{k-1} \leq \frac{N-1}{k-1}$</code>. Thus, we get the upper bound:</p>
+
+<p>$$ A_k(N) \leq  \frac{(N-k+1)(N-1)}{k-1} \leq \frac{N^2}{k-1} $$</p>
+
+<p>For a lower bound, we must show that we have many progressions contained in
+that interval. Indeed, if the first term is inside the interval <code>$[x]$</code>, then,
+the common difference can by any positive integer less than <code>$\frac{N-x}{k-1}$</code>.
+Thus, we get</p>
+
+<p>$$ A_k(N) \geq \frac{x(N-x)}{k-1} = \frac{N^2}{4(k-1)}, $$</p>
+
+<p>by choosing <code>$x = N/2$</code>. Therefore, we see that we really have order of <code>$N^2$</code> arithmetic progressions of constant length.</p>
+
+<h1 id="refining">Refining</h1>
+
+<p>To be more precise, we observe that we have <code>$\left \lfloor \frac{N-a}{k-1} \right \rfloor$</code> arithmetic progressions of length <code>$k$</code> with first term <code>$a \in [N]$</code>. Therefore</p>
+
+<div> $$ A_k(N) = \sum_{a = 1}^{N} \left \lfloor \frac{N-a}{k-1} \right \rfloor
+=  \sum_{a = 0}^{N-1} \left \lfloor \frac{a}{k-1} \right \rfloor $$ </div>
+
+<p>By using that <code>$x - 1 \leq \lfloor x \rfloor \leq x$</code>, and that,</p>
+
+<div> $$ \sum_{a = 0}^{N-1} \frac{a}{k-1}  = \frac{N(N-1)}{2(k-1)} = \frac{N^2}{2(k-1)} - \frac{N}{2(k-1)} $$ </div>
+
+<p>we have that:
+<div> $$ \frac{1}{2(k-1)}N^2 - \left (1+\frac{1}{2(k-1)} \right)N \leq A_k(N) \leq \frac{1}{2(k-1)}N^2 - \frac{1}{2(k-1)}N $$ </div></p>
+
+<p>Which gives <code>$A_k(N) \sim \frac{N^2}{2(k-1)}$</code> .</p>
+
+<h1 id="typical-progressions">Typical Progressions</h1>
+
+<p>Let <code>$\mathcal{A}_k(N)$</code> be the set of all <code>$k$</code>-term arithmetic progressions inside the set <code>$[N]$</code>. What can we say about a typical element of <code>$\mathcal{A}_k(N)$</code>?</p>
+
+<p>Lets carry out the expected common difference:</p>
+
+<div> $$ \frac{1}{2(k-1)}N^2 - \left (1+\frac{1}{2(k-1)} \right)N \leq A_k(N) \leq \frac{1}{2(k-1)}N^2 - \frac{1}{2(k-1)}N $$ </div>
 
 
   
 <div class="prev-next-post pure-g">
   <div class="pure-u-1-24" style="text-align: left;">
     
+    <a href="/post/polytope/"><i class="fa fa-chevron-left"></i></a>
+    
   </div>
   <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="/post/polytope/">The Birkhoff Polytope</a>
+    </nav>
     
   </div>
   <div class="pure-u-2-24">
@@ -255,14 +298,8 @@
   </div>
   <div class="pure-u-10-24">
     
-    <nav class="next">
-      <a href="/notes/cartan/1_banach/">Chapter 1 - Differential Calculus in Banach Spaces</a>
-    </nav>
-    
   </div>
   <div class="pure-u-1-24" style="text-align: right;">
-    
-    <a href="/notes/cartan/1_banach/"><i class="fa fa-chevron-right"></i></a>
     
   </div>
 </div>

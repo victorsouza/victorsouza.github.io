@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="An application of Hall&#39;s Theorem">
+  <meta name="generator" content="Hugo 0.21" />
+
+  <title>The Birkhoff Polytope &middot; combinatorial.space</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/hybrid.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'] ],
+        displayMath: [ ['$$','$$'] ],
+        processEscapes: true,
+        processEnvironments: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        TeX: { equationNumbers: { autoNumber: "AMS" },
+        extensions: ["AMSmath.js", "AMSsymbols.js"] }
+      }
+    });
+
+  </script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+
+
+  
+  
+
+</head>
+
+
+<body>
+<div class="page-background"></div>
+
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/">combinatorial<br>.space <i class="fa fa-cube" aria-hidden="true" style="float:right;margin-right:1em; margin-top: 0.1em; color: rgba(255,255,255, 0.25);"></i></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/victor.souza.dev" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/victorsouza" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2017. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>The Birkhoff Polytope</h1>
+  <h2>An application of Hall&#39;s Theorem</h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>01 Aug 2017</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/matchings">Matchings</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/polytopes">Polytopes</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/geometry">Geometry</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  
+
+<p>This is my first post on <a href="http://combinatorial.space">combinatorial.space</a>. What I have in mind for this page is to post short articles on mathematical topics that interest me, and sporadically, I&rsquo;ll cover other topics.</p>
+
+<p>One aspect of mathematics that amazes me is the connection between seemingly unrelated concepts. For me, this is where true beauty lies, and what drives me to keep exploring all sorts of topics. We will see an interplay between graph theory and geometry by studying a class of matrices that arises in probability theory.</p>
+
+<p>A real matrix <code>$A = (a_{ij})$</code> is called <strong>doubly stochastic</strong> if it&rsquo;s entries are nonnegative and the sum of the entries of each row and each column adds up to one, that is, <code>$\forall j \sum_{i}a_{ij} = 1$</code> and <code>$\forall i \sum_{j}a_{ij} = 1$</code>. By adding all entries of the matrix columnwise and rowwise, we see that a doubly stochastic matrix should be a square matrix.</p>
+
+<p>Define then <code>$B_n \subset \mathbb{R}^{n^2}$</code> as the natural embedding of the set of all doubly stochastic matrices into <code>$\mathbb{R}^{n^2}$</code>. It is easy to see that this set is convex. Indeed, any convex combination of matrices in <code>$B_n$</code> remains positive and have the stochastic property.</p>
+
+<p>The set <code>$B_n$</code> is not empty, indeed, the identity matrix is doubly stochastic. Additionally, any permutation matrix <code>$P_\sigma = (\delta_{i,\sigma(j)})$</code> is doubly stochastic. Here, <code>$\delta_{x,y}$</code> is the indicator for <code>$x=y$</code>, so a permutation matrix have exactly one entry 1 on every column and every row, all other entries are 0. We have <code>$n!$</code> such matrices. It is easy to see that these matrices are the only doubly stochastic matrices with integer coordinates.
+Indeed, these are the points where <code>$B_n$</code> intersects the integer lattice <code>$\mathbb{Z}^{n^2}$</code>.</p>
+
+<p>Our goal is to show this characterization of <code>$B_n$</code>:</p>
+
+<blockquote>
+<p><strong>Theorem (Birkhoff–von Neumann)</strong>
+The set <code>$B_n$</code> forms a convex polyhedron where the vertices are the permutation matrices.</p>
+</blockquote>
+
+<p>In particular, this show that a doubly stochastic matrix can be written as a convex combination of permutation matrices. Our proof to this theorem will use perfect matchings in bipartite graphs, so we need a little detour into graph theory.</p>
+
+<h1 id="bipartite-graphs">Bipartite Graphs</h1>
+
+<p>A <strong>graph</strong> is a pair <code>$G = (V,E)$</code> where <code>$V$</code> is a set of vertices and <code>$E$</code> is a set of pairs of vertices, called edges. When <code>$\{u,v\} \in E$</code>, we say that <code>$u$</code> and <code>$v$</code> are adjacent vertices. The edge <code>$\{u,v\}$</code> is said to be incident to <code>$u$</code> and <code>$v$</code>. Denote by <code>$N(v)$</code> neighbourhood of <code>$v$</code>, that is, the set of vertices adjacent to <code>$v$</code>. A graph is <strong>bipartite</strong> when the vertex set can be partitioned into two sets, <code>$A$</code> and <code>$B$</code>, such that every edge is incident to both <code>$A$</code> and <code>$B$</code>. Alternatively, <code>$A$</code> and <code>$B$</code> forms a bipartition of <code>$G$</code> if for every vertex <code>$v \in A$</code>, we have <code>$N(v) \subset B$</code>, for every vertex <code>$v \in B$</code>, <code>$N(v) \subset A$</code>.</p>
+
+<p>Let <code>$G = (V,E)$</code> be a graph. A <strong>matching</strong> in <code>$G$</code> is a subset <code>$M \subset E$</code> of disjoint edges. A vertex <code>$v \in V$</code> is said to be covered by a matching if it has an edge incident to <code>$v$</code>. A matching is a <strong>perfect matching</strong> if it also cover every edge of the graph.</p>
+
+<p>We will study the special case of perfect matchings on bipartite graphs, in which a very natural necessary condition turns out to be sufficient. Let <code>$G = (V,E)$</code> be a bipartite graph with bipartition <code>$V = A \cup B$</code>. Clearly a perfect matching in <code>$G$</code> is only possible if <code>$|A| = |B|$</code>. Another obstacle for having a perfect matching is if there is a subset <code>$S \subset A$</code>, such that <code>$|N(S)| &lt; |S|$</code>, where <code>$N(S)$</code> is the union of the neighbourhoods of vertices in <code>$S$</code>.</p>
+
+<blockquote>
+<p><strong>Theorem (Hall)</strong>
+A bipartite graph <code>$G = (V,E)$</code> with parts <code>$A$</code> and <code>$B$</code> has a perfect matching if and only if <code>$|A| = |B|$</code> and for every subset <code>$S \subset A$</code>, we  have <code>$|N(S)| \geq |S|$</code>.</p>
+</blockquote>
+
+<p><strong>Proof:</strong>
+The condition is clearly necessary. Indeed, for every subset <code>$S\subset A$</code>, its neighbourhood <code>$N(S)$</code> are precisely the vertices that can be used to match vertices in <code>$S$</code>. We will proceed by induction on <code>$n = |A| = |B|$</code>. The case <code>$n = 1$</code> is trivial.</p>
+
+<p>For bigger <code>$n$</code>, suppose we have a proper subset <code>$S \subset A$</code> that is saturated, meaning that <code>$|N(S)| = |S|$</code>. Then we can only match vertices in <code>$N(S)$</code> with vertices in <code>$S$</code>. As <code>$S$</code> is a proper subset, one can find a perfect matching for <code>$S$</code> and <code>$N(S)$</code> by induction.</p>
+
+<p>We now have to show that we can match <code>$A \setminus S$</code> with <code>$B \setminus N(S)$</code>. Note that they have the same cardinality, which is less than <code>$n$</code>. Therefore it is sufficient to show that we have Hall&rsquo;s condition inside this pair and apply the induction hypothesis. Let <code>$A' = A \setminus S$</code>, <code>$B' = B \setminus N(S)$</code> and <code>$H \subset A'$</code>. Suppose that <code>$|N(H) \cap B'| &lt; |H|$</code>. Thus <code>$|N(H \cup S)| = |N(S) \cup (N(H)\cap B')| &lt; |S| + |H|$</code>, absurd. Thus, <code>$|N(H) \cap B'| \geq |H|$</code>, so we can apply induction.</p>
+
+<p>The only case left is when all proper subsets <code>$S \subset A$</code> have <code>$|N(S)| \geq |S| + 1$</code>. This case is easier as we can pick any edge <code>$\{ x,y \}$</code> to be in our perfect matching and still have Hall&rsquo;s condition on the remaining graph, obtained by removing both vertices. This is easy to see as for any set <code>$S \subset A \ \{x\}$</code>, its neighbourhood can be decreased by at most one.
+<code>$\blacksquare$</code></p>
+
+<h1 id="completing-the-proof">Completing the Proof</h1>
+
+<p>We are now ready to prove the Birkhoff-von Neumann theorem. Given a <code>$n \times n$</code> doubly stochastic matrix <code>$A$</code>, one can associate to it a bipartite graph <code>$G_A$</code> with bipartition <code>$X \cup Y$</code>, where <code>$X = \{x_1, \dots, x_n \}$</code>, <code>$Y = \{y_1, \dots, y_n \}$</code> and the edge <code>$\{x_i, y_j\}$</code> is in <code>$G_A$</code> precisely when <code>$A_{i,j} &gt; 0$</code>.</p>
+
+<p>We will show that such bipartite graph <code>$G_A$</code> has a perfect matching by the means of the Hall&rsquo;s theorem. Let <code>$S \subset X$</code> be any subset of vertices. They correspond to a subset of rows of the matrix <code>$A$</code>. The set <code>$N(S)$</code> is the set of columns that intersects the rows <code>$S$</code> on a positive entry. Alternatively, the columns <code>$N(S)$</code> covers all the nonzero entries of <code>$S$</code>.
+By summing the entries on the columns <code>$N(S)$</code>, we get:</p>
+
+<div> $$ |N(S)| = \sum_{j \in N(S)}\sum_{i \in Y}a_{ij}  = \sum_{i \in Y}\sum_{j \in N(S)}a_{ij}  \geq \sum_{i \in S}\sum_{j \in N(S)}a_{ij} = |S| $$ </div>
+
+<p>In words, the columns <code>$N(S)$</code> holds all the weight of the rows <code>$S$</code>, as each column or row carries the same weight, there must be at least the same number of columns as rows.</p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="/post/count_aps/">Counting Arithmetic Progressions</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="/post/count_aps/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+
+
+
+
+</body>
+</html>
+
