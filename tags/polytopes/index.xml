@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Polytopes on combinatorial.space</title>
+    <title>Polytopes on combinatorial. space</title>
     <link>/tags/polytopes/</link>
-    <description>Recent content in Polytopes on combinatorial.space</description>
+    <description>Recent content in Polytopes on combinatorial. space</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017. All rights reserved.</copyright>
-    <lastBuildDate>Tue, 01 Aug 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 05 Sep 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/polytopes/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>The Birkhoff Polytope</title>
       <link>/post/polytope/</link>
-      <pubDate>Tue, 01 Aug 2017 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 05 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>/post/polytope/</guid>
       <description>This is my first post on combinatorial.space. What I have in mind for this page is to post short articles on mathematical topics that interest me, and sporadically, I&amp;rsquo;ll cover other topics.

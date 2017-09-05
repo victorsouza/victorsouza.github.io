@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>combinatorial.space</title>
+    <title>combinatorial. space</title>
     <link>/</link>
-    <description>Recent content on combinatorial.space</description>
+    <description>Recent content on combinatorial. space</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017. All rights reserved.</copyright>
@@ -33,19 +33,9 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
     </item>
     
     <item>
-      <title>Counting Arithmetic Progressions</title>
-      <link>/post/count_aps/</link>
-      <pubDate>Wed, 02 Aug 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/post/count_aps/</guid>
-      <description>Let&amp;rsquo;s count the number of $k$-term arithmetic progressions contained inside the interval $[N]$. Let $A_k(N)$ denote such quantity. Intuitively, we expect roughly $N^2$ such progressions, as we have order of $N$ choices for the first term and order $N$ choices for the common difference.
-Estimating An arithmetic progression of length $k$ inside $[N]$ cannot have the first term bigger than $N - k + 1$. An progression $\{an + b : 0 \leq n &amp;lt; k\} \subset [N]$ has last term $a(k-1) + b \leq N$, therefore the common difference is bounded above by $\frac{N-b}{k-1} \leq \frac{N-1}{k-1}$.</description>
-    </item>
-    
-    <item>
       <title>The Birkhoff Polytope</title>
       <link>/post/polytope/</link>
-      <pubDate>Tue, 01 Aug 2017 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 05 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>/post/polytope/</guid>
       <description>This is my first post on combinatorial.space. What I have in mind for this page is to post short articles on mathematical topics that interest me, and sporadically, I&amp;rsquo;ll cover other topics.

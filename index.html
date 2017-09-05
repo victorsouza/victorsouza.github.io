@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="generator" content="Hugo 0.21" />
 
-  <title>combinatorial.space</title>
+  <title>combinatorial. space</title>
 
   
   
@@ -37,7 +37,7 @@
 
   
   
-  <link rel="alternate" type="application/rss+xml" title="combinatorial.space" href="/index.xml" />
+  <link rel="alternate" type="application/rss+xml" title="combinatorial. space" href="/index.xml" />
   
 
   
@@ -59,9 +59,11 @@
         skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
         TeX: { equationNumbers: { autoNumber: "AMS" },
         extensions: ["AMSmath.js", "AMSsymbols.js"] }
-      }
+      },
+      CommonHTML: { linebreaks: { automatic: true } },
+      "HTML-CSS": { linebreaks: { automatic: true } },
+      SVG: { linebreaks: { automatic: true } }
     });
-
   </script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
@@ -219,45 +221,11 @@
 
 
 <div class="header">
-  <h1>combinatorial.space</h1>
+  <h1>combinatorial. space</h1>
   <h2>a place for mathematics, discrete and otherwise</h2>
 </div>
 
 <div class="content">
-  
-    <article>
-  <header>
-    <h2><a href="/post/count_aps/">Counting Arithmetic Progressions</a></h2>
-
-    <div class="post-meta">
-
-  <div>
-    <i class="fa fa-calendar fa-fw"></i>
-    <time>02 Aug 2017</time>
-  </div>
-
-  
-
-  
-
-  
-
-</div>
-
-  </header>
-
-  <p>
-  Let&rsquo;s count the number of $k$-term arithmetic progressions contained inside the interval $[N]$. Let $A_k(N)$ denote such quantity. Intuitively, we expect roughly $N^2$ such progressions, as we have order of $N$ choices for the first term and order $N$ choices for the common difference.
-Estimating An arithmetic progression of length $k$ inside $[N]$ cannot have the first term bigger than $N - k + 1$. An progression $\{an + b : 0 \leq n &lt; k\} \subset [N]$ has last term $a(k-1) + b \leq N$, therefore the common difference is bounded above by $\frac{N-b}{k-1} \leq \frac{N-1}{k-1}$.
-  </p>
-
-  
-  <footer>
-    <a href="/post/count_aps/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
-  </footer>
-  
-</article>
-
   
     <article>
   <header>
@@ -267,7 +235,7 @@ Estimating An arithmetic progression of length $k$ inside $[N]$ cannot have the 
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
-    <time>01 Aug 2017</time>
+    <time>05 Sep 2017</time>
   </div>
 
   

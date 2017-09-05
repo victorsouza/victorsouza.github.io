@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on combinatorial.space</title>
+    <title>Tags on combinatorial. space</title>
     <link>/tags/</link>
-    <description>Recent content in Tags on combinatorial.space</description>
+    <description>Recent content in Tags on combinatorial. space</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017. All rights reserved.</copyright>
-    <lastBuildDate>Tue, 01 Aug 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 05 Sep 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>Geometry</title>
       <link>/tags/geometry/</link>
-      <pubDate>Tue, 01 Aug 2017 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 05 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>/tags/geometry/</guid>
       <description></description>
@@ -24,7 +24,7 @@
     <item>
       <title>Matchings</title>
       <link>/tags/matchings/</link>
-      <pubDate>Tue, 01 Aug 2017 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 05 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>/tags/matchings/</guid>
       <description></description>
@@ -33,7 +33,7 @@
     <item>
       <title>Polytopes</title>
       <link>/tags/polytopes/</link>
-      <pubDate>Tue, 01 Aug 2017 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 05 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>/tags/polytopes/</guid>
       <description></description>
