@@ -111,6 +111,12 @@ span.qed{
   float: right;
   font-size: 20px;
 }
-span.qed::before{
-  content: "■";
+
+p{
+  text-align: justify;
+  text-indent: 1em;
+}
+
+blockquote p{
+  text-indent: 0em;
 }

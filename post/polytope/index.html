@@ -266,7 +266,7 @@ Indeed, these are the points where <code>$B_n$</code> intersects the integer lat
 
 <blockquote>
 <p><strong>Theorem (Birkhoff–von Neumann)</strong>
-The set <code>$B_n$</code> forms a convex polyhedron where the vertices are the permutation matrices.</p>
+The set <code>$B_n$</code> forms a convex polytope where the vertices are the permutation matrices.</p>
 </blockquote>
 
 <p>In particular, this show that a doubly stochastic matrix can be written as a convex combination of permutation matrices. Our proof to this theorem will use perfect matchings in bipartite graphs, so we need a little detour into graph theory. This next section can be skipped if the reader is familiar with the common notation in graph theory.</p>
@@ -289,12 +289,12 @@ The condition is clearly necessary. Indeed, for every subset <code>$S\subset A$<
 
 <p>For bigger <code>$n$</code>, suppose we have a proper subset <code>$S \subset A$</code> that is saturated, meaning that <code>$|N(S)| = |S|$</code>. Then we can only match vertices in <code>$N(S)$</code> with vertices in <code>$S$</code>. As <code>$S$</code> is a proper subset, one can find a perfect matching for <code>$S$</code> and <code>$N(S)$</code> by induction.</p>
 
-<p>We now have to show that we can match <code>$A \setminus S$</code> with <code>$B \setminus N(S)$</code>. Note that they have the same cardinality, which is less than <code>$n$</code>. Therefore it is sufficient to show that we have Hall&rsquo;s condition inside this pair and apply the induction hypothesis. Let <code>$A' = A \setminus S$</code>, <code>$B' = B \setminus N(S)$</code> and <code>$H \subset A'$</code>. Suppose that <code>$|N(H) \cap B'| &lt; |H|$</code>. Thus
-<div> $$ |N(H \cup S)| = |N(S) \cup (N(H)\cap B&rsquo;)| &lt; |S| + |H|$$ </div>
+<p>We now have to show that we can match <code>$A \setminus S$</code> with <code>$B \setminus N(S)$</code>. Note that they have the same cardinality, which is less than <code>$n$</code>. Therefore it is sufficient to show that we have Hall&rsquo;s condition inside this pair and apply the induction hypothesis. Let <code>$A' = A \setminus S$</code>, <code>$B' = B \setminus N(S)$</code> and <code>$H \subset A'$</code>. Suppose that <code>$|N(H) \cap B'| &lt; |H|$</code>. Thus,
+<div> $$ |N(H \cup S)| = |N(S) \cup (N(H)\cap B&rsquo;)| &lt; |S| + |H|,$$ </div>
 absurd. Thus, <code>$|N(H) \cap B'| \geq |H|$</code>, so we can apply induction.</p>
 
 <p>The only case left is when all proper subsets <code>$S \subset A$</code> have <code>$|N(S)| \geq |S| + 1$</code>. This case is easier as we can pick any edge <code>$\{ x,y \}$</code> to be in our perfect matching and still have Hall&rsquo;s condition on the remaining graph, obtained by removing both vertices. This is easy to see as for any set <code>$S \subset A \ \{x\}$</code>, its neighbourhood can be decreased by at most one.
-<span class="qed"></span></p>
+<span class="qed">■</span></p>
 
 <h1 id="completing-the-proof">Completing the Proof</h1>
 
@@ -303,13 +303,14 @@ absurd. Thus, <code>$|N(H) \cap B'| \geq |H|$</code>, so we can apply induction.
 <p>We will show that such bipartite graph <code>$G_A$</code> has a perfect matching by the means of the Hall&rsquo;s theorem. Let <code>$S \subset X$</code> be any subset of vertices. They correspond to a subset of rows of the matrix <code>$A$</code>. The set <code>$N(S)$</code> is the set of columns that intersects the rows <code>$S$</code> on a positive entry. Alternatively, the columns <code>$N(S)$</code> covers all the nonzero entries of <code>$S$</code>.
 By summing the entries on the columns <code>$N(S)$</code>, we get:</p>
 
-<div> $$ |N(S)| = \sum_{j \in N(S)}\sum_{i \in Y}a_{ij}  = \sum_{i \in Y}\sum_{j \in N(S)}a_{ij}  \geq \sum_{i \in S}\sum_{j \in N(S)}a_{ij} = |S| $$ </div>
+<div> $$ |N(S)| = \sum_{j \in N(S)}\sum_{i \in Y}a_{ij}  = \sum_{i \in Y}\sum_{j \in N(S)}a_{ij}  \geq \sum_{i \in S}\sum_{j \in N(S)}a_{ij} = |S|. $$ </div>
 
 <p>In words, the columns <code>$N(S)$</code> holds all the weight of the rows <code>$S$</code>, as each column or row carries the same weight, there must be at least the same number of columns as rows.</p>
 
 <p>Applying Hall&rsquo;s Theorem, we have a perfect matching in <code>$G_A$</code>. Notice that a perfect matching in this bipartite graph correspond to a permutation matrix, as for each column, we choose just one row and vice versa. Therefore, there is a permutation <code>$\sigma$</code> such that <code>$A$</code> is positive in the entries <code>$(i,\sigma(i))$</code>. Let <code>$m$</code> be the minimum over these entries. With this, consider the matrix:
-$$ A&rsquo; = \frac{1}{1-m}(A - m P_\sigma). $$
-Note that all the columns and rows of <code>$A'$</code> adds to one as well. Also, by the choice of <code>$m$</code>, no negative entry is created. Furthermore, <code>$A'$</code> has at least one nonzero entry less. Therefore, we can use induction in the number of nonzero entries of <code>$A$</code>. By the indction hypothesis, the matrix <code>$A'$</code> is a convex combination of permutation matrices, therefore:</p>
+$$ A&rsquo; = \frac{1}{1-m}(A - m P_\sigma). $$</p>
+
+<p>Note that all the columns and rows of <code>$A'$</code> adds to one as well. Also, by the choice of <code>$m$</code>, no negative entry is created. Furthermore, <code>$A'$</code> has at least one nonzero entry less. Therefore, we can use induction in the number of nonzero entries of <code>$A$</code>. By the indction hypothesis, the matrix <code>$A'$</code> is a convex combination of permutation matrices, therefore:</p>
 
 <div> $$ A' = \sum_{i=1}^N \alpha_i P_{\sigma_i}  = \frac{1}{1-m} (A - m P_\sigma),$$ </div>
 
@@ -317,12 +318,16 @@ Note that all the columns and rows of <code>$A'$</code> adds to one as well. Als
 
 <div> $$ A = (1-m)\left( \sum_{i=1}^N \alpha_i P_{\sigma_i} \right) + m P_{\sigma}$$ </div>
 
-<p>is a convex combination of permutation matrices.
-<span class="qed"></span></p>
+<p>is a convex combination of permutation matrices.</p>
+
+<p>To finish the proof, we have to the base case for the induction, namely, when there are only <code>$n$</code> positive entries. But it is clear that in this case, each row and each column should have exactly one positive entry, so the only possibility is a permutation matrix.</p>
+
+<p>So we have that every element in <code>$B_n$</code> is the convex hull of the finite set of permutation matrices, so it forms a polytope. We can check that all the <code>$n!$</code> permutation matrices are indeed vertices of this polytope. Indeed, suppose that a permutation matrix is written as a convex combination of more than one distinct permutation matrices. Then, there is at least one entry of their matrices where they differ. This entry is strictly less than one on the convex combination, which is impossible in a permutation matrix.
+<span class="qed">■</span></p>
 
 <h1 id="conclusion">Conclusion</h1>
 
-<p>We have shown that the set of doubly stochastic matrices naturally embed into a polyhedron called the Birkhoff polyhedron. For that, we&rsquo;ve used a result about matching in bipartite graphs. More facts about polytopes will be present in future posts.</p>
+<p>We have shown that the set of doubly stochastic matrices naturally embed into a polytope called the Birkhoff polytope. For that, we&rsquo;ve used a result about matching in bipartite graphs. More facts about polytopes will be present in future posts.</p>
 
 
   
