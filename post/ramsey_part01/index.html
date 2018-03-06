@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A brief introduction - Part 1">
+  <meta name="generator" content="Hugo 0.21" />
+
+  <title>Ramsey&#39;s Theorem for Graphs &middot; combinatorial.space</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/hybrid.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'] ],
+        displayMath: [ ['$$','$$'] ],
+        processEscapes: true,
+        processEnvironments: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        TeX: { equationNumbers: { autoNumber: "AMS" },
+        extensions: ["AMSmath.js", "AMSsymbols.js"] }
+      },
+      CommonHTML: { linebreaks: { automatic: true } },
+      "HTML-CSS": { linebreaks: { automatic: true } },
+      SVG: { linebreaks: { automatic: true } }
+    });
+  </script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+
+
+  
+  
+
+</head>
+
+
+<body>
+<div class="page-background"></div>
+
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/">combinatorial<br>.space <i class="fa fa-cube" aria-hidden="true" style="float:right;margin-right:1em; margin-top: 0.1em; color: rgba(255,255,255, 0.25);"></i></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+    </li>
+    
+
+
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/victor.souza.dev" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/victorsouza" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2017. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Ramsey&#39;s Theorem for Graphs</h1>
+  <h2>A brief introduction - Part 1</h2>
+</div>
+
+<div class="content">
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>06 Mar 2018</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/graphs">Graphs</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/ramsey-theory">Ramsey Theory</a>
+    
+  </div>
+  
+  
+
+</div>
+  
+
+<p>Ramsey theory is a vibrant branch of combinatorics that explores the unavoidability of ordered structures inside large enough combinatorial structures. This is a very vague description, so the purpose of this note is to make this claim precise in the language of graphs. As Ramsey theory and it&rsquo;s applications are one of my favourite themes in mathematics, this series of notes have also the purpose of being a reference in future notes to common notation, definitions and theorems. In fact, I even wrote my <a href="#references">undergraduate thesis</a> in Ramsey theory! No previous knowledge of graph will be assumed.</p>
+
+<p>Before we dive into the theory, let&rsquo;s make some standard notation clear. For <code>$n \in \mathbb{N}$</code>, define <code>$[n] = \{1,\dotsc,n\}$</code>. For any set <code>$A$</code> and <code>$k \in \mathbb{N}$</code>, define <code>${ A \choose k} = \{ S \subseteq A : |S| = k \}$</code>. Note that <code>$|{A \choose k}| = {|A| \choose k}$</code>. Sometimes we use <code>${A \choose \leq k} = \{ S \subseteq A : |S| \leq k\}$</code> and similar variants. The power set of <code>$A$</code> is denoted by <code>$\mathcal{P}(A) = \{ S : S \subset A\}$</code>.</p>
+
+<p>In Ramsey theory, it is common to call partitions colourings. Let <code>$A$</code> be a set, we say that a colouring of <code>$A$</code> in <code>$r$</code> colours is any function <code>$c : A \to [r]$</code>. This induces a partition of <code>$A$</code> into the colour classes <code>$c^{-1}(1), \dotsc , c^{-1}(r)$</code>. It is common to have other finite sets as colours, for instance, a red-blue colouring of <code>$A$</code> is a colouring <code>$c : A \to \{R,B\}$</code>, and we can denote the colour classes by <code>$A_R = c^{-1}(R)$</code>, <code>$A_B = c^{-1}(B)$</code></p>
+
+<h1 id="graphs-and-colourings">Graphs and Colourings</h1>
+
+<p>A <strong>graph</strong> is a collection of vertices together with collection of pairs of vertices called edges. Formally a graph <code>$G$</code> is a pair <code>$G=(V,E)$</code> where <code>$V$</code> is a non-empty set and <code>$E \subseteq {V \choose 2}$</code>. If <code>$G$</code> is a graph, we denote <code>$V(G)$</code> for it&rsquo;s vertex set and <code>$E(G)$</code> for its edge set. This definition is the definition of a simple graph, and whenever the term graph is used, we mean a simple graph.</p>
+
+<p>In a graph <code>$G$</code>, when an edge <code>$e = \{u,v\}\in E(G)$</code> for vertices <code>$u,v \in V(G)$</code> we say that <code>$e$</code> is <strong>incident</strong> to <code>$u$</code> and <code>$v$</code>, and we say that <code>$u$</code> and <code>$v$</code> are <strong>adjacent</strong>. Given a vertex <code>$v$</code>, the <strong>neighbourhood</strong> of <code>$v$</code>, denoted by <code>$N(v)$</code> is the set of vertices that are adjacent to <code>$v$</code>. The degree of a vertex <code>$v$</code>, denoted <code>$d(v)$</code>, is the size of the neighbourhood of <code>$v$</code>.</p>
+
+<p>On Figure 1, we see the drawing of a graph. Each round dot represents a vertex, so we have 8 vertices. The edges are represented by curves with endpoints on it&rsquo;s vertices, so we have 10 edges. On this graph, we have one vertex of degree 1, four vertices of degree 2, two vertices of degree 3 and one vertex of degree 4.</p>
+
+
+<figure >
+    
+        <img src="/img/graph_01.png" alt="(Drawing of a simple graph)" width="40%" />
+    
+    
+    <figcaption>
+        <p>
+        (Figure 1) Drawing of a simple graph.
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+
+
+<p>The useful information of a graph are the set of edges, they define structure between vertices. If we relabel all the vertices of a graph, and relabel the edges correspondingly, no information is lost. To capture this idea, we say that to graphs <code>$G$</code> and <code>$H$</code> are <strong>isomorphic</strong> if there is a bijection <code>$\phi : V(G) \to V(H)$</code> such that <code>$\{\phi(u),\phi(v)\} \in E(H)$</code> if and only if <code>$\{u,v\} \in E(G)$</code>. Such function <code>$\phi$</code> is called an <strong>isomorphism</strong> of graphs.</p>
+
+<p>One important class of graphs are the <strong>complete graphs</strong> <code>$K_n$</code>. The complete graph on a set of vertices <code>$V$</code> is the graph with all possible edges, that is, <code>$E = {V \choose 2}$</code>. Up to isomorphism, one can consider the complete graphs with <code>$n$</code> vertices to be the graph <code>$K_n = ([n], {[n] \choose  2})$</code>. On Figure 2, we have a graph isomorphic to <code>$K_5$</code>.</p>
+
+<p>A <strong>subgraph</strong> of a graph <code>$G$</code> is another graph <code>$H$</code> with <code>$V(H) \subseteq V(G)$</code> and <code>$E(H) \subseteq E(G)$</code>. We say that a graph <code>$G$</code> <strong>has a copy of</strong> a graph <code>$H$</code> when <code>$G$</code> has a subgraph that is isomorphic to <code>$H$</code>. For instance, the graph <code>$K_5$</code> has a copy of <code>$K_3$</code>, indeed, it has <code>${5 \choose 3} = 10$</code> copies.</p>
+
+
+<figure >
+    
+        <img src="/img/graph_02.png" alt="(Drawing of a simple graph)" width="30%" />
+    
+    
+    <figcaption>
+        <p>
+        (Figure 2) An edge colouring of $K_5$.
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+
+
+<p>An <strong>edge colouring</strong>  of <code>$G$</code> is a colouring <code>$c: E(G) \to [r]$</code>. Each colour class corresponds to a subgraph of <code>$G$</code>, namely <code>$G_i = (V(G), c^{-1}(i))$</code>, also called colour classes. We say that a colouring of <code>$G$</code> has a <strong>monocromatic copy</strong> of <code>$H$</code> if one of the colour classes has a copy of <code>$H$</code>. The colouring given in Figure 2 does not have a monochromatic copy of a <code>$K_3$</code>, but has two monochromatic copies of the cycle on 5 vertices.</p>
+
+<h1 id="ramsey-theorem">Ramsey Theorem</h1>
+
+<p>We are now ready to do some basic Ramsey theory. Our main tool in proving our results will be the pigeonhole principle, which states that if we put objects into classes, and we have more objects than classes, then some class has more than one object. Formally, the pigeonhole principle is the statement that if <code>$f: [n] \to [r]$</code> is a function, and <code>$n &gt; r$</code>, then there is some <code>$x \in n$</code> for which <code>$|f^{-1}(x)| &gt; 1$.</code> One can improve that a little bit, as we always have an <code>$x \in [n]$</code> with <code>$|f^{-1}(x)| \geq \lceil \frac{n}{r} \rceil$</code>. In some sense, Ramsey theory is a sequence of generalizations of the pigeonhole principle.</p>
+
+<p>The first result we will prove it&rsquo;s called Ramsey&rsquo;s theorem for graphs, even thought Ramsey did not prove it, he did an infinite version of this statement, which may appear in a future note. This theorem concerns about finding monochromatic copies of a given graph, and if we can find a monochromatic complete graph <code>$K_n$</code> in a colouring of <code>$G$</code>, we can also find a monochromatic copy of any graph <code>$H$</code> with at most <code>$n$</code> vertices. Therefore, we will only concern about complete graphs on this note.</p>
+
+<blockquote>
+<p><strong>Theorem (Ramsey)</strong>
+For all <code>$t,r \in \mathbb{N}$</code> there is <code>$N$</code> such that any edge-colouring of <code>$K_N$</code> in <code>$r$</code> colours has a monochromatic copy of <code>$K_t$</code>.</p>
+</blockquote>
+
+<p>If for a given <code>$t$</code> and <code>$r$</code>, <code>$N$</code> has the property of the conclusion of the theorem above, then <code>$N+1$</code> also have the same property. It is natural then to ask what is the smallest <code>$N$</code> with this property. So we the define the Ramsey number <code>$R_r(t)$</code> with <code>$r$</code> colours as:</p>
+
+<div> $$ R_r(t) = \min \{ N : \text{any } c:E(K_N) \to [r] \text{ has a monochromatic copy of } K_t\}. $$</div>
+
+<p>So Ramsey&rsquo;s theorem can be stated as <code>$R_r(t) &lt; \infty$</code>, for all <code>$r$</code> and <code>$t$</code>.</p>
+
+<p><strong>Proof:</strong>
+Let <code>$G = K_N$</code> be a complete graph and we are given an arbitrary edge-colouring <code>$c : E(G) \to [r]$</code>. Let <code>$v_1$</code> be any vertex, and look at it&rsquo;s coloured neighbourhoods <code>$N_1(v_1), \dotsc, N_r(v_1)$</code>. As <code>$G$</code> is the complete graph, each other vertex of the graph is in one of these sets. If <code>$N \geq rN_2$</code>, by the pigeonhole principle, one of the neighbourhoods has at least <code>$N_2$</code> vertices, so let <code>$a_1 \in [r]$</code> be such <code>$|N_{a_1}(v_1)| \geq N_2$</code>. Let <code>$G_2$</code> be the graph subgraph of <code>$G$</code> induced by <code>$N_{a_1}$</code>, that is, <code>$G_2 = (N_{a_1}, {N_{a_1} \choose 2})$</code>, and restrict the colouring <code>$c$</code> to a colouring <code>$c_2$</code> on the edges of <code>$G_2$</code>. Now we repeat this argument on <code>$G_2$</code>.</p>
+
+<p>Just for the sake of clarity, we will unroll the argument again. Let <code>$v_2 \in G_2$</code> be any vertex. Consider the coloured neighbourhoods <code>$N_1(v_2), \dotsc, N_r(v_2)$</code> in <code>$G_2$</code> and if <code>$N &gt; rN_3$</code>, we pick a colour <code>$a_2$</code> where <code>$|N_{a_2}(v_2)| \geq N_3$</code>, and set <code>$G_3$</code> be the graph restricted to the vertices of <code>$N_{a_2}(v_2)$</code> and restrict the colouring to obtain <code>$c_3$</code>.</p>
+
+
+<figure >
+    
+        <img src="/img/graph_03.png" alt="(Drawing of a simple graph)" width="60%" />
+    
+    
+    <figcaption>
+        <p>
+        (Figure 3) Process repeated after $K$ steps.
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+
+
+<p>After repeating this argument <code>$K$</code> times, we obtain a sequence of vertices <code>$v_1, \dotsc, v_K$</code>, and colours <code>$a_1, \dotsc, a_K$</code> with the property that if <code>$i &lt; j$</code> then <code>$c({v_i, v_j}) = a_i$</code>, that is, the colour of an edge is determined by the vertex with smaller index, as can be seen from Figure 3. For that to apply, we assumed that <code>$N \geq Kr^K$</code>.</p>
+
+<p>Finally, if <code>$K = r(t-1) + 1$</code>, then some colour <code>$b \in [r]$</code> will appear at least <code>$t$</code> times in the sequence <code>$a_1, \dotsc, a_K$</code>, let&rsquo;s say that <code>$a_{i_1} = \dotsc = a_{i_t} = i$</code>. Then the vertices <code>$v_{i_1}, \dotsc, v_{i_t}$</code> forms a monochromatic copy of <code>$K_t$</code>. Therefore, if <code>$N = Kr^K \geq rt r^{r(t-1) + 1} &lt; tr^{rt}$</code>, then every <code>$r$</code>-edge-colouring of <code>$K_N$</code> has a monochromatic copy of a <code>$K_t$</code>. Therefore, <code>$R_r(t) &lt; tr^{rt} &lt; \infty$</code>.
+<span class="qed">■</span></p>
+
+<p><strong>Remark 1:</strong> Before finishing this note, just a few remarks about this proof. Note that at each step, we potentially throw away a lot of the graph, keeping just a <code>$1/r$</code> proportion of the vertices. This may seem wasteful, but this is <em>essentially</em> our best approach known for upper bounds of this kind. By essentially I mean that the more sophisticated ideas that leads to a better asymptotic bounds have the same constant under the exponential.</p>
+
+<p><strong>Remark 2:</strong> We just showed an upper bound for the numbers <code>$R_r(t)$</code>, so the natural question for the lower bounds raises naturally. That requires a radically different approach, and may be the topic of a future note.</p>
+
+<p><strong>Remark 3:</strong> We did prove a generic statement that holds for any <code>$r$</code> and <code>$t$</code>. If one of <code>$r =1$</code> or <code>$t \leq 2$</code>, the definition of <code>$R_r(t)$</code> trivializes. The only other pairs of numbers that are known exactly are <code>$R_2(3) = 6$</code>, <code>$R_2(4) = 18$</code> and <code>$R_3(3) = 17$</code>.</p>
+
+<p>This theorem exemplifies the philosophy behind Ramsey theory. No matter how disordered a colouring can be, one can find a small portion of the colouring that is highly organized. On the next note in this series, we will explore an application of this result in number theory.</p>
+
+<h1 id="references">References</h1>
+
+<p><a name="references"></a>
+[1] Souza, Campos - <a href="http://www.ic.unicamp.br/~reltech/PFG/2016/PFG-16-22.pdf">Introdução à Teoria de Ramsey em Grafos</a> (Portuguese) [Introduction to Ramsey Theory on Graphs]. 2016, Undergraduate Thesis, Insitute of Computing, University of Campinas, 2016.</p>
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="/post/polytope/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="/post/polytope/">The Birkhoff Polytope</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+  </div>
+</div>
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'combinatorial-space';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+
+
+
+
+</body>
+</html>
+

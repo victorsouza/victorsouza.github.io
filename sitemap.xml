@@ -13,8 +13,8 @@
   </url>
   
   <url>
-    <loc>/post/schur/</loc>
-    <lastmod>2017-09-10T00:00:00+00:00</lastmod>
+    <loc>/post/ramsey_part01/</loc>
+    <lastmod>2018-03-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -33,14 +33,14 @@
   </url>
   
   <url>
-    <loc>/tags/combinatorics/</loc>
-    <lastmod>2017-09-10T00:00:00+00:00</lastmod>
+    <loc>/tags/geometry/</loc>
+    <lastmod>2017-09-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/geometry/</loc>
-    <lastmod>2017-09-05T00:00:00+00:00</lastmod>
+    <loc>/tags/graphs/</loc>
+    <lastmod>2018-03-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -57,12 +57,6 @@
   </url>
   
   <url>
-    <loc>/tags/number-theory/</loc>
-    <lastmod>2017-09-10T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/tags/polytopes/</loc>
     <lastmod>2017-09-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -70,19 +64,19 @@
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2017-09-10T00:00:00+00:00</lastmod>
+    <lastmod>2018-03-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/ramsey-theory/</loc>
-    <lastmod>2017-09-10T00:00:00+00:00</lastmod>
+    <lastmod>2018-03-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/</loc>
-    <lastmod>2017-09-10T00:00:00+00:00</lastmod>
+    <lastmod>2017-09-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

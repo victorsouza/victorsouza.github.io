@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ramsey Theory on combinatorial. space</title>
+    <title>Ramsey Theory on combinatorial.space</title>
     <link>/tags/ramsey-theory/</link>
-    <description>Recent content in Ramsey Theory on combinatorial. space</description>
+    <description>Recent content in Ramsey Theory on combinatorial.space</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017. All rights reserved.</copyright>
-    <lastBuildDate>Sun, 10 Sep 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 06 Mar 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/ramsey-theory/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Schur&#39;s Theorem</title>
-      <link>/post/schur/</link>
-      <pubDate>Sun, 10 Sep 2017 00:00:00 +0000</pubDate>
+      <title>Ramsey&#39;s Theorem for Graphs</title>
+      <link>/post/ramsey_part01/</link>
+      <pubDate>Tue, 06 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/schur/</guid>
-      <description>When tackling a hard problem, it is often useful to study a relate easier problem. The Fermat Last Theorem states that for any integer $n &amp;gt; 2$, the equation $x^n + y^n = z^n$ cannot be solved in the integers in a nontrivial way, that is, $x,y,z \neq 0$. This is indeed a very hard problem, it remained unsolved for more than 350 years, becoming a real theorem after Andrew Wiles&amp;rsquo;s proof in 1994.</description>
+      <guid>/post/ramsey_part01/</guid>
+      <description>Ramsey theory is a vibrant branch of combinatorics that explores the unavoidability of ordered structures inside large enough combinatorial structures. This is a very vague description, so the purpose of this note is to make this claim precise in the language of graphs. As Ramsey theory and it&amp;rsquo;s applications are one of my favourite themes in mathematics, this series of notes have also the purpose of being a reference in future notes to common notation, definitions and theorems.</description>
     </item>
     
   </channel>

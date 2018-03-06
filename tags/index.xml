@@ -1,25 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on combinatorial. space</title>
+    <title>Tags on combinatorial.space</title>
     <link>/tags/</link>
-    <description>Recent content in Tags on combinatorial. space</description>
+    <description>Recent content in Tags on combinatorial.space</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017. All rights reserved.</copyright>
-    <lastBuildDate>Sun, 10 Sep 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 05 Sep 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Combinatorics</title>
-      <link>/tags/combinatorics/</link>
-      <pubDate>Sun, 10 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/combinatorics/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>Geometry</title>
@@ -31,20 +22,20 @@
     </item>
     
     <item>
+      <title>Graphs</title>
+      <link>/tags/graphs/</link>
+      <pubDate>Tue, 06 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/graphs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Matchings</title>
       <link>/tags/matchings/</link>
       <pubDate>Tue, 05 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>/tags/matchings/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Number Theory</title>
-      <link>/tags/number-theory/</link>
-      <pubDate>Sun, 10 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/number-theory/</guid>
       <description></description>
     </item>
     
@@ -60,7 +51,7 @@
     <item>
       <title>Ramsey Theory</title>
       <link>/tags/ramsey-theory/</link>
-      <pubDate>Sun, 10 Sep 2017 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 06 Mar 2018 00:00:00 +0000</pubDate>
       
       <guid>/tags/ramsey-theory/</guid>
       <description></description>

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on combinatorial.space</title>
-    <link>/post/</link>
-    <description>Recent content in Posts on combinatorial.space</description>
+    <title>Graphs on combinatorial.space</title>
+    <link>/tags/graphs/</link>
+    <description>Recent content in Graphs on combinatorial.space</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017. All rights reserved.</copyright>
     <lastBuildDate>Tue, 06 Mar 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/graphs/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -19,16 +19,6 @@
       
       <guid>/post/ramsey_part01/</guid>
       <description>Ramsey theory is a vibrant branch of combinatorics that explores the unavoidability of ordered structures inside large enough combinatorial structures. This is a very vague description, so the purpose of this note is to make this claim precise in the language of graphs. As Ramsey theory and it&amp;rsquo;s applications are one of my favourite themes in mathematics, this series of notes have also the purpose of being a reference in future notes to common notation, definitions and theorems.</description>
-    </item>
-    
-    <item>
-      <title>The Birkhoff Polytope</title>
-      <link>/post/polytope/</link>
-      <pubDate>Tue, 05 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/post/polytope/</guid>
-      <description>This is my first post on combinatorial.space. What I have in mind for this page is to post short articles on mathematical topics that interest me, and sporadically, I&amp;rsquo;ll cover other topics.
-One aspect of mathematics that amazes me is the connection between seemingly unrelated concepts. For me, this is where true beauty lies, and what drives me to keep exploring all sorts of topics. We will see an interplay between graph theory and geometry by studying a class of matrices that arises in probability theory.</description>
     </item>
     
   </channel>

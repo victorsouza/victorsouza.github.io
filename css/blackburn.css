@@ -117,6 +117,25 @@ p{
   text-indent: 1em;
 }
 
+
+figure {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+figure img {
+    vertical-align: top;
+    text-align: center;
+}
+
+figure figcaption p{
+  margin: 0 auto;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+}
+
 blockquote p{
   text-indent: 0em;
 }
