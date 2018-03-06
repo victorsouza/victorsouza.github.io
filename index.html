@@ -62,10 +62,15 @@
       },
       CommonHTML: { linebreaks: { automatic: true } },
       "HTML-CSS": { linebreaks: { automatic: true } },
-      SVG: { linebreaks: { automatic: true } }
+      SVG: { linebreaks: { automatic: true, width: "container" } }
+    });
+    MathJax.Hub.Register.StartupHook("SVG multiline Ready",function () {
+      MathJax.ElementJax.mml.mbase.prototype.SVGlinebreakPenalty.nestfactor = 350;
     });
   </script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
 
 
 
@@ -225,7 +230,8 @@
 
 
 <div class="header">
-  <h1>combinatorial.space</h1>
+  
+  <h1>combinatorial . space</h1>
   <h2>a place for mathematics, discrete and otherwise</h2>
 </div>
 

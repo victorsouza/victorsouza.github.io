@@ -60,10 +60,15 @@
       },
       CommonHTML: { linebreaks: { automatic: true } },
       "HTML-CSS": { linebreaks: { automatic: true } },
-      SVG: { linebreaks: { automatic: true } }
+      SVG: { linebreaks: { automatic: true, width: "container" } }
+    });
+    MathJax.Hub.Register.StartupHook("SVG multiline Ready",function () {
+      MathJax.ElementJax.mml.mbase.prototype.SVGlinebreakPenalty.nestfactor = 350;
     });
   </script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
 
 
 
@@ -260,7 +265,7 @@
 
 <p>Before we dive into the theory, let&rsquo;s make some standard notation clear. For <code>$n \in \mathbb{N}$</code>, define <code>$[n] = \{1,\dotsc,n\}$</code>. For any set <code>$A$</code> and <code>$k \in \mathbb{N}$</code>, define <code>${ A \choose k} = \{ S \subseteq A : |S| = k \}$</code>. Note that <code>$|{A \choose k}| = {|A| \choose k}$</code>. Sometimes we use <code>${A \choose \leq k} = \{ S \subseteq A : |S| \leq k\}$</code> and similar variants. The power set of <code>$A$</code> is denoted by <code>$\mathcal{P}(A) = \{ S : S \subset A\}$</code>.</p>
 
-<p>In Ramsey theory, it is common to call partitions colourings. Let <code>$A$</code> be a set, we say that a colouring of <code>$A$</code> in <code>$r$</code> colours is any function <code>$c : A \to [r]$</code>. This induces a partition of <code>$A$</code> into the colour classes <code>$c^{-1}(1), \dotsc , c^{-1}(r)$</code>. It is common to have other finite sets as colours, for instance, a red-blue colouring of <code>$A$</code> is a colouring <code>$c : A \to \{R,B\}$</code>, and we can denote the colour classes by <code>$A_R = c^{-1}(R)$</code>, <code>$A_B = c^{-1}(B)$</code></p>
+<p>In Ramsey theory, it is common to call partitions colourings. Let <code>$A$</code> be a set, we say that a colouring of <code>$A$</code> in <code>$r$</code> colours is any function <code>$c : A \to [r]$</code>. This induces a partition of <code>$A$</code> into the colour classes <code>$c^{-1}(1), \dotsc , c^{-1}(r)$</code>. It is common to have other finite sets as colours, for instance, a red-blue colouring of <code>$A$</code> is a colouring <code>$c : A \to \{R,B\}$</code>, and we can denote the colour classes by <code>$A_R = c^{-1}(R)$</code>, <code>$A_B = c^{-1}(B)$</code>.</p>
 
 <h1 id="graphs-and-colourings">Graphs and Colourings</h1>
 
@@ -273,7 +278,7 @@
 
 <figure >
     
-        <img src="/img/graph_01.png" alt="(Drawing of a simple graph)" width="40%" />
+        <img src="/img/graph_01.png" alt="(Drawing of a simple graph)" width="280px" />
     
     
     <figcaption>
@@ -292,12 +297,12 @@
 
 <p>One important class of graphs are the <strong>complete graphs</strong> <code>$K_n$</code>. The complete graph on a set of vertices <code>$V$</code> is the graph with all possible edges, that is, <code>$E = {V \choose 2}$</code>. Up to isomorphism, one can consider the complete graphs with <code>$n$</code> vertices to be the graph <code>$K_n = ([n], {[n] \choose  2})$</code>. On Figure 2, we have a graph isomorphic to <code>$K_5$</code>.</p>
 
-<p>A <strong>subgraph</strong> of a graph <code>$G$</code> is another graph <code>$H$</code> with <code>$V(H) \subseteq V(G)$</code> and <code>$E(H) \subseteq E(G)$</code>. We say that a graph <code>$G$</code> <strong>has a copy of</strong> a graph <code>$H$</code> when <code>$G$</code> has a subgraph that is isomorphic to <code>$H$</code>. For instance, the graph <code>$K_5$</code> has a copy of <code>$K_3$</code>, indeed, it has <code>${5 \choose 3} = 10$</code> copies.</p>
+<p>A <strong>subgraph</strong> of a graph <code>$G$</code> is another graph <code>$H$</code> with <code>$V(H) \subseteq V(G)$</code> and <code>$E(H) \subseteq E(G)$</code>. We say that a graph <code>$G$</code> <strong>has a copy of</strong> a graph <code>$H$</code> when <code>$G$</code> has a subgraph that is isomorphic to <code>$H$</code>. For instance, the graph <code>$K_5$</code> has a copy of <code>$K_3$</code>, indeed, it has <code>${5 \choose 3} = 10$</code> copies. When we say that a graph <code>$G$</code> has a graph <code>$H$</code>, we mean that <code>$G$</code> has a copy of <code>$H$</code>.</p>
 
 
 <figure >
     
-        <img src="/img/graph_02.png" alt="(Drawing of a simple graph)" width="30%" />
+        <img src="/img/graph_02.png" alt="(Drawing of a simple graph)" width="200px" />
     
     
     <figcaption>
@@ -327,7 +332,7 @@ For all <code>$t,r \in \mathbb{N}$</code> there is <code>$N$</code> such that an
 
 <p>If for a given <code>$t$</code> and <code>$r$</code>, <code>$N$</code> has the property of the conclusion of the theorem above, then <code>$N+1$</code> also have the same property. It is natural then to ask what is the smallest <code>$N$</code> with this property. So we the define the Ramsey number <code>$R_r(t)$</code> with <code>$r$</code> colours as:</p>
 
-<div> $$ R_r(t) = \min \{ N : \text{any } c:E(K_N) \to [r] \text{ has a monochromatic copy of } K_t\}. $$</div>
+<div> $$ R_r(t) = \min \{ N : \text{any } c:E(K_N) \to [r] \text{ has a monochromatic } K_t\}. $$</div>
 
 <p>So Ramsey&rsquo;s theorem can be stated as <code>$R_r(t) &lt; \infty$</code>, for all <code>$r$</code> and <code>$t$</code>.</p>
 
@@ -339,7 +344,7 @@ Let <code>$G = K_N$</code> be a complete graph and we are given an arbitrary edg
 
 <figure >
     
-        <img src="/img/graph_03.png" alt="(Drawing of a simple graph)" width="60%" />
+        <img src="/img/graph_03.png" alt="(Drawing of a simple graph)" width="400px" />
     
     
     <figcaption>
