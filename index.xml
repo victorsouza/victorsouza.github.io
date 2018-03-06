@@ -33,6 +33,15 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
     </item>
     
     <item>
+      <title>Schur&#39;s Theorem</title>
+      <link>/post/schur/</link>
+      <pubDate>Sun, 10 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/post/schur/</guid>
+      <description>When tackling a hard problem, it is often useful to study a relate easier problem. The Fermat Last Theorem states that for any integer $n &amp;gt; 2$, the equation $x^n + y^n = z^n$ cannot be solved in the integers in a nontrivial way, that is, $x,y,z \neq 0$. This is indeed a very hard problem, it remained unsolved for more than 350 years, becoming a real theorem after Andrew Wiles&amp;rsquo;s proof in 1994.</description>
+    </item>
+    
+    <item>
       <title>The Birkhoff Polytope</title>
       <link>/post/polytope/</link>
       <pubDate>Tue, 05 Sep 2017 00:00:00 +0000</pubDate>

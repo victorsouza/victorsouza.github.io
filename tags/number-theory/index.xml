@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on combinatorial. space</title>
-    <link>/post/</link>
-    <description>Recent content in Posts on combinatorial. space</description>
+    <title>Number Theory on combinatorial. space</title>
+    <link>/tags/number-theory/</link>
+    <description>Recent content in Number Theory on combinatorial. space</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017. All rights reserved.</copyright>
     <lastBuildDate>Sun, 10 Sep 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/number-theory/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -19,16 +19,6 @@
       
       <guid>/post/schur/</guid>
       <description>When tackling a hard problem, it is often useful to study a relate easier problem. The Fermat Last Theorem states that for any integer $n &amp;gt; 2$, the equation $x^n + y^n = z^n$ cannot be solved in the integers in a nontrivial way, that is, $x,y,z \neq 0$. This is indeed a very hard problem, it remained unsolved for more than 350 years, becoming a real theorem after Andrew Wiles&amp;rsquo;s proof in 1994.</description>
-    </item>
-    
-    <item>
-      <title>The Birkhoff Polytope</title>
-      <link>/post/polytope/</link>
-      <pubDate>Tue, 05 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/post/polytope/</guid>
-      <description>This is my first post on combinatorial.space. What I have in mind for this page is to post short articles on mathematical topics that interest me, and sporadically, I&amp;rsquo;ll cover other topics.
-One aspect of mathematics that amazes me is the connection between seemingly unrelated concepts. For me, this is where true beauty lies, and what drives me to keep exploring all sorts of topics. We will see an interplay between graph theory and geometry by studying a class of matrices that arises in probability theory.</description>
     </item>
     
   </channel>
