@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="via integration and unimodal sequences">
+  <meta name="generator" content="Hugo 0.21" />
+
+  <title>Bonferroni Inequalities &middot; combinatorial.space</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/hybrid.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'] ],
+        displayMath: [ ['$$','$$'] ],
+        processEscapes: true,
+        processEnvironments: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        TeX: { equationNumbers: { autoNumber: "AMS" },
+        extensions: ["AMSmath.js", "AMSsymbols.js"] }
+      },
+      CommonHTML: { linebreaks: { automatic: true } },
+      "HTML-CSS": { linebreaks: { automatic: true } },
+      SVG: { linebreaks: { automatic: true, width: "container" } }
+    });
+    MathJax.Hub.Register.StartupHook("SVG multiline Ready",function () {
+      MathJax.ElementJax.mml.mbase.prototype.SVGlinebreakPenalty.nestfactor = 350;
+    });
+  </script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+
+
+
+
+  
+  
+
+</head>
+
+
+<body>
+<div class="page-background"></div>
+
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/">combinatorial<br>.space <i class="fa fa-cube" aria-hidden="true" style="float:right;margin-right:1em; margin-top: 0.1em; color: rgba(255,255,255, 0.25);"></i></a>
+
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+    </li>
+    
+
+
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/victor.souza.dev" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/victorsouza" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2017. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Bonferroni Inequalities</h1>
+  <h2>via integration and unimodal sequences</h2>
+</div>
+
+<div class="content">
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>31 Mar 2018</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/measure">Measure</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/combinatorics">Combinatorics</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/unimodal">Unimodal</a>
+    
+  </div>
+  
+  
+
+</div>
+  
+
+<p>The <strong>principle of inclusion-exclusion</strong> is a fundamental tool in combinatorics. It relates the cardinality of a union of sets to the cardinality of the intersection of these sets. We will use the following notation: denote <code>$[n] = \{1, \dots, n\}$</code> and for a set <code>$A$</code>, define <code>${ A \choose k} = \{ S \subseteq A : |S| = k \}$</code>. The inclusion-exclusion principle can be stated in a compact way as follows, for finite sets <code>$A_1, \dotsc, A_n$</code>:</p>
+
+<div> $$ \begin{align}
+\left | \bigcup_{i\in [n]} A_i  \right| &= \sum_{\emptyset \neq I \subset [n]} (-1)^{|I|+1} \left | \bigcap_{i \in I} A_i\right | \\
+&= \sum_{k=1}^n (-1)^{k+1} \sum_{I \in {[n] \choose k}} \left | \bigcap_{i \in I} A_i\right | .
+\end{align}$$</div>
+
+<p>We gave two different expressions for this formula. The first one is more compact, but the second one is often more useful, as we separate the terms by the number of sets in the intersection. Indeed another common way to write such identity is by expanding the notation:</p>
+
+<div> $$ \begin{align}
+\left | \bigcup_{i\in [n]} A_i  \right| &= \sum_{1 \leq i \leq n} |A_i| - \sum_{1 \leq i < j \leq n } | A_i \cap A_j| \\
+&+ \sum_{1 \leq i < j < k \leq n} |A_i \cap A_j \cap A_k| \\
+&+ \dotsc + (-1)^{n-1} \left| \bigcap_{i \in [n]} A_i \right |.
+\end{align} $$</div>
+
+<p>Grouping the terms in this way, one can see the terms as successive approximations of the cardinality of the union of the <code>$A_i$</code>. If we stop at the first term, it is easy to see that we overestimate the size of the union, that is, <code>$|\bigcup_{i \in [n]}A_i | \leq \sum_{i \in [n]} |A_i|$</code>. If we add the second term as a correction, then we underestimate the size. If then we add the third term, we overestimate it again. Indeed, this behaviour is captured in general by the <strong>Bonferroni&rsquo;s inequalities</strong>, that states that for <code>$N$</code> even we have</p>
+
+<div>$$ \displaystyle \left | \bigcup_{i\in [n]} A_i  \right| \geq \sum_{k=1}^N (-1)^{k+1} \sum_{I \in {[n] \choose k}} \left | \bigcap_{i \in I} A_i \right | $$</div>
+
+<p>and  for <code>$N$</code> odd we have</p>
+
+<div> $$ \displaystyle \left | \bigcup_{i\in [n]} A_i  \right| \leq \sum_{k=1}^N (-1)^{k+1} \sum_{I \in {[n] \choose k}} \left | \bigcap_{i \in I} A_i \right |. $$</div>
+
+<p>The canonical way to prove all these propositions is by induction on <code>$n$</code>. We will not prove it here, so consider it an exercise if you haven&rsquo;t done it at least once.</p>
+
+<p>The goal of this note is to prove a measure theoretical version of this identity via integration and properties of unimodal sequences.</p>
+
+<h1 id="inclusion-exclusion-via-integration">Inclusion-Exclusion via Integration</h1>
+
+<p>Let <code>$(\Omega, \mathcal{A}, \mu)$</code> be a measure space and <code>$A_1, \dots, A_n \in \mathcal{A}$</code> be measurable sets with finite <code>$\mu$</code>-measure. Denote <code>$A = \bigcup_{i \in [n]} A_i$</code>. As <code>$A$</code> is measurable, it&rsquo;s indicator function <code>$\unicode{x1D7D9}_A$</code> is a measurable function. Define the function <code>$F$</code> as</p>
+
+<div> $$
+F(\omega) = \prod_{i \in [n]} (\unicode{x1D7D9}_A(\omega) - \unicode{x1D7D9}_{A_i}(\omega)).
+$$ </div>
+
+<p>Note that if <code>$\omega \not\in A$</code>, then <code>$\unicode{x1D7D9}_A(\omega) = 0$</code> and <code>$\unicode{x1D7D9}_{A_i}(\omega) = 0$</code> for <code>$i \in [n]$</code>, so <code>$F(\omega) = 0$</code>.
+On the other hand, if <code>$\omega \in A$</code>, then there is <code>$i$</code> so that <code>$\omega \in A_i$</code>, so <code>$\unicode{x1D7D9}_A(\omega) - \unicode{x1D7D9}_{A_i}(\omega) = 0$</code>, this also implies that <code>$F(\omega) = 0$</code>, that is, <code>$F$</code> is identically 0. Expanding the product, we have:</p>
+
+<div> $$
+0 = \prod_{i \in [n]} (\unicode{x1D7D9}_A - \unicode{x1D7D9}_{A_i}) = \unicode{x1D7D9}_A + \sum_{\emptyset \neq I \in [n]}(-1)^{|I|} \prod_{i \in I}\unicode{x1D7D9}_{A_i} .
+$$ </div>
+
+<p>Therefore</p>
+
+<div> $$
+\unicode{x1D7D9}_A = \sum_{\emptyset \neq I \in [n]}(-1)^{|I|+1} \unicode{x1D7D9}_{\cap_{i \in I}A_i} .
+$$ </div>
+
+<p>Integrating both sides, we have</p>
+
+<div> $$ \begin{align}
+\int \unicode{x1D7D9}_A d\mu &=  \int \sum_{\emptyset \neq I \in [n]}(-1)^{|I|+1} \unicode{x1D7D9}_{\cap_{i \in I}A_i} d\mu \\
+&= \sum_{\emptyset \neq I \in [n]}(-1)^{|I|+1} \int \unicode{x1D7D9}_{\cap_{i \in I}A_i} d\mu
+\end{align}$$ </div>
+<div> $$ \begin{align}
+\mu\left( \bigcup_{i \in [n]}A_i \right) &= \sum_{\emptyset \neq I \in [n]}(-1)^{|I|+1} \mu \left( \bigcap_{i \in I}A_i \right).
+\end{align}$$ </div>
+
+<p>This is the principle of inclusion exclusion for measures. Note that we had to assume that <code>$\mu(A_i) &lt; \infty$</code>, for all <code>$i \in [n]$</code>. If we have the counting measure, this corresponds exactly to the first identity on this note. We will prove the Bonferroni&rsquo;s inequalities using a similar approach, but we need a little detour.</p>
+
+<h1 id="unimodal-sequences">Unimodal Sequences</h1>
+
+<p>A sequence of real numbers <code>$\{a_i\}_{i \geq 0}$</code> is called unimodal if there is an index <code>$m$</code> such that <code>$a_0 \leq a_1 \leq \dotsc \leq a_m$</code> and <code>$a_m \geq a_{m+1} \geq \dotsc$</code>. That is, a sequence is unimodal if it is monotonic nondecreasing until some point, and after that, it is monotonic nonincreasing.</p>
+
+<blockquote>
+<p><strong>Lemma:</strong>
+If <code>${a_i}$</code> is a nonnegative unimodal sequence such that <code>$\sum_{i=0}^n (-1)^{i}a_i = 0$</code>, then for every <code>$k \leq n$</code>, we have <code>$(-1)^k\sum_{i=0}^k (-1)^{i}a_i \geq 0$</code>.</p>
+</blockquote>
+
+<p><strong>Proof:</strong>
+First, let&rsquo;s prove that this property holds for monotone sequences. Suppose that <code>$\{a_i\}_{i \geq 0}$</code> is monotone nondecreasing. Thus we have</p>
+
+<div> $$ \begin{align}
+\sum_{i=0}^{2k+1} (-1)^{i}a_i &= \sum_{i=0}^{k} (a_{2i} - a_{2i+1}) \leq 0, \\
+\sum_{i=0}^{2k} (-1)^{i}a_i &= a_0 + \sum_{i=1}^{k} (a_{2i} - a_{2i-1}) \geq 0.
+\end{align} $$ </div>
+
+<p>Therefore, the result holds for nondecreasing sequences. Now, if a sequence <code>$\{a_i\}_{i \geq 0}$</code> is unimodal with turning point <code>$m$</code>, we know that the lemma holds for all <code>$k \leq m$</code>. For <code>$k &gt; m$</code> we use the fact that <code>$\sum_{i=0}^n (-1)^{i}a_i = 0$</code> to get</p>
+
+<div> $$ \begin{align}
+\sum_{i=0}^{k} (-1)^{i}a_i &= \sum_{i=0}^{k} (-1)^{i}a_i - \sum_{i=0}^n (-1)^{i}a_i\\
+&= - \sum_{i=k+1}^{n} (-1)^{i}a_i \\
+&= - \sum_{i=0}^{n-k-1} (-1)^{n-i}a_{n-i}.
+\end{align} $$ </div>
+
+<p>But the sequence <code>$\{a_{n-i}\}_{i \geq 0}$</code> is then unimodal with turning point <code>$n - m$</code>. Therefore, the index <code>$n-k-1\leq n - m$</code>, so the sequence is monotone nondecreasing up to that index. This gives us</p>
+
+<div> $$
+(-1)^k\sum_{i=0}^{k} (-1)^{i}a_i = -(-1)^{k}\sum_{i=0}^{n-k-1} (-1)^{n-i}a_{n-i} \\
+= (-1)^{n-k-1}\sum_{i=0}^{n-k-1} (-1)^{i}a_{n-i} \geq 0.
+$$ </div>
+
+<p>The lemma is then proved. <span class="qed">■</span></p>
+
+<p>One natural sequence that we can use with this lemma is the sequence defined by binomial numbers, that is <code>$a_i = { n \choose i}$</code>. The fact that the alternating sum is zero is a consequence of the <strong>binomial theorem</strong>, as we have <code>$\sum_{i=0}^n {n \choose i}(-1)^i = (1-1)^n = 0$</code>.</p>
+
+<h1 id="bonferroni-via-integration">Bonferroni via Integration</h1>
+
+<p>Let again <code>$(\Omega, \mathcal{A}, \mu)$</code> be a measure space and <code>$A_1, \dots, A_n \in \mathcal{A}$</code> be measurable sets with finite <code>$\mu$</code>-measure. Denote <code>$A = \bigcup_{i \in [n]} A_i$</code>. Define the function <code>$L : \Omega \to \mathcal{P}([n])$</code> as the set of indices <code>$i$</code> such that <code>$\omega \in A_i$</code>. Formally, set</p>
+
+<div> $$L(\omega) = \{ i \in [n] : \omega \in A_i \}. $$ </div>
+
+<p>Now, note that</p>
+
+<div> $$
+\sum_{I \in {[n] \choose k}} \unicode{x1D7D9}_{\cap_{i \in I} A_i}(\omega) = { |L(\omega)| \choose k}.
+$$ </div>
+
+<p>Now, consider the following function <code>$F_N$</code>.</p>
+
+<div> $$ \begin{align}
+F_N(\omega) &=  \unicode{x1D7D9}_{A}(\omega) +
+\sum_{k = 1}^{N}(-1)^k\sum_{I \in {[n] \choose k}} \unicode{x1D7D9}_{\cap_{i \in I} A_i}(\omega)\\
+&= \unicode{x1D7D9}_{A}(\omega) +
+\sum_{k=1}^{N}(-1)^j{ |L(\omega)| \choose k}.
+\end{align} $$ </div>
+
+<p>Integrating <code>$F_N$</code> over <code>$A$</code>, we obtain:</p>
+
+<div> $$ \begin{align}
+\int_A F_N d\mu &=  \int_A \unicode{x1D7D9}_{A} d\mu +
+\int_A \sum_{k=1}^{N}(-1)^k{ |L(\omega)| \choose k} d\mu \\
+&=  \int_A \sum_{k=0}^{N} (-1)^k{ |L(\omega)| \choose k} d\mu.
+\end{align} $$ </div>
+
+<p>For every <code>$\omega \in \Omega$</code>, the sequence <code>${ |L(\omega)| \choose k}$</code> is unimodal and has the alternating zero sum property, as discussed before. Therefore, we have</p>
+
+<div> $$ (-1)^N \int_A F_N d\mu \geq 0.  $$ </div>
+
+<p>This can be rewritten as, for <code>$N$</code> even, we have</p>
+
+<div>$$\mu\left( \bigcup_{i \in [n]}A_i \right) \geq \sum_{k=1}^{N} (-1)^{k+1} \sum_{I \in {[n] \choose k}} \mu \left( \bigcap_{i \in I} A_i \right) , $$</div>
+
+<p>and for <code>$N$</code> odd we have</p>
+
+<div>$$\mu\left( \bigcup_{i \in [n]}A_i \right) \leq \sum_{k=1}^{N} (-1)^{k+1} \sum_{I \in {[n] \choose k}} \mu \left( \bigcap_{i \in I} A_i \right). $$</div>
+
+<p>These are the Bonferroni inequalities on the measure setting.</p>
+
+<h1 id="conclusion">Conclusion</h1>
+
+<p>We have show both the principle of Inclusion-Exclusion and the Bonferroni inequalities via integration of the adequate measurable function over a measure space, and also exploiting some properties of unimodal sequences. Again, one can prove such identities by induction, but knowing different proofs for a proposition is always useful to find connections and parallels with different areas. These proofs sheds light into connection of this set of inequalities and properties of the binomial numbers. It will be nice to discover other nice applications of the Lemma we&rsquo;ve proved about unimodal sequences in different problems.</p>
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="/post/ramsey_part01/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="/post/ramsey_part01/">Ramsey&#39;s Theorem for Graphs</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+  </div>
+</div>
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'combinatorial-space';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+
+
+
+
+</body>
+</html>
+

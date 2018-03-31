@@ -13,6 +13,11 @@
   </url>
   
   <url>
+    <loc>/post/bonferroni/</loc>
+    <lastmod>2018-03-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/post/ramsey_part01/</loc>
     <lastmod>2018-03-06T00:00:00+00:00</lastmod>
   </url>
@@ -30,6 +35,12 @@
   <url>
     <loc>/about/</loc>
     <lastmod>2017-04-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/combinatorics/</loc>
+    <lastmod>2018-03-31T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -51,6 +62,12 @@
   </url>
   
   <url>
+    <loc>/tags/measure/</loc>
+    <lastmod>2018-03-31T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/notes/</loc>
     <lastmod>2017-06-07T10:53:22-04:00</lastmod>
     <priority>0</priority>
@@ -64,7 +81,7 @@
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2018-03-06T00:00:00+00:00</lastmod>
+    <lastmod>2018-03-31T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -76,12 +93,18 @@
   
   <url>
     <loc>/tags/</loc>
-    <lastmod>2017-09-05T00:00:00+00:00</lastmod>
+    <lastmod>2018-03-31T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/topics/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/unimodal/</loc>
+    <lastmod>2018-03-31T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

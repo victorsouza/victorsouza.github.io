@@ -33,6 +33,15 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
     </item>
     
     <item>
+      <title>Bonferroni Inequalities</title>
+      <link>/post/bonferroni/</link>
+      <pubDate>Sat, 31 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/bonferroni/</guid>
+      <description>The principle of inclusion-exclusion is a fundamental tool in combinatorics. It relates the cardinality of a union of sets to the cardinality of the intersection of these sets. We will use the following notation: denote $[n] = \{1, \dots, n\}$ and for a set $A$, define ${ A \choose k} = \{ S \subseteq A : |S| = k \}$. The inclusion-exclusion principle can be stated in a compact way as follows, for finite sets $A_1, \dotsc, A_n$:</description>
+    </item>
+    
+    <item>
       <title>Ramsey&#39;s Theorem for Graphs</title>
       <link>/post/ramsey_part01/</link>
       <pubDate>Tue, 06 Mar 2018 00:00:00 +0000</pubDate>

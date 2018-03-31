@@ -139,3 +139,7 @@ figure figcaption p{
 blockquote p{
   text-indent: 0em;
 }
+
+blockquote div{
+  text-align: center;
+}
