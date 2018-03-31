@@ -292,30 +292,30 @@
 
 <h1 id="inclusion-exclusion-via-integration">Inclusion-Exclusion via Integration</h1>
 
-<p>Let <code>$(\Omega, \mathcal{A}, \mu)$</code> be a measure space and <code>$A_1, \dots, A_n \in \mathcal{A}$</code> be measurable sets with finite <code>$\mu$</code>-measure. Denote <code>$A = \bigcup_{i \in [n]} A_i$</code>. As <code>$A$</code> is measurable, it&rsquo;s indicator function <code>$\unicode{x1D7D9}_A$</code> is a measurable function. Define the function <code>$F$</code> as</p>
+<p>Let <code>$(\Omega, \mathcal{A}, \mu)$</code> be a measure space and <code>$A_1, \dots, A_n \in \mathcal{A}$</code> be measurable sets with finite <code>$\mu$</code>-measure. Denote <code>$A = \bigcup_{i \in [n]} A_i$</code>. As <code>$A$</code> is measurable, it&rsquo;s indicator function <code>$\mathbf{1}_A$</code> is a measurable function. Define the function <code>$F$</code> as</p>
 
 <div> $$
-F(\omega) = \prod_{i \in [n]} (\unicode{x1D7D9}_A(\omega) - \unicode{x1D7D9}_{A_i}(\omega)).
+F(\omega) = \prod_{i \in [n]} (\mathbf{1}_A(\omega) - \mathbf{1}_{A_i}(\omega)).
 $$ </div>
 
-<p>Note that if <code>$\omega \not\in A$</code>, then <code>$\unicode{x1D7D9}_A(\omega) = 0$</code> and <code>$\unicode{x1D7D9}_{A_i}(\omega) = 0$</code> for <code>$i \in [n]$</code>, so <code>$F(\omega) = 0$</code>.
-On the other hand, if <code>$\omega \in A$</code>, then there is <code>$i$</code> so that <code>$\omega \in A_i$</code>, so <code>$\unicode{x1D7D9}_A(\omega) - \unicode{x1D7D9}_{A_i}(\omega) = 0$</code>, this also implies that <code>$F(\omega) = 0$</code>, that is, <code>$F$</code> is identically 0. Expanding the product, we have:</p>
+<p>Note that if <code>$\omega \not\in A$</code>, then <code>$\mathbf{1}_A(\omega) = 0$</code> and <code>$\mathbf{1}_{A_i}(\omega) = 0$</code> for <code>$i \in [n]$</code>, so <code>$F(\omega) = 0$</code>.
+On the other hand, if <code>$\omega \in A$</code>, then there is <code>$i$</code> so that <code>$\omega \in A_i$</code>, so <code>$\mathbf{1}_A(\omega) - \mathbf{1}_{A_i}(\omega) = 0$</code>, this also implies that <code>$F(\omega) = 0$</code>, that is, <code>$F$</code> is identically 0. Expanding the product, we have:</p>
 
 <div> $$
-0 = \prod_{i \in [n]} (\unicode{x1D7D9}_A - \unicode{x1D7D9}_{A_i}) = \unicode{x1D7D9}_A + \sum_{\emptyset \neq I \in [n]}(-1)^{|I|} \prod_{i \in I}\unicode{x1D7D9}_{A_i} .
+0 = \prod_{i \in [n]} (\mathbf{1}_A - \mathbf{1}_{A_i}) = \mathbf{1}_A + \sum_{\emptyset \neq I \in [n]}(-1)^{|I|} \prod_{i \in I}\mathbf{1}_{A_i} .
 $$ </div>
 
 <p>Therefore</p>
 
 <div> $$
-\unicode{x1D7D9}_A = \sum_{\emptyset \neq I \in [n]}(-1)^{|I|+1} \unicode{x1D7D9}_{\cap_{i \in I}A_i} .
+\mathbf{1}_A = \sum_{\emptyset \neq I \in [n]}(-1)^{|I|+1} \mathbf{1}_{\cap_{i \in I}A_i} .
 $$ </div>
 
 <p>Integrating both sides, we have</p>
 
 <div> $$ \begin{align}
-\int \unicode{x1D7D9}_A d\mu &=  \int \sum_{\emptyset \neq I \in [n]}(-1)^{|I|+1} \unicode{x1D7D9}_{\cap_{i \in I}A_i} d\mu \\
-&= \sum_{\emptyset \neq I \in [n]}(-1)^{|I|+1} \int \unicode{x1D7D9}_{\cap_{i \in I}A_i} d\mu
+\int \mathbf{1}_A d\mu &=  \int \sum_{\emptyset \neq I \in [n]}(-1)^{|I|+1} \mathbf{1}_{\cap_{i \in I}A_i} d\mu \\
+&= \sum_{\emptyset \neq I \in [n]}(-1)^{|I|+1} \int \mathbf{1}_{\cap_{i \in I}A_i} d\mu
 \end{align}$$ </div>
 <div> $$ \begin{align}
 \mu\left( \bigcup_{i \in [n]}A_i \right) &= \sum_{\emptyset \neq I \in [n]}(-1)^{|I|+1} \mu \left( \bigcap_{i \in I}A_i \right).
@@ -368,22 +368,22 @@ $$ </div>
 <p>Now, note that</p>
 
 <div> $$
-\sum_{I \in {[n] \choose k}} \unicode{x1D7D9}_{\cap_{i \in I} A_i}(\omega) = { |L(\omega)| \choose k}.
+\sum_{I \in {[n] \choose k}} \mathbf{1}_{\cap_{i \in I} A_i}(\omega) = { |L(\omega)| \choose k}.
 $$ </div>
 
 <p>Now, consider the following function <code>$F_N$</code>.</p>
 
 <div> $$ \begin{align}
-F_N(\omega) &=  \unicode{x1D7D9}_{A}(\omega) +
-\sum_{k = 1}^{N}(-1)^k\sum_{I \in {[n] \choose k}} \unicode{x1D7D9}_{\cap_{i \in I} A_i}(\omega)\\
-&= \unicode{x1D7D9}_{A}(\omega) +
+F_N(\omega) &=  \mathbf{1}_{A}(\omega) +
+\sum_{k = 1}^{N}(-1)^k\sum_{I \in {[n] \choose k}} \mathbf{1}_{\cap_{i \in I} A_i}(\omega)\\
+&= \mathbf{1}_{A}(\omega) +
 \sum_{k=1}^{N}(-1)^j{ |L(\omega)| \choose k}.
 \end{align} $$ </div>
 
 <p>Integrating <code>$F_N$</code> over <code>$A$</code>, we obtain:</p>
 
 <div> $$ \begin{align}
-\int_A F_N d\mu &=  \int_A \unicode{x1D7D9}_{A} d\mu +
+\int_A F_N d\mu &=  \int_A \mathbf{1}_{A} d\mu +
 \int_A \sum_{k=1}^{N}(-1)^k{ |L(\omega)| \choose k} d\mu \\
 &=  \int_A \sum_{k=0}^{N} (-1)^k{ |L(\omega)| \choose k} d\mu.
 \end{align} $$ </div>
