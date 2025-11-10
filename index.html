@@ -1,348 +1,144 @@
-<!doctype html>
-<html lang="en">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link rel="icon" href="favicon/favicon-32x32.png">
+
+  <!doctype html>
+  <html lang="en">
+  <link rel="icon" href="favicon/favicon-32x32.png">
+  
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="path/to/module/css/colors.css">
-<head>
-  <meta charset="utf-8">
-  <title>Victor Seixas Souza</title>
-  <meta name="description" content="Personal homepage of Victor Seixas Souza">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Glass+Antiqua&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css"
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css"
   integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0"
   crossorigin="anonymous">
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js"
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js"
   integrity="sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4"
   crossorigin="anonymous"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js"
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js"
   integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
   crossorigin="anonymous"></script>
-  <script>
-      document.addEventListener("DOMContentLoaded", function() {
-          renderMathInElement(document.body, {
-            // customised options
-            // • auto-render specific keys, e.g.:
-            delimiters: [
-                {left: '$$', right: '$$', display: true},
-                {left: '$', right: '$', display: false},
-                {left: '\\(', right: '\\)', display: false},
-                {left: '\\[', right: '\\]', display: true}
-            ],
-            // • rendering keys, e.g.:
-            throwOnError : false
-          });
-      });
-  </script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  renderMathInElement(document.body, {
+  delimiters: [
+    {left: '$$', right: '$$', display: true},
+    {left: '$', right: '$', display: false},
+    {left: '\\(', right: '\\)', display: false},
+    {left: '\\[', right: '\\]', display: true}
+  ],
+  macros: {
+    "\\AA": "\\mathbb{A}", "\\BB": "\\mathbb{B}", "\\CC": "\\mathbb{C}", "\\DD": "\\mathbb{D}",
+    "\\EE": "\\mathbb{E}", "\\FF": "\\mathbb{F}", "\\GG": "\\mathbb{G}", "\\HH": "\\mathbb{H}",
+    "\\II": "\\mathbb{I}", "\\JJ": "\\mathbb{J}", "\\KK": "\\mathbb{K}", "\\LL": "\\mathbb{L}",
+    "\\MM": "\\mathbb{M}", "\\NN": "\\mathbb{N}", "\\OO": "\\mathbb{O}", "\\PP": "\\mathbb{P}",
+    "\\QQ": "\\mathbb{Q}", "\\RR": "\\mathbb{R}", "\\SS": "\\mathbb{S}", "\\TT": "\\mathbb{T}",
+    "\\UU": "\\mathbb{U}", "\\VV": "\\mathbb{V}", "\\WW": "\\mathbb{W}", "\\XX": "\\mathbb{X}",
+    "\\YY": "\\mathbb{Y}", "\\ZZ": "\\mathbb{Z}",
+    "\\cA": "\\mathcal{A}", "\\cB": "\\mathcal{B}", "\\cC": "\\mathcal{C}", "\\cD": "\\mathcal{D}",
+    "\\cE": "\\mathcal{E}", "\\cF": "\\mathcal{F}", "\\cG": "\\mathcal{G}", "\\cH": "\\mathcal{H}",
+    "\\cI": "\\mathcal{I}", "\\cJ": "\\mathcal{J}", "\\cK": "\\mathcal{K}", "\\cL": "\\mathcal{L}",
+    "\\cM": "\\mathcal{M}", "\\cN": "\\mathcal{N}", "\\cO": "\\mathcal{O}", "\\cP": "\\mathcal{P}",
+    "\\cQ": "\\mathcal{Q}", "\\cR": "\\mathcal{R}", "\\cS": "\\mathcal{S}", "\\cT": "\\mathcal{T}",
+    "\\cU": "\\mathcal{U}", "\\cV": "\\mathcal{V}", "\\cW": "\\mathcal{W}", "\\cX": "\\mathcal{X}",
+    "\\cY": "\\mathcal{Y}", "\\cZ": "\\mathcal{Z}",
+    "\\bfA": "\\mathbf{A}", "\\bfB": "\\mathbf{B}", "\\bfC": "\\mathbf{C}", "\\bfD": "\\mathbf{D}",
+    "\\bfE": "\\mathbf{E}", "\\bfF": "\\mathbf{F}", "\\bfG": "\\mathbf{G}", "\\bfH": "\\mathbf{H}",
+    "\\bfI": "\\mathbf{I}", "\\bfJ": "\\mathbf{J}", "\\bfK": "\\mathbf{K}", "\\bfL": "\\mathbf{L}",
+    "\\bfM": "\\mathbf{M}", "\\bfN": "\\mathbf{N}", "\\bfO": "\\mathbf{O}", "\\bfP": "\\mathbf{P}",
+    "\\bfQ": "\\mathbf{Q}", "\\bfR": "\\mathbf{R}", "\\bfS": "\\mathbf{S}", "\\bfT": "\\mathbf{T}",
+    "\\bfU": "\\mathbf{U}", "\\bfV": "\\mathbf{V}", "\\bfW": "\\mathbf{W}", "\\bfX": "\\mathbf{X}",
+    "\\bfY": "\\mathbf{Y}", "\\bfZ": "\\mathbf{Z}",
+    "\\bfa": "\\mathbf{a}", "\\bfb": "\\mathbf{b}", "\\bfc": "\\mathbf{c}", "\\bfd": "\\mathbf{d}",
+    "\\bfe": "\\mathbf{e}", "\\bff": "\\mathbf{f}", "\\bfg": "\\mathbf{g}", "\\bfh": "\\mathbf{h}",
+    "\\bfi": "\\mathbf{i}", "\\bfj": "\\mathbf{j}", "\\bfk": "\\mathbf{k}", "\\bfl": "\\mathbf{l}",
+    "\\bfm": "\\mathbf{m}", "\\bfn": "\\mathbf{n}", "\\bfo": "\\mathbf{o}", "\\bfp": "\\mathbf{p}",
+    "\\bfq": "\\mathbf{q}", "\\bfr": "\\mathbf{r}", "\\bfs": "\\mathbf{s}", "\\bft": "\\mathbf{t}",
+    "\\bfu": "\\mathbf{u}", "\\bfv": "\\mathbf{v}", "\\bfw": "\\mathbf{w}", "\\bfx": "\\mathbf{x}",
+    "\\bfy": "\\mathbf{y}", "\\bfz": "\\mathbf{z}",
+    "\\GL": "\\operatorname{GL}",
+    "\\sign": "\\operatorname{sign}",
+    "\\chara": "\\operatorname{char}",
+    "\\Sym": "\\operatorname{Sym}",
+    "\\abs": "#1| #2 #1|",
+    "\\card": "#1| #2 #1|",
+    "\\p": "#1\\lparen #2 #1\\rparen",
+    "\\set": "#1\\{ #2 #1\\}",
+    "\\st": "\\,\\colon",
+    "\\from": "\\,\\colon",
+    "\\defined": "\\coloneqq",
+    "\\defines": "\\eqqcolon",
+    },
+    throwOnError : false
+    });
+  });
+</script>
 
-</head>
+  <head>
+    <meta charset="utf-8">
+    <title>Victor Seixas Souza</title>
+    <meta name="description" content="Personal homepage of Victor Seixas Souza">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+  
+<header>
+<name><a href="/">Victor Seixas Souza</a></name>
+<nav>
+  <a href="/publications">Publications</a>
+  <a href="/teaching">Teaching</a>
+</nav>
+</header>
 
-<style>
-:root {
-  --bg-colour: #FEFEFE;
-  --text-colour: #1F2A44;
-  --name-colour: #941352;
-  --abstract-colour: #FEFEED;
-  --year-colour: #941352;
-  --link-colour: #0077aa;
-  --link-colour-hover: #941352; 
-  --svg-colour: #707070;
-}
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 500px) {
-  body {
-    margin: 0 auto;
-    max-width: 800px;
-    max-width: 46em;
-  }
-
-  info { padding: 0 }
-  section p { padding: 0 1em; }
-  section ul { padding: 1em;}
-
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 500px) {
-  body {
-    margin: 0 auto;
-    max-width: 46em;
-  }
-  section p { padding: 0 2.5em; }
-}
-
-body {
-  font-family: 'KaTeX_Main';
-  color: var(--text-colour);
-  font-size: 16px;
-  line-height: 1.2;
-  /*text-align: justify;*/
-  margin: 1em auto;
-  width: auto;
-}
-
-a{ color: var(--link-colour); }
-a:hover{ color: var(--link-colour-hover); }
-
-me { font-weight: bold; color: black; }
-
-panel {
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-info {
-  width: auto;
-  flex-shrink: 0.8;
-  padding: 0 1em;
-}
-
-picture#portrait{
-  display: block;
-  margin: 0.2em 1em;
-}
-
-picture#portrait img{
-  max-width: 220px;
-  width: fit-content(220px);
-}
-
-name {
-  display: block;
-  font-family: 'Raleway';
-  font-size: 2.6em;
-  font-weight: bold;
-  color: var(--name-colour);
-  margin-bottom: 0.4em;
-}
-
-panel title{
-  display: block;
-  font-size: 1.1em;
-  margin-bottom: 0.2em;
-}
-
-logos {
-  text-align: center;
-  display: block;
-  margin-bottom: 1em;
-}
-logos a{ text-decoration: none; }
-logos svg {
-  width: 32px;
-  height: 32px;
-  fill: var(--svg-colour);
-}
-logos .orcid:hover { fill: #A5CD39; }
-logos .arxiv {
-  background-color: var(--svg-colour);
-  fill: var(--bg-colour);
-  padding: 0 2px;
-  width: 28px;
-  height: 32px;
-}
-logos .arxiv:hover { background-color: #B31B1B; }
-logos .github:hover { fill: #24292E; }
-logos .lattes:hover { fill: #006699; }
-logos .google-scholar:hover { fill: #4080ec; }
-logos .cv:hover { fill: #ee2e4f; }
-
-bob::before { content: "(at)"; }
-bab::before { content: "(dot)"; }
-
-section {
-  padding: 0 1em;
-  counter-reset: pub-count 0;
-}
-
-section title {
-  display: block;
-  font-size: 2em;
-  margin-left: 0.65em;
-}
-
-/* Publication */
-
-pub {
-  display: block;
-  margin: 0.8em 0 0.4em 1em;
-  padding: 0 0;
-  counter-increment: pub-count 1;
-}
-
-pub-year {
-  content: attr(year);
-  display: block;
-  float: right;
-  background-color: var(--year-colour);
-  color: var(--bg-colour);
-  padding: 0.1em 0.4em;
-  font-size: 0.9em;
-}
-
-pub-title {
-  font-size: 1.2em;
-  font-weight: 400;
-  line-height: 1.0em;
-  display: block;
-  max-width: 80%;
-  text-indent: -0.75em;
-  padding-left: 0.75em;
-  text-decoration: underline;
-  text-align: left;
-}
-
-pub-title::before{
-  content: counter(pub-count) " -";
-  display: inline-block;
-  padding: 0 0.3em 0 0;
-  margin-left: -1.7em;
-  width: 2em;
-  text-align: right;
-  text-indent: 0;
-}
-
-pub-title .katex{ font-size: 1em; }
-
-pub-coauth::before { content: "by "; }
-pub-coauth {
-  display: block;
-  padding-left: 1em;
-  font-size: 0.9em;
-}
-pub-coauth::after { content: "."; }
-
-sep::before{
-  content: "⊗";
-  font-weight: bold;
-}
-
-pub links {
-  display: block;
-  font-size: 0.9em;
-  font-weight: bold;
-  padding-left: 0.85em;
-}
-
-pub links::before{ content: "⟨"; font-weight: bold; }
-pub links::after{ content: "⟩"; font-weight: bold; }
-
-journal {
-  display: block;
-  padding-left: 0.8em;
-  font-style: italic;
-}
-journal::after { content: "."; }
-
-pub abstract{
-  display: block;
-  overflow-y: hidden;
-  height: 0;
-  font-family: "KaTeX_Main";
-  font-size: 1.0em;
-  background-color: var(--abstract-colour);
-}
-
-pub abstract .katex {
-  font-size: 1.0em;
-}
-
-pub > input[type="checkbox"] {
-  position: absolute;
-  left: -100vw;
-}
-
-pub > input[type="checkbox"]:checked ~ abstract {
-  height: auto;
-  overflow: visible;
-  padding: 0.4em 1.0em;
-}
-
-pub links label{
-  color: var(--link-colour);
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-pub links label:hover{
-  color: var(--link-colour-hover);
-}
-
-
-
-/* Last edited information */
-edit {
-  display: block;
-  text-align: center;
-  font-size: 0.9em;
-  margin-top: 14em;
-}
-edit::before{ content: "⟨ last edited in "; }
-edit::after{ content: " ⟩"; }
-
-
-
-</style>
-</head>
-
-<body>
-
-
-<panel>
+  
+<header>
   <info>
-  <name>Victor Seixas Souza</name>
+    <title>Klarman Fellow at</title>
+    <a href='https://math.cornell.edu/'>Department of Mathematics</a> <br>
+    <a href='https://www.cornell.edu/'>Cornell University</a> <br>
 
-  <title>Klarman Fellow at</title>
-  <a href='https://math.cornell.edu/'>Department of Mathematics</a> <br>
-  <a href='https://www.cornell.edu/'>Cornell University</a> <br>
+    <br>
+    505 Mallot Hall <br>
+    Ithaca, 14853 NY <br>
+    United States <br>
+    <br>
 
-  <br>
-  Mallot Hall <br>
-  Ithaca, 14850 NY <br>
-  United States <br>
-  <br>
+    <title>Research Fellow at  </title>
+    <a href='https://www.sid.cam.ac.uk/'>Sidney Sussex College</a> <br>
+    Cambridge, CB2 3HU <br>
+    United Kingdom<br>
+    <br>
 
-  <title>Research Fellow at  </title>
-  <a href='https://www.sid.cam.ac.uk/'>Sidney Sussex College</a> <br>
-  Cambridge, CB2 3HU <br>
-  United Kingdom<br>
-  <br>
-
-  <logos>
-  <a href='https://orcid.org/0000-0001-7598-7792'>
-    <svg class='orcid'><use xlink:href='#orcid'/></svg>
-  </a>
-  <a href='https://arxiv.org/a/souza_v_1.html'>
-    <svg class='arxiv'><use xlink:href='#arxiv' /></svg>
-  </a>
-  <a href='https://github.com/victorsouza/'>
-    <svg class='github'><use xlink:href='#github' /></svg>
-  </a>
-  <a href='https://scholar.google.com/citations?user=-MljGiMAAAAJ'>
-    <svg class='google-scholar'><use xlink:href='#google-scholar' /></svg>
-  </a>
-  <a href='http://lattes.cnpq.br/0853141109951986'>
-    <svg class='lattes'><use xlink:href='#lattes' /></svg>
-  </a>
-  <a href='files/cv-souza.pdf'>
-    <svg class='cv'><use xlink:href='#cv' /></svg>
-  </a>
-  </logos>
-  vss28 <bob /> cam <bab /> ac <bab /> uk
+    <logos>
+    <a href='https://orcid.org/0000-0001-7598-7792'>
+      <svg class='orcid'><use xlink:href='#orcid'/></svg>
+    </a>
+    <a href='https://arxiv.org/a/souza_v_1.html'>
+      <svg class='arxiv'><use xlink:href='#arxiv' /></svg>
+    </a>
+    <a href='https://github.com/victorsouza/'>
+      <svg class='github'><use xlink:href='#github' /></svg>
+    </a>
+    <a href='https://scholar.google.com/citations?user=-MljGiMAAAAJ'>
+      <svg class='google-scholar'><use xlink:href='#google-scholar' /></svg>
+    </a>
+    <a href='http://lattes.cnpq.br/0853141109951986'>
+      <svg class='lattes'><use xlink:href='#lattes' /></svg>
+    </a>
+    <a href='files/cv-souza.pdf'>
+      <svg class='cv'><use xlink:href='#cv' /></svg>
+    </a>
+    </logos>
+    vsouza <bob /> cornell <bab /> edu </br>
+    vss28 <bob /> cam <bab /> ac <bab /> uk 
   </info>
-  <picture id="portrait">
+  <picture>
     <!-- <source media='(max-width: 767px)' srcset='img/port2.jpg'>
     <source media='(min-width: 768px)' srcset='img/port2.jpg'> -->
     <img src='img/port1.jpg'>
   </picture>
-</panel>
+</header>
 
 <section>
 <p>
@@ -361,7 +157,6 @@ edit::after{ content: " ⟩"; }
   <a href="https://robiscounting.github.io/">Rob Morris</a> 
   at <a href="https://impa.br/">IMPA</a> surounded by the forests of Rio de Janeiro.
 </p>
-
 </section>
 
 <section>
@@ -376,439 +171,225 @@ and related areas in statistical physics and theoretical computer science.
 Recently, I have been involved with the study of <a href="https://www.youtube.com/watch?v=RpU7JrE1uCk">synchronisation phenomena</a>.
 My work on synchronisation has been recently featured in <a href="https://www.quantamagazine.org/new-proof-shows-that-expander-graphs-synchronize-20230724/"> Quanta magazine</a>.
 </p>
-
 </section>
 
+
 <section>
-<title>Publications</title>
-
-
+<title>Selected Publications</title>
 
 <pub>
-  <pub-year>2025</pub-year>  
-  <pub-title>On problems in extremal multigraph theory</pub-title>
-  <pub-coauth>V. Falgas-Ravry, A. Mond, R. Sarkar, and <me>V. Souza</me></pub-coauth>
-  <journal>Preliminary Manuscript</journal>
-  <input type="checkbox" id="multigraphs">
-  <links>
-    <a href="https://arxiv.org/abs/2505.14281">arxiv</a> <sep />
-  <label for="multigraphs">abstract</label>
-  </links>
-  <abstract>
-    A multigraph $G$ is said to be an $(s,q)$-graph if every $s$-set of vertices in $G$ supports at most $q$ edges (counting multiplicities). In this paper we consider the maximal sum and product of edge multiplicities in an $(s,q)$-graph on $n$ vertices. These are multigraph analogues of a problem of Erdős raised by Füredi and Kündgen and Mubayi and Terry respectively, with applications to counting problems and extremal hypergraph theory.
-    We make major progress, settling conjectures of Day, Falgas-Ravry and Treglown and of Falgas-Ravry, establishing intricate behaviour for both the sum and the product problems, and providing both a general picture and evidence that the problems may prove computationally intractable in general.
-  </abstract>
+<pub-year>2025</pub-year>
+<pub-title>Double-jump phase transition for the reverse Littlewood--Offord problem</pub-title>
+<pub-auth>
+<a href="https://www.dpmms.cam.ac.uk/~lh569/">L. Hollom</a>, <a href="https://sites.google.com/view/julien-portier/accueil">J. Portier</a>, and <me>V. Souza</me></pub-auth>
+<input type="checkbox" class="abs" id="reverse-littlewood-offord">
+<input type="checkbox" class="cite" id="reverse-littlewood-offord-cite">
+<links>
+<a href="https://arxiv.org/abs/2503.24202">arxiv</a> <sep></sep>
+<label for="reverse-littlewood-offord" class="abs">abstract</label> <sep></sep>
+<label for="reverse-littlewood-offord-cite" class="cite">cite</label>
+</links>
+<abstract>
+Erdős conjectured in 1945 that for any unit vectors $v_1, \dotsc, v_n$ in $\mathbb{R}^2$ and signs $\varepsilon_1, \dotsc, \varepsilon_n$ taken independently and uniformly in $\{-1,1\}$, the random Rademacher sum $\sigma = \varepsilon_1 v_1 + \dotsb + \varepsilon_n v_n$ satisfies $\|\sigma\|_2 \leq 1$  with probability $\Omega(1/n)$.
+While this conjecture is false for even $n$, Beck has proved that $\|\sigma\|_2 \leq \sqrt{2}$ always holds with probability $\Omega(1/n)$.
+Recently, He, Juškevičius, Narayanan, and Spiro conjectured that the Erdős' conjecture holds when $n$ is odd.
+We disprove this conjecture by exhibiting vectors $v_1, \dotsc, v_n$ for which $\|\sigma\|_2 \leq 1$ occurs with probability $O(1/n^{3/2})$.
+On the other hand, an approximated version of their conjecture holds: we show that we always have $\|\sigma\|_2 \leq 1 + \delta$ with probability $\Omega_\delta(1/n)$, for all $\delta > 0$.
+This shows that when $n$ is odd, the minimum probability that $\|\sigma\|_2 \leq r$ exhibits a double-jump phase transition at $r = 1$, as we can also show that $\|\sigma\|_2 \leq 1$ occurs with probability at least $\Omega((1/2+\mu)^n)$ for some $\mu > 0$.
+Additionally, and using a different construction, we give a negative answer to a question of Beck and two other questions of He, Juškevičius, Narayanan, and Spiro, concerning the optimal constructions minimising the probability that $\|\sigma\|_2 \leq \sqrt{2}$.
+We also make some progress on the higher dimensional versions of these questions.
+</abstract>
+<cite><pre>
+@MISC{HPS-25-reverse-lo,
+    title = {Double-jump phase transition for the reverse Littlewood--Offord problem},
+    author = {Lawrence Hollom and Julien Portier and Victor Souza},
+    archivePrefix = "arXiv",
+    primaryClass = "math.CO",
+    eprint = "2503.24202"
+    doi = {https://arxiv.org/abs/2503.24202},
+}
+</pre></cite>
 </pub>
 
 <pub>
-  <pub-year>2025</pub-year>  
-  <pub-title>Intersections of random chords of a circle</pub-title>
-  <pub-coauth>C. Bortolotto and <me>V. Souza</me></pub-coauth>
-  <journal>To appear in The American Mathematical Monthly</journal>
-  <input type="checkbox" id="karamata">
-  <links>
-    <a href="https://arxiv.org/abs/2504.12866">arxiv</a> <sep />
-  <label for="karamata">abstract</label>
-  </links>
-  <abstract>
-    Where are the intersection points of diagonals of a regular $n$-gon located? What is the distribution of the intersection point of two random chords of a circle? We investigate these and related new questions in geometric probability, extend a largely forgotten result of Karamata, and elucidate its connection to the Bertrand paradox.
-  </abstract>
+<pub-year>2024</pub-year>
+<pub-title>The Maker-Breaker percolation game on a random board</pub-title>
+<pub-auth>
+V. Dvořák, <a href="https://sites.google.com/view/adva-mond">A. Mond</a>, and <me>V. Souza</me></pub-auth>
+<journal>To appear in the Annals of Probability</journal>
+<input type="checkbox" class="abs" id="maker-breaker-random">
+<input type="checkbox" class="cite" id="maker-breaker-random-cite">
+<links>
+<a href="https://arxiv.org/abs/2402.17547">arxiv</a> <sep></sep>
+<label for="maker-breaker-random" class="abs">abstract</label> <sep></sep>
+<label for="maker-breaker-random-cite" class="cite">cite</label>
+</links>
+<abstract>
+The $(m,b)$ Maker-Breaker percolation game on $(\mathbb{Z}^2)_p$, introduced by Day and Falgas-Ravry, is played in the following way.
+Before the game starts, each edge of $\mathbb{Z}^2$ is removed independently with probability $1-p$.
+After that, Maker chooses a vertex $v_0$ to protect.
+Then, in each round Maker and Breaker claim respectively $m$ and $b$ unclaimed edges of $G$.
+Breaker wins if after the removal of the edges claimed by him the component of $v_0$ becomes finite, and Maker wins if she can indefinitely prevent Breaker from winning. <br><br>
+
+We show that for any $p < 1$, Breaker almost surely has a winning strategy for the $(1,1)$ game on $(\mathbb{Z}^2)_p$.
+This fully answers a question of Day and Falgas-Ravry, who showed that for $p = 1$ Maker has a winning strategy for the $(1,1)$ game.
+Further, we show that in the $(2,1)$ game on $(\mathbb{Z}^2)_p$ Maker almost surely has a winning strategy whenever $p > 0.9402$, while Breaker almost surely has a winning strategy whenever $p < 0.5278$.
+This shows that the threshold value of $p$ above which Maker has a winning strategy for the $(2,1)$ game on $\mathbb{Z}^2$ is non-trivial.
+In fact, we prove similar results in various settings, including other lattices and biases $(m,b)$. <br><br>
+
+These results extend also to the most general case, which we introduce, where each edge is given to Maker with probability $\alpha$ and to Breaker with probability $\beta$ before the game starts.
+</abstract>
+<cite><pre>
+@MISC{DMS-24-mb-random,
+    title = {The Maker-Breaker percolation game on a random board},
+    author = {Vojtěch Dvořák and Adva Mond and Victor Souza},
+    archivePrefix = "arXiv",
+    primaryClass = "math.PR",
+    eprint = "2402.17547"
+    doi = {https://arxiv.org/abs/2402.17547},
+}
+</pre></cite>
 </pub>
 
 <pub>
-  <pub-year>2025</pub-year>  
-  <pub-title>Double-jump phase transition for the reverse Littlewood&ndash;Offord problem</pub-title>
-  <pub-coauth>L. Hollom, J. Portier, and <me>V. Souza</me></pub-coauth>
-  <input type="checkbox" id="reverse-littlewood-offord">
-  <links>
-    <a href="https://arxiv.org/abs/2503.24202">arxiv</a> <sep />
-  <label for="reverse-littlewood-offord">abstract</label>
-  </links>
-  <abstract>
-    Erdős conjectured in 1945 that for any unit vectors $v_1, \dotsc, v_n$ in $\mathbb{R}^2$ and signs $\varepsilon_1, \dotsc, \varepsilon_n$ taken independently and uniformly in $\{-1,1\}$, the random Rademacher sum $\sigma = \varepsilon_1 v_1 + \dotsb + \varepsilon_n v_n$ satisfies $\|\sigma\|_2 \leq 1$  with probability $\Omega(1/n)$.
-    While this conjecture is false for even $n$, Beck has proved that $\|\sigma\|_2 \leq \sqrt{2}$ always holds with probability $\Omega(1/n)$.
-    Recently, He, Juškevičius, Narayanan, and Spiro conjectured that the Erdős' conjecture holds when $n$ is odd.
-    We disprove this conjecture by exhibiting vectors $v_1, \dotsc, v_n$ for which $\|\sigma\|_2 \leq 1$ occurs with probability $O(1/n^{3/2})$.
-    On the other hand, an approximated version of their conjecture holds: we show that we always have $\|\sigma\|_2 \leq 1 + \delta$ with probability $\Omega_\delta(1/n)$, for all $\delta > 0$.
-    This shows that when $n$ is odd, the minimum probability that $\|\sigma\|_2 \leq r$ exhibits a double-jump phase transition at $r = 1$, as we can also show that $\|\sigma\|_2 \leq 1$ occurs with probability at least $\Omega((1/2+\mu)^n)$ for some $\mu > 0$.
-    Additionally, and using a different construction, we give a negative answer to a question of Beck and two other questions of He, Juškevičius, Narayanan, and Spiro, concerning the optimal constructions minimising the probability that $\|\sigma\|_2 \leq \sqrt{2}$.
-    We also make some progress on the higher dimensional versions of these questions.
-  </abstract>
+<pub-year>2023</pub-year>
+<pub-title>On the number of monochromatic solutions to multiplicative equations</pub-title>
+<pub-auth>
+<a href="https://aragaolucas.github.io/">L. Aragão</a>, <a href="https://sites.google.com/view/jonathanchapman">J. Chapman</a>, <a href="https://www.miquelortega.net/">M. Ortega</a>, and <me>V. Souza</me></pub-auth>
+<journal>To appear in Combinatorica</journal>
+<input type="checkbox" class="abs" id="monochromatic-products">
+<input type="checkbox" class="cite" id="monochromatic-products-cite">
+<links>
+<a href="https://arxiv.org/abs/2311.18742">arxiv</a> <sep></sep>
+<label for="monochromatic-products" class="abs">abstract</label> <sep></sep>
+<label for="monochromatic-products-cite" class="cite">cite</label>
+</links>
+<abstract>
+Given an $r$-colouring of the interval $\{2, \dotsc, N \}$, what is the minimum number of monochromatic solutions of the equation $xy = z$?
+For $r=2$, we show that there are always asymptotically at least $(1/2\sqrt{2}) N^{1/2} \log N$ monochromatic solutions, and that the leading constant is sharp.
+We also establish a stability version of this result.
+For general $r$, we show that there are at least $C_r N^{1/S(r-1)}$ monochromatic solutions, where $S(r)$ is the Schur number for $r$ colours and $C_r$ is a constant.
+This bound is sharp up to logarithmic factors when $r \leq 4$.
+We also obtain results for more general multiplicative equations of the form $x_1^{a_1} \dotsb x_k^{a_k} = y$, where $a_1, \dotsc, a_k$ are positive integers, at least one of which equals $1$.
+Our corresponding upper bounds are given in terms of certain 'interval Rado numbers' for additive equations.
+We pose a number of open problems concerning these numbers.
+</abstract>
+<cite><pre>
+@MISC{ACOS-23-multiplicative-schur,
+    title = {On the number of monochromatic solutions to multiplicative equations},
+    author = {Lucas Aragão and Jonathan Chapman and Miquel Ortega and Victor Souza},
+    archivePrefix = "arXiv",
+    primaryClass = "math.CO",
+    eprint = "2311.18742"
+    doi = {https://arxiv.org/abs/2311.18742},
+}
+</pre></cite>
 </pub>
 
 <pub>
-  <pub-year>2024</pub-year>  
-  <pub-title>The Maker-Breaker percolation game on a random board</pub-title>
-  <pub-coauth>V. Dvořák, A. Mond, and <me>V. Souza</me></pub-coauth>
-  <input type="checkbox" id="maker-breaker-random">
-  <links>
-    <a href="https://arxiv.org/abs/2402.17547">arxiv</a> <sep />
-  <label for="maker-breaker-random">abstract</label>
-  </links>
-  <abstract>
-    The $(m,b)$ Maker-Breaker percolation game on $(\mathbb{Z}^2)_p$, introduced by Day and Falgas-Ravry, is played in the following way.
-    Before the game starts, each edge of $\mathbb{Z}^2$ is removed independently with probability $1-p$.
-    After that, Maker chooses a vertex $v_0$ to protect.
-    Then, in each round Maker and Breaker claim respectively $m$ and $b$ unclaimed edges of $G$.
-    Breaker wins if after the removal of the edges claimed by him the component of $v_0$ becomes finite, and Maker wins if she can indefinitely prevent Breaker from winning. <br><br>
-
-    We show that for any $p < 1$, Breaker almost surely has a winning strategy for the $(1,1)$ game on $(\mathbb{Z}^2)_p$.
-    This fully answers a question of Day and Falgas-Ravry, who showed that for $p = 1$ Maker has a winning strategy for the $(1,1)$ game.
-    Further, we show that in the $(2,1)$ game on $(\mathbb{Z}^2)_p$ Maker almost surely has a winning strategy whenever $p > 0.9402$, while Breaker almost surely has a winning strategy whenever $p < 0.5278$.
-    This shows that the threshold value of $p$ above which Maker has a winning strategy for the $(2,1)$ game on $\mathbb{Z}^2$ is non-trivial.
-    In fact, we prove similar results in various settings, including other lattices and biases $(m,b)$. <br><br>
-
-    These results extend also to the most general case, which we introduce, where each edge is given to Maker with probability $\alpha$ and to Breaker with probability $\beta$ before the game starts.
-  </abstract>
+<pub-year>2022</pub-year>
+<pub-title>Expander graphs are globally synchronising</pub-title>
+<pub-auth>
+<a href="https://sites.google.com/view/pedro-abdalla/home">P. Abdalla</a>, <a href="https://people.math.ethz.ch/~abandeira/">A. Bandeira</a>, <a href="https://math.cornell.edu/martin-kassabov">M. Kassabov</a>, <me>V. Souza</me>, <a href="https://www.stevenstrogatz.com/">S. Strogatz</a>, and <a href="https://pi.math.cornell.edu/~ajt/">A. Townsend</a></pub-auth>
+<input type="checkbox" class="abs" id="kuramoto-expander">
+<input type="checkbox" class="cite" id="kuramoto-expander-cite">
+<links>
+<a href="https://arxiv.org/abs/2210.12788">arxiv</a> <sep></sep>
+<a href="https://www.quantamagazine.org/new-proof-shows-that-expander-graphs-synchronize-20230724/">quanta</a> <sep></sep>
+<label for="kuramoto-expander" class="abs">abstract</label> <sep></sep>
+<label for="kuramoto-expander-cite" class="cite">cite</label>
+</links>
+<abstract>
+The Kuramoto model is a prototypical model used for rigorous mathematical analysis in the field of synchronisation and nonlinear dynamics.
+A realisation of this model consists of a collection of identical oscillators with interactions given by a network, which we identify respectively with vertices and edges of a graph.
+In this paper, we show that a graph with sufficient expansion must be globally synchronizing, meaning that the Kuramoto model on such a graph will converge to the fully synchronised state with all the oscillators with same phase, for every initial state up to a set of measure zero.
+In particular, we show that for any $\varepsilon > 0$ and $p \geq (1 + \varepsilon)(\log n)/n$, the Kuramoto model on the Erdős-Rényi graph $G(n,p)$ is globally synchronizing with probability tending to one as $n$ goes to infinity.
+This improves on a previous result of Kassabov, Strogatz and Townsend and solves a conjecture of Ling, Xu and Bandeira.
+We also show that the Kuramoto model is globally synchronizing on any $d$-regular Ramanujan graph with $d \geq 600$ and that, for the same range of degrees, a $d$-regular random graph is typically globally synchronizing.
+</abstract>
+<cite><pre>
+@MISC{ABKSST-22-expander-sync,
+    title = {Expander graphs are globally synchronizing},
+    author = {Pedro Abdalla and Afonso Bandeira and Martin Kassabov and Victor Souza and Steven Strogatz},
+    archivePrefix = "arXiv",
+    primaryClass = "math.CO",
+    eprint = "2210.12788"
+    doi = {https://arxiv.org/abs/2210.12788},
+}
+</pre></cite>
 </pub>
 
 <pub>
-  <pub-year>2023</pub-year> 
-  <pub-title>On the number of monochromatic solutions to multiplicative equations</pub-title>
-  <pub-coauth>L. Aragão, J. Chapman, M. Ortega, and <me>V. Souza</me></pub-coauth>
-  <input type="checkbox" id="monochromatic-products">
-  <links>
-    <a href="https://arxiv.org/abs/2311.18742">arxiv</a> <sep />
-  <label for="monochromatic-products">abstract</label>
-  </links>
-  <abstract>
-  Given an $r$-colouring of the interval $\{2, \dotsc, N \}$, what is the minimum number of monochromatic solutions of the equation $xy = z$?
-  For $r=2$, we show that there are always asymptotically at least $(1/2\sqrt{2}) N^{1/2} \log N$ monochromatic solutions, and that the leading constant is sharp.
-  We also establish a stability version of this result.
-  For general $r$, we show that there are at least $C_r N^{1/S(r-1)}$ monochromatic solutions, where $S(r)$ is the Schur number for $r$ colours and $C_r$ is a constant.
-  This bound is sharp up to logarithmic factors when $r \leq 4$.
-  We also obtain results for more general multiplicative equations of the form $x_1^{a_1} \dotsb x_k^{a_k} = y$, where $a_1, \dotsc, a_k$ are positive integers, at least one of which equals $1$.
-  Our corresponding upper bounds are given in terms of certain 'interval Rado numbers' for additive equations.
-  We pose a number of open problems concerning these numbers.  
-  </abstract>
-</pub>
-
-<pub>
-  <pub-year>2023</pub-year> 
-  <pub-title>Localised graph Maclaurin inequalities</pub-title>
-  <pub-coauth>L. Aragão and <me>V. Souza</me></pub-coauth>
-  <journal>Annals of Combinatorics, 2023</journal>
-  <input type="checkbox" id="localised-maclaurin">
-  <links>
-    <a href="https://arxiv.org/abs/2301.13189">arxiv</a> <sep />
-    <a href="https://doi.org/10.1007/s00026-023-00672-0">journal</a> <sep />
-  <label for="localised-maclaurin">abstract</label>
-  </links>
-  <abstract>
-  The Maclaurin inequalities for graphs are a broad generalisation of the
-  classical theorems of Turán and Zykov.
-  In a nutshell they provide an asymptotically sharp answer to the following
-  question: what is the maximum number of cliques of size q in a 
-  $K_{r+1}$-free graph with a given number of cliques of size $s$?
-  We prove an extensions of the graph Maclaurin inequalities with a weight
-  function that captures the local structure of the graph.
-  As a corollary, we settle a recent conjecture of Kirsch and Nir,
-  which simultaneously encompass the previous localised results of Bradač,
-  Malec and Tompkins and of Kirsch and Nir.
-  </abstract>
-</pub>
-  
-<pub>
-  <pub-year>2022</pub-year>  
-  <pub-title>Expander graphs are globally synchronising</pub-title>
-  <pub-coauth>P. Abdalla, A. Bandeira, M. Kassabov, <me>V. Souza</me>, S. Strogatz, and A. Townsend</pub-coauth>
-  <input type="checkbox" id="kuramoto-expander">
-  <links>
-    <a href="https://arxiv.org/abs/2210.12788">arxiv</a> <sep />
-    <a href="https://www.quantamagazine.org/new-proof-shows-that-expander-graphs-synchronize-20230724/">quanta</a> <sep />
-  <label for="kuramoto-expander">abstract</label>
-  </links>
-  <abstract>
-  The Kuramoto model is a prototypical model used for rigorous mathematical
-  analysis in the field of synchronisation and nonlinear dynamics.
-  A realisation of this model consists of a collection of identical
-  oscillators with interactions given by a network, which we identify
-  respectively with vertices and edges of a graph.
-  In this paper, we show that a graph with sufficient expansion must be
-  globally synchronising, meaning that the Kuramoto model on such a graph
-  will converge to the fully synchronised state with all the oscillators
-  with same phase, for every initial state up to a set of measure zero.
-  In particular, we show that for any $\varepsilon > 0$ and
-  $p \geq (1 + \varepsilon)(\log n)/n$, the Kuramoto model on the Erdős-Rényi
-  graph $G(n,p)$ is globally synchronising with probability tending to one as
-  $n$ goes to infinity.
-  This improves on a previous result of Kassabov, Strogatz and Townsend
-  and solves a conjecture of Ling, Xu and Bandeira.
-  We also show that the Kuramoto model is globally synchronising
-  on any $d$-regular Ramanujan graph with $d \geq 600$ and that,
-  for the same range of degrees, a $d$-regular random graph is
-  typically globally synchronising.
-  </abstract>
-</pub>
-
-
-
-<pub>
-  <pub-year>2022</pub-year> 
-  <pub-title>A note on the number of Egyptian fractions</pub-title>
-  <pub-coauth>N. Lebowitz-Lockard and <me>V. Souza</me></pub-coauth>
-  <journal>Integers, 2023</journal>
-  <input type="checkbox" id="egyptian-note">
-  <links>
-    <a href="https://arxiv.org/abs/2210.07921">arxiv</a> <sep />
-    <a href="http://math.colgate.edu/~integers/x89/x89.pdf">journal</a> <sep />
-  <label for="egyptian-note">abstract</label>
-  </links>
-  <abstract>
-    Improving an estimate of Croot, Dobbs, Friedlander, Hetzel and Pappalardi,
-    we show that for all $k \geq 2$, the number of integers $1 \leq a \leq n$
-    such that the equation $$\frac{a}{n} = \frac{1}{m_1} + \dotsc + \frac{1}{m_k}$$
-    has a solution in positive integers $m_1, \dotsc, m_k$ is bounded above by
-    $n^{1 - 1/2^{k-2} + o(1)}$ as $n$ goes to infinity.
-  </abstract>
-</pub>
-
-<pub>
-  <pub-year>2022</pub-year>  
-  <pub-title>Improved bounds for the dimension of divisibility</pub-title>
-  <pub-coauth><me>V. Souza</me> and L. Versteegen</pub-coauth>
-  <journal>European Journal of Combinatorics, 2024</journal>
-  <input type="checkbox" id="improved-dimension-divisibility">
-  <links>
-    <a href="https://arxiv.org/abs/2202.04001">arxiv</a> <sep />
-    <a href="https://doi.org/10.1016/j.ejc.2023.103912">journal</a> <sep />
-  <label for="improved-dimension-divisibility">abstract</label>
-  </links>
-  <abstract>
-    The dimension of a partially-ordered set $P$ is the smallest integer $d$ such that one can embed $P$ into a product of $d$ linear orders.
-    We prove that the dimension of the divisibility order on the interval $\{1, \dotsc, n\}$ is bounded above by $C(\log n)^2 (\log \log n)^{-2} \log \log \log n$ as $n$ goes to infinity.
-    This improves a recent result by Lewis and the first author, who showed an upper bound of $C(\log n)^2 (\log \log n)^{-1}$ and a lower bound of $c(\log n)^2 (\log \log n)^{-2}$, asymptotically.
-    To obtain these bounds, we provide a refinement of a bound of Füredi and Kahn and exploit a connection between the dimension of the divisibility order and the maximum size of $r$-cover-free families.
-  </abstract>
-</pub>
-
-<pub>
-  <pub-year>2021</pub-year>  
-  <pub-title>The Maker-Breaker percolation game on the square lattice</pub-title>
-  <pub-coauth>V. Dvořák, A. Mond, and <me>V. Souza</me></pub-coauth>
-  <journal>Journal of Combinatorial Theory, Series B. (Accepted)</journal>
-  <input type="checkbox" id="maker-breaker-percolation">
-  <links>
-    <a href="https://arxiv.org/abs/2105.12864">arxiv</a> <sep />
-  <label for="maker-breaker-percolation">abstract</label>
-  </links>
-  <abstract>
-    We study the $(m,b)$ Maker-Breaker percolation game on $\mathbb{Z}^2$,
-    introduced by Day and Falgas-Ravry.
-    In this game, Maker and Breaker claim respectively $m$ and $b$ unclaimed
-    edges of the square lattice $\mathbb{Z}^2$.
-    Breaker wins if the component of the origin becomes finite when his edges
-    are deleted from $\mathbb{Z}^2$.
-    Maker if she can indefinitely avoid a win of Breaker.
-    We show that Breaker has a winning strategy for the $(m,b)$ game whenever
-    $b \geq (2 - 1/14 + o(1))m$, breaking the ratio $2$ barrier proved by Day
-    and Falgas-Ravry. <br><br>
-    
-    Addressing further questions of Day and Falgas-Ravry, we show that Breaker
-    can win the $(m,2m)$ game even if he allows Maker to claim $c$ edges before
-    the game starts, for any integer $c$, and that he can moreover win rather
-    quickly as a function of $c$. <br><br>
-    
-    We also consider the game played on the so-called polluted board,
-    obtained after performing Bernoulli bond percolation on $\mathbb{Z}^2$
-    with parameter $p$.
-    We show that for the $(1,1)$ game on the polluted board, Breaker almost
-    surely has a winning strategy whenever $p \leq 0.6298$.
-  </abstract>
-</pub>
-
-<pub>
-  <pub-year>2020</pub-year>  
-  <pub-title>The order dimension of divisibility</pub-title>
-  <pub-coauth>D. Lewis and <me>V. Souza</me></pub-coauth>
-  <journal>Journal of Combinatorial Theory, Series A, 2021</journal>
-  <input type="checkbox" id="dimension-divisibility-order">
-  <links>
-    <a href="https://arxiv.org/abs/2001.08549">arxiv</a> <sep />
-    <a href="https://doi.org/10.1016/j.jcta.2020.105391">journal</a> <sep />
-  <label for="dimension-divisibility-order">abstract</label>
-  </links>
-  <abstract>
-  The Dushnik-Miller dimension of a partially-ordered set $P$ is the smallest
-  $d$ such that one can embed $P$ into a product of $d$ linear orders.
-  We prove that the dimension of the divisibility order on the interval
-  $\{1,\dotsc,n\}$, is equal to $(\log n)^2(\log\log n)^{\Theta(1)}$ as $n$
-  goes to infinity.
-  We prove similar bounds for the $2$-dimension of divisibility in $\{1,\dotsc,n\}$,
-  where the $2$-dimension of a poset $P$ is the smallest $d$ such that $P$ is isomorphic
-  to a suborder of the subset lattice of $\{1, \dotsc, d\}$.
-  We also prove an upper bound for the $2$-dimension of posets of bounded degree
-  and show that the $2$-dimension of the divisibility poset on the set $(\alpha n, n]$ is
-  $\Theta_\alpha(\log n)$ for $\alpha \in (0,1)$.
-  At the end we pose several problems.
-  </abstract>
-</pub>
-
-<pub>
-  <pub-year>2019</pub-year> 
-  <pub-title>The typical structure of sets with small sumset</pub-title> 
-  <pub-coauth>M. Campos, M. Collares, R. Morris, N. Morrison, and <me>V. Souza</me></pub-coauth>
-  <journal>International Mathematics Research Notices, 2022</journal>
-  <input type="checkbox" id="typical-small-sumset">
-  <links>
-    <a href="https://arxiv.org/abs/1910.11324">arxiv</a> <sep />
-    <a href="https://doi.org/10.1093/imrn/rnab021">journal</a> <sep />
-  <label for="typical-small-sumset">abstract</label>
-  </links>
-  <abstract>
-  In this paper we determine the number and typical structure of sets of integers
+<pub-year>2019</pub-year>
+<pub-title>The typical structure of sets with small sumset</pub-title>
+<pub-auth>
+<a href="https://marceloscampos.github.io/">M. Campos</a>, <a href="https://scholar.google.com.br/citations?user=NzpLYCEAAAAJ&hl=pt-BR">M. Collares</a>, <a href="https://robiscounting.github.io/">R. Morris</a>, <a href="https://web.uvic.ca/~nmorrison/">N. Morrison</a>, and <me>V. Souza</me></pub-auth>
+<journal>International Mathematics Research Notices, 2022</journal>
+<input type="checkbox" class="abs" id="typicall-small-sumset">
+<input type="checkbox" class="cite" id="typicall-small-sumset-cite">
+<links>
+<a href="https://arxiv.org/abs/1910.11324">arxiv</a> <sep></sep>
+<a href="https://doi.org/10.1093/imrn/rnab021">journal</a> <sep></sep>
+<label for="typicall-small-sumset" class="abs">abstract</label> <sep></sep>
+<label for="typicall-small-sumset-cite" class="cite">cite</label>
+</links>
+<abstract>
+In this paper we determine the number and typical structure of sets of integers
   with bounded doubling. In particular, improving recent results of Green and Morris,
   and of Mazur, we show that the following holds for every fixed $\lambda > 2$ and
   every $k \geq (\log n)^4$: if $\omega \to \infty$ as $n \to \infty$ (arbitrarily
   slowly), then almost all sets $A \subset [n]$ with $|A| = k$ and $|A+A| \leq \lambda k$
   are contained in an arithmetic progression of length $\lambda k/2 + \omega$.
-  </abstract>
+</abstract>
+<cite><pre>
+@ARTICLE{CCMMS-22-small-sumset,
+    title = {The typical structure of sets with small sumset},
+    author = {Marcelo Campos and Maurício Collares and Robert Morris and Natasha Morrison and Victor Souza},
+    journal = {International Mathematics Research Notices},
+    volume = {2022},
+    number = {14},
+    pages = {11011--11055},
+    year = {2022},
+    publisher = {Oxford University Press},
+    doi = {https://doi.org/10.1093/imrn/rnab021},
+}
+</pre></cite>
 </pub>
-
-<pub>
-  <pub-year>2019</pub-year>
-  <pub-title>Blowup Ramsey numbers</pub-title>
-  <pub-coauth> <me>V. Souza</me></pub-coauth>
-  <journal>European Journal of Combinatorics, 2021</journal>
-  <input type="checkbox" id="blowup-ramsey">
-  <links>
-    <a href="https://arxiv.org/abs/1910.13912">arxiv</a> <sep />
-    <a href="https://doi.org/10.1016/j.ejc.2020.103238">journal</a> <sep />
-  <label for="blowup-ramsey">abstract</label>
-  </links>
-  <abstract>
-  We study a generalisation of the bipartite Ramsey numbers to blowups
-  of graphs. For a graph $G$, denote the $t$-blowup of $G$ by $G[t]$.
-  We say that $G$ is $r$-Ramsey for $H$, and write $G \xrightarrow{r} H$,
-  if every $r$-colouring of the edges of $G$ has a monochromatic copy of $H$.
-  We show that if $G \xrightarrow{r} H$, then for all $t$, there exists $n$
-  such that $G[n] \xrightarrow{r} H[t]$.
-  In fact, we provide exponential lower and upper bounds for the minimum
-  $n$ with $G[n] \xrightarrow{r} H[t]$, and conjecture an upper bound of
-  the form $c^t$, where $c$ depends on $H$ and $r$, but not on $G$.
-  We also show that this conjecture holds for $G(n,p)$ with high probability,
-  above the threshold for the event $G(n,p) \xrightarrow{r} H$.
-  </abstract>
-</pub>
-
 
 </section>
 
 <section>
-<title>Conference Papers</title>
-
-<pub>
-  <pub-year>2022</pub-year>
-  <pub-title>On the zero-sum Ramsey problem over $\mathbb{Z}_2^d$</pub-title>
-  <pub-coauth>J. Alvarado, L. Colucci, R. Parente, and <me>V. Souza</me></pub-coauth>
-  <journal>The 15th Latin American Theoretical Informatics Symposium, 2022</journal>
-  <input type="checkbox" id="zerosum-ramsey-z2t">
-  <links>
-    <a href="https://doi.org/10.1007/978-3-031-20624-5_27">proceedings</a> <sep />
-  <label for="zerosum-ramsey-z2t">abstract</label>
-  </links>
-  <abstract>
-    Let $\Gamma$ be a finite abelian group and let $G$ be a graph.
-    The zero-sum Ramsey number $R(G, \Gamma)$ is the least integer $N$
-    (if it exists) such that, for every edge-colouring $E(K_N) \mapsto \Gamma$,
-    one can find a copy $G \subseteq K_N$ where the sum of the colours of the
-    edges of $G$ is zero.
-    
-    A large body of research on this problem has emerged in the past few decades,
-    paying special attention to the case where $\Gamma$ is cyclic.
-    In this work, we start a systematic study of $R(G, \Gamma)$ for
-    groups $\Gamma$ of small exponent, in particular, $\Gamma = \mathbb{Z}_2^d$.
-    For the Klein group $\mathbb{Z}_2^2$, the smallest non-cyclic abelian group,
-    we compute $R(G, \mathbb{Z}_2^2)$ for all odd forests $G$ and show that
-    $R(G, \mathbb{Z}_2^2) \leq n+2$ for all forests $G$ on at least $6$ vertices. 
-    We also show that $R(C_4, \mathbb{Z}_2^d) = 2^d + 1$ for any $d \geq 2$,
-    and determine the order of magnitude of $R(K_{t,r}, \mathbb{Z}_2^d)$
-    as $d \to \infty$ for all $t, r$.
-    
-    We also consider the related setting where the ambient graph $K_N$
-    is substituted by the complete bipartite graph $K_{N,N}$.
-    Denote the analogue bipartite zero-sum Ramsey number by $B(G, \Gamma)$.
-    We show that $B(C_4, \mathbb{Z}_2^d) = 2^d + 1$ for all $d \geq 1$ and
-    $B(\{C_4, C_6\}, \mathbb{Z}_2^d) = 2^{d/2} + 1$ for all even $d \geq 2$.
-    Additionally, we show that $B(K_{t,r}, \mathbb{Z}_2^d)$ and $R(K_{t,r},
-    \mathbb{Z}_2^d)$ have the same asymptotic behaviour as $d \to \infty$,
-    for all $t, r$.
-    Finally, we conjecture the value of $B(\{C_4, \dotsc, C_{2m}\}, \mathbb{Z}_2^d)$
-    and provide the corresponding lower bound.
-  </abstract>
-</pub>
-
-<pub>
-  <pub-year>2021</pub-year>
-  <pub-title>Hitting times for arc-disjoint arborescences in random digraph processes</pub-title>
-  <pub-coauth>M. Collares, Y. Kohayakawa, T. Martins, R. Parente, and <me>V. Souza</me></pub-coauth>
-  <journal>XI Latin and American Algorithms, Graphs and Optimization Symposium, 2021</journal>
-  <input type="checkbox" id="hitting-time-arborescence">
-  <links>
-    <a href="https://doi.org/10.1016/j.procs.2021.11.046">proceedings</a> <sep />
-  <label for="hitting-time-arborescence">abstract</label>
-  </links>
-  <abstract>
-    In this work, we study hitting times for the appearance of a
-    spanning structure in the Erdős-Rényi random directed graph
-    processes. Namely, we are concerned with the appearance of an
-    arborescence, a spanning digraph in which, for a vertex $u$ called
-    the root and any other vertex $v$, there is exactly one
-    directed path from $u$ to $v$.
-    Let $\mathcal{D}(n,0), \mathcal{D}(n,1), \dotsc, \mathcal{D}(n,n(n-1))$
-    be the random digraph process where for every
-    $m \in \{0,\dotsc, n(n-1)\}$, $\mathcal{D}(n,m)$ is a digraph with
-    vertex set $\{1,\dotsc, n\}$; $\mathcal{D}(n,0)$ has no arcs and, for
-    $1 \leq m \leq n(n-1)$, the digraph $\mathcal{D}(n,m)$ is obtained by adding
-    an arc to $\mathcal{D}(n,m-1)$, chosen uniformly at random among the not
-    present arcs. In this paper we determine the hitting time for the
-    existence of $k$ arc-disjoint arborescences when
-    $k=  k(n) \ll \sqrt{\log n}$.
-  </abstract>
-</pub>
-
+<title>Coauthors</title>
+<cloud>
+<author><a href="https://sites.google.com/view/adva-mond">Adva Mond</a><sup>4</sup></author>
+<author><a href="https://aragaolucas.github.io/">Lucas Aragão</a><sup>2</sup></author>
+<author><a href="https://scholar.google.com.br/citations?user=NzpLYCEAAAAJ&hl=pt-BR">Maurício Collares</a><sup>2</sup></author>
+<author>Vojtěch Dvořák<sup>2</sup></author>
+<author><a href="https://scholar.google.com/citations?hl=en&user=YPKQtYIAAAAJ">Roberto Parente</a><sup>2</sup></author>
+<author><a href="https://lversteegen-personal.github.io/">Leo Versteegen</a><sup>2</sup></author>
+<author><a href="https://sites.google.com/view/pedro-abdalla/home">Pedro Abdalla</a><sup>1</sup></author>
+<author><a href="https://arxiv.org/search/math?searchtype=author&query=Alvarado,+J+D">José Alvarado</a><sup>1</sup></author>
+<author><a href="https://people.math.ethz.ch/~abandeira/">Afonso Bandeira</a><sup>1</sup></author>
+<author><a href="https://arxiv.org/search/math?searchtype=author&query=Bortolotto,+C">Cynthia Bortolotto</a><sup>1</sup></author>
+<author><a href="https://marceloscampos.github.io/">Marcelo Campos</a><sup>1</sup></author>
+<author><a href="https://sites.google.com/view/jonathanchapman">Jonathan Chapman</a><sup>1</sup></author>
+<author><a href="https://sites.google.com/view/lcolucci">Lucas Colucci</a><sup>1</sup></author>
+<author><a href="https://www.umu.se/en/staff/victor-falgas-ravry/">Victor Falgas-Ravry</a><sup>1</sup></author>
+<author><a href="https://www.dpmms.cam.ac.uk/~lh569/">Lawrence Hollom</a><sup>1</sup></author>
+<author><a href="https://math.cornell.edu/martin-kassabov">Martin Kassabov</a><sup>1</sup></author>
+<author><a href="https://www.ime.usp.br/~yoshi/">Yoshiharu Kohayakawa</a><sup>1</sup></author>
+<author><a href="https://noahlockard.wordpress.com/">Noah Lebowitz-Lockard</a><sup>1</sup></author>
+<author>David Lewis<sup>1</sup></author>
+<author><a href="https://www.professores.uff.br/tlmartins/">Taísa Martins</a><sup>1</sup></author>
+<author><a href="https://robiscounting.github.io/">Rob Morris</a><sup>1</sup></author>
+<author><a href="https://web.uvic.ca/~nmorrison/">Natasha Morrison</a><sup>1</sup></author>
+<author><a href="https://www.miquelortega.net/">Miquel Ortega</a><sup>1</sup></author>
+<author><a href="https://sites.google.com/view/julien-portier/accueil">Julien Portier</a><sup>1</sup></author>
+<author>Rik Sarkar<sup>1</sup></author>
+<author><a href="https://www.stevenstrogatz.com/">Steven Strogatz</a><sup>1</sup></author>
+<author><a href="https://pi.math.cornell.edu/~ajt/">Alex Townsend</a><sup>1</sup></author>
+</cloud>
 </section>
-
-
-
-<section>
-<title>Teaching</title>
-<ul>
-  <li>
-    2025 - Lecturer for <a href="https://www.maths.cam.ac.uk/postgrad/part-iii/files/GtC/Combinatorics/spectral-graph-theory.pdf">Spectral Graph Theory</a> (Part III) at the University of Cambridge.
-  </li>
-  <li>
-    2024 - Supervisor for <b>Number Theory</b> (Part II) at the University of Cambridge.
-  </li>
-  <li>
-    2024 - Lecturer for <a href="https://impa.br/ensino/programas-de-formacao/doutorado/minicursos/fourier-analysis-and-arithmetic-progressions/">Fourier Analysis and Arithmetic Progressions</a> (Minicourse) at IMPA.
-  </li>
-  <li>
-    2023 - Supervisor for <b>Graph Theory</b> (Part II) at the University of Cambridge.
-  </li>
-  <li>
-    2022 - Supervisor for <b>Number Theory</b> (Part II) at the University of Cambridge.
-  </li>
-  <li>
-    2021 - Supervisor for <b>Number Theory</b> (Part II) at the University of Cambridge.
-  </li>
-  <li>
-    2021 - Supervisor for <b>Analysis I</b> (Part IA) at the University of Cambridge.
-  </li>
-  <li>
-    2020  - Supervisor for <b>Number Theory</b> (Part II) at the University of Cambridge.
-  </li>
-  <li>
-    2017 - Teacher Assistant for <b>Probability I</b> (Graduate course) at IMPA.
-  </li>
-</ul>
-</section>
-
-<edit>July 2025</edit>
-
-
-
-</body>
 
 
 <svg display="none">
@@ -939,4 +520,13 @@ C 28.739922 22.819922 28.820312 21.65 28.820312 21 C 28.820312 18.35 27.269531 1
 
 </svg>
 
-</html>
+
+  
+<footer>
+  <edit>November 2025</edit>
+  <copyright>&copy; Victor Seixas Souza, 2023 - 2025</copyright>
+</footer>
+
+  </body>
+  </html>
+  

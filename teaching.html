@@ -1,0 +1,136 @@
+
+  <!doctype html>
+  <html lang="en">
+  <link rel="icon" href="favicon/favicon-32x32.png">
+  
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Glass+Antiqua&display=swap" rel="stylesheet">
+
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css"
+  integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0"
+  crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js"
+  integrity="sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4"
+  crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js"
+  integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+  crossorigin="anonymous"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  renderMathInElement(document.body, {
+  delimiters: [
+    {left: '$$', right: '$$', display: true},
+    {left: '$', right: '$', display: false},
+    {left: '\\(', right: '\\)', display: false},
+    {left: '\\[', right: '\\]', display: true}
+  ],
+  macros: {
+    "\\AA": "\\mathbb{A}", "\\BB": "\\mathbb{B}", "\\CC": "\\mathbb{C}", "\\DD": "\\mathbb{D}",
+    "\\EE": "\\mathbb{E}", "\\FF": "\\mathbb{F}", "\\GG": "\\mathbb{G}", "\\HH": "\\mathbb{H}",
+    "\\II": "\\mathbb{I}", "\\JJ": "\\mathbb{J}", "\\KK": "\\mathbb{K}", "\\LL": "\\mathbb{L}",
+    "\\MM": "\\mathbb{M}", "\\NN": "\\mathbb{N}", "\\OO": "\\mathbb{O}", "\\PP": "\\mathbb{P}",
+    "\\QQ": "\\mathbb{Q}", "\\RR": "\\mathbb{R}", "\\SS": "\\mathbb{S}", "\\TT": "\\mathbb{T}",
+    "\\UU": "\\mathbb{U}", "\\VV": "\\mathbb{V}", "\\WW": "\\mathbb{W}", "\\XX": "\\mathbb{X}",
+    "\\YY": "\\mathbb{Y}", "\\ZZ": "\\mathbb{Z}",
+    "\\cA": "\\mathcal{A}", "\\cB": "\\mathcal{B}", "\\cC": "\\mathcal{C}", "\\cD": "\\mathcal{D}",
+    "\\cE": "\\mathcal{E}", "\\cF": "\\mathcal{F}", "\\cG": "\\mathcal{G}", "\\cH": "\\mathcal{H}",
+    "\\cI": "\\mathcal{I}", "\\cJ": "\\mathcal{J}", "\\cK": "\\mathcal{K}", "\\cL": "\\mathcal{L}",
+    "\\cM": "\\mathcal{M}", "\\cN": "\\mathcal{N}", "\\cO": "\\mathcal{O}", "\\cP": "\\mathcal{P}",
+    "\\cQ": "\\mathcal{Q}", "\\cR": "\\mathcal{R}", "\\cS": "\\mathcal{S}", "\\cT": "\\mathcal{T}",
+    "\\cU": "\\mathcal{U}", "\\cV": "\\mathcal{V}", "\\cW": "\\mathcal{W}", "\\cX": "\\mathcal{X}",
+    "\\cY": "\\mathcal{Y}", "\\cZ": "\\mathcal{Z}",
+    "\\bfA": "\\mathbf{A}", "\\bfB": "\\mathbf{B}", "\\bfC": "\\mathbf{C}", "\\bfD": "\\mathbf{D}",
+    "\\bfE": "\\mathbf{E}", "\\bfF": "\\mathbf{F}", "\\bfG": "\\mathbf{G}", "\\bfH": "\\mathbf{H}",
+    "\\bfI": "\\mathbf{I}", "\\bfJ": "\\mathbf{J}", "\\bfK": "\\mathbf{K}", "\\bfL": "\\mathbf{L}",
+    "\\bfM": "\\mathbf{M}", "\\bfN": "\\mathbf{N}", "\\bfO": "\\mathbf{O}", "\\bfP": "\\mathbf{P}",
+    "\\bfQ": "\\mathbf{Q}", "\\bfR": "\\mathbf{R}", "\\bfS": "\\mathbf{S}", "\\bfT": "\\mathbf{T}",
+    "\\bfU": "\\mathbf{U}", "\\bfV": "\\mathbf{V}", "\\bfW": "\\mathbf{W}", "\\bfX": "\\mathbf{X}",
+    "\\bfY": "\\mathbf{Y}", "\\bfZ": "\\mathbf{Z}",
+    "\\bfa": "\\mathbf{a}", "\\bfb": "\\mathbf{b}", "\\bfc": "\\mathbf{c}", "\\bfd": "\\mathbf{d}",
+    "\\bfe": "\\mathbf{e}", "\\bff": "\\mathbf{f}", "\\bfg": "\\mathbf{g}", "\\bfh": "\\mathbf{h}",
+    "\\bfi": "\\mathbf{i}", "\\bfj": "\\mathbf{j}", "\\bfk": "\\mathbf{k}", "\\bfl": "\\mathbf{l}",
+    "\\bfm": "\\mathbf{m}", "\\bfn": "\\mathbf{n}", "\\bfo": "\\mathbf{o}", "\\bfp": "\\mathbf{p}",
+    "\\bfq": "\\mathbf{q}", "\\bfr": "\\mathbf{r}", "\\bfs": "\\mathbf{s}", "\\bft": "\\mathbf{t}",
+    "\\bfu": "\\mathbf{u}", "\\bfv": "\\mathbf{v}", "\\bfw": "\\mathbf{w}", "\\bfx": "\\mathbf{x}",
+    "\\bfy": "\\mathbf{y}", "\\bfz": "\\mathbf{z}",
+    "\\GL": "\\operatorname{GL}",
+    "\\sign": "\\operatorname{sign}",
+    "\\chara": "\\operatorname{char}",
+    "\\Sym": "\\operatorname{Sym}",
+    "\\abs": "#1| #2 #1|",
+    "\\card": "#1| #2 #1|",
+    "\\p": "#1\\lparen #2 #1\\rparen",
+    "\\set": "#1\\{ #2 #1\\}",
+    "\\st": "\\,\\colon",
+    "\\from": "\\,\\colon",
+    "\\defined": "\\coloneqq",
+    "\\defines": "\\eqqcolon",
+    },
+    throwOnError : false
+    });
+  });
+</script>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Victor Seixas Souza</title>
+    <meta name="description" content="Personal homepage of Victor Seixas Souza">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+  
+<header>
+<name><a href="/">Victor Seixas Souza</a></name>
+<nav>
+  <a href="/publications">Publications</a>
+  <a href="/teaching">Teaching</a>
+</nav>
+</header>
+
+  
+<section>
+<title>Teaching</title>
+<ul>
+  <li>
+    2025 - Lecturer for <a href="https://www.maths.cam.ac.uk/postgrad/part-iii/files/GtC/Combinatorics/spectral-graph-theory.pdf">Spectral Graph Theory</a> (Part III) at the University of Cambridge.
+  </li>
+  <li>
+    2024 - Supervisor for <b>Number Theory</b> (Part II) at the University of Cambridge.
+  </li>
+  <li>
+    2024 - Lecturer for <a href="https://impa.br/ensino/programas-de-formacao/doutorado/minicursos/fourier-analysis-and-arithmetic-progressions/">Fourier Analysis and Arithmetic Progressions</a> (Minicourse) at IMPA.
+  </li>
+  <li>
+    2023 - Supervisor for <b>Graph Theory</b> (Part II) at the University of Cambridge.
+  </li>
+  <li>
+    2022 - Supervisor for <b>Number Theory</b> (Part II) at the University of Cambridge.
+  </li>
+  <li>
+    2021 - Supervisor for <b>Number Theory</b> (Part II) at the University of Cambridge.
+  </li>
+  <li>
+    2021 - Supervisor for <b>Analysis I</b> (Part IA) at the University of Cambridge.
+  </li>
+  <li>
+    2020  - Supervisor for <b>Number Theory</b> (Part II) at the University of Cambridge.
+  </li>
+  <li>
+    2017 - Teacher Assistant for <b>Probability I</b> (Graduate course) at IMPA.
+  </li>
+</ul>
+</section>
+
+  
+<footer>
+  <edit>November 2025</edit>
+  <copyright>&copy; Victor Seixas Souza, 2023 - 2025</copyright>
+</footer>
+
+  </body>
+  </html>
+  

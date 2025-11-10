@@ -1,0 +1,459 @@
+[[publication]]
+label = "sandglass"
+selected = false
+conference = false
+title = "The sandglass conjecture beyond cancellative pairs"
+year = "2025"
+authors = ["adva-m", "victor-s", "leo-v"]
+links.arxiv = "https://arxiv.org/abs/2505.14281"
+abstract = """
+The sandglass conjecture, posed by Simonyi, states that if a pair $(\\mathcal{A}, \\mathcal{B})$ of families of subsets of $[n]$ is recovering then $|\\mathcal{A}| |\\mathcal{B}| \\leq 2^n$.
+We improve the best known upper bound to $|\\mathcal{A}| |\\mathcal{B}| \\leq 2.2543^n$.
+To do this we overcome a significant barrier by exponentially separating the upper bounds on recovering pairs from cancellative pairs, a related notion.
+"""
+cite='''@MISC{MSV-25-sandglass,
+    title = {The sandglass conjecture beyond cancellative pairs},
+    author = {Adva Mond and Victor Souza and Leo Versteegen},
+    archivePrefix = "arXiv",
+    primaryClass = "math.CO",
+    eprint = "2508.21819"
+    doi = {https://arxiv.org/abs/2508.21819},
+}'''
+
+[[publication]]
+label = "multigraphs"
+selected = false
+conference = false
+title = "On problems in extremal multigraph theory"
+year = "2025"
+authors = ["victor-fr", "adva-m", "rik-s", "victor-s"]
+links.arxiv = "https://arxiv.org/abs/2505.14281"
+abstract = """
+A multigraph $G$ is said to be an $(s,q)$-graph if every $s$-set of vertices in $G$ supports at most $q$ edges (counting multiplicities).
+In this paper we consider the maximal sum and product of edge multiplicities in an $(s,q)$-graph on $n$ vertices.
+These are multigraph analogues of a problem of Erdős raised by Füredi and Kündgen and Mubayi and Terry respectively, with applications to counting problems and extremal hypergraph theory.
+We make major progress, settling conjectures of Day, Falgas-Ravry and Treglown and of Falgas-Ravry, establishing intricate behaviour for both the sum and the product problems, and providing both a general picture and evidence that the problems may prove computationally intractable in general.
+"""
+cite='''@MISC{FRMSS-25-extremal-multigraphs,
+    title = {On problems in extremal multigraph theory},
+    author = {Victor Falgas-Ravry and Adva Mond and Rik Sarkar and Victor Souza},
+    archivePrefix = "arXiv",
+    primaryClass = "math.CO",
+    eprint = "2505.14281"
+    doi = {https://arxiv.org/abs/2505.14281},
+}'''
+
+
+
+[[publication]]
+label = "karamata"
+selected = false
+conference = false
+title = "Intersections of random chords of a circle"
+year = "2025"
+authors = ["cynthia-b", "victor-s"]
+journal.name="To appear in The American Mathematical Monthly"
+links.arxiv = "https://arxiv.org/abs/2504.12866"
+abstract = """
+Where are the intersection points of diagonals of a regular $n$-gon located?
+What is the distribution of the intersection point of two random chords of a circle?
+We investigate these and related new questions in geometric probability, extend a largely forgotten result of Karamata, and elucidate its connection to the Bertrand paradox.
+"""
+cite='''@MISC{BS-25-random-chords,
+    title = {Intersections of random chords of a circle},
+    author = {Cynthia Bortolotto and Victor Souza},
+    archivePrefix = "arXiv",
+    primaryClass = "math.MG",
+    eprint = "2504.12866"
+    doi = {https://arxiv.org/abs/2504.12866},
+}'''
+
+
+
+[[publication]]
+label = "reverse-littlewood-offord"
+selected = true
+conference = false
+title = "Double-jump phase transition for the reverse Littlewood--Offord problem"
+year = "2025"
+authors = ["lawrence-h", "julien-p", "victor-s"]
+links.arxiv = "https://arxiv.org/abs/2503.24202"
+abstract = """
+Erdős conjectured in 1945 that for any unit vectors $v_1, \\dotsc, v_n$ in $\\mathbb{R}^2$ and signs $\\varepsilon_1, \\dotsc, \\varepsilon_n$ taken independently and uniformly in $\\{-1,1\\}$, the random Rademacher sum $\\sigma = \\varepsilon_1 v_1 + \\dotsb + \\varepsilon_n v_n$ satisfies $\\|\\sigma\\|_2 \\leq 1$  with probability $\\Omega(1/n)$.
+While this conjecture is false for even $n$, Beck has proved that $\\|\\sigma\\|_2 \\leq \\sqrt{2}$ always holds with probability $\\Omega(1/n)$.
+Recently, He, Juškevičius, Narayanan, and Spiro conjectured that the Erdős' conjecture holds when $n$ is odd.
+We disprove this conjecture by exhibiting vectors $v_1, \\dotsc, v_n$ for which $\\|\\sigma\\|_2 \\leq 1$ occurs with probability $O(1/n^{3/2})$.
+On the other hand, an approximated version of their conjecture holds: we show that we always have $\\|\\sigma\\|_2 \\leq 1 + \\delta$ with probability $\\Omega_\\delta(1/n)$, for all $\\delta > 0$.
+This shows that when $n$ is odd, the minimum probability that $\\|\\sigma\\|_2 \\leq r$ exhibits a double-jump phase transition at $r = 1$, as we can also show that $\\|\\sigma\\|_2 \\leq 1$ occurs with probability at least $\\Omega((1/2+\\mu)^n)$ for some $\\mu > 0$.
+Additionally, and using a different construction, we give a negative answer to a question of Beck and two other questions of He, Juškevičius, Narayanan, and Spiro, concerning the optimal constructions minimising the probability that $\\|\\sigma\\|_2 \\leq \\sqrt{2}$.
+We also make some progress on the higher dimensional versions of these questions.
+"""
+cite='''@MISC{HPS-25-reverse-lo,
+    title = {Double-jump phase transition for the reverse Littlewood--Offord problem},
+    author = {Lawrence Hollom and Julien Portier and Victor Souza},
+    archivePrefix = "arXiv",
+    primaryClass = "math.CO",
+    eprint = "2503.24202"
+    doi = {https://arxiv.org/abs/2503.24202},
+}'''
+
+
+
+[[publication]]
+label = "maker-breaker-random"
+selected = true
+conference = false
+title = "The Maker-Breaker percolation game on a random board"
+year = "2024"
+authors = ["vojtech-d", "adva-m", "victor-s"]
+journal.name = "To appear in the Annals of Probability"
+links.arxiv = "https://arxiv.org/abs/2402.17547"
+abstract = """
+The $(m,b)$ Maker-Breaker percolation game on $(\\mathbb{Z}^2)_p$, introduced by Day and Falgas-Ravry, is played in the following way.
+Before the game starts, each edge of $\\mathbb{Z}^2$ is removed independently with probability $1-p$.
+After that, Maker chooses a vertex $v_0$ to protect.
+Then, in each round Maker and Breaker claim respectively $m$ and $b$ unclaimed edges of $G$.
+Breaker wins if after the removal of the edges claimed by him the component of $v_0$ becomes finite, and Maker wins if she can indefinitely prevent Breaker from winning. <br><br>
+
+We show that for any $p < 1$, Breaker almost surely has a winning strategy for the $(1,1)$ game on $(\\mathbb{Z}^2)_p$.
+This fully answers a question of Day and Falgas-Ravry, who showed that for $p = 1$ Maker has a winning strategy for the $(1,1)$ game.
+Further, we show that in the $(2,1)$ game on $(\\mathbb{Z}^2)_p$ Maker almost surely has a winning strategy whenever $p > 0.9402$, while Breaker almost surely has a winning strategy whenever $p < 0.5278$.
+This shows that the threshold value of $p$ above which Maker has a winning strategy for the $(2,1)$ game on $\\mathbb{Z}^2$ is non-trivial.
+In fact, we prove similar results in various settings, including other lattices and biases $(m,b)$. <br><br>
+
+These results extend also to the most general case, which we introduce, where each edge is given to Maker with probability $\\alpha$ and to Breaker with probability $\\beta$ before the game starts.
+"""
+cite='''@MISC{DMS-24-mb-random,
+    title = {The Maker-Breaker percolation game on a random board},
+    author = {Vojtěch Dvořák and Adva Mond and Victor Souza},
+    archivePrefix = "arXiv",
+    primaryClass = "math.PR",
+    eprint = "2402.17547"
+    doi = {https://arxiv.org/abs/2402.17547},
+}'''
+
+
+
+[[publication]]
+label = "monochromatic-products"
+selected = true
+conference = false
+title = "On the number of monochromatic solutions to multiplicative equations"
+year = "2023"
+authors = ["lucas-a", "jonathan-c", "miquel-o", "victor-s"]
+journal.name="To appear in Combinatorica"
+links.arxiv = "https://arxiv.org/abs/2311.18742"
+abstract = """
+Given an $r$-colouring of the interval $\\{2, \\dotsc, N \\}$, what is the minimum number of monochromatic solutions of the equation $xy = z$?
+For $r=2$, we show that there are always asymptotically at least $(1/2\\sqrt{2}) N^{1/2} \\log N$ monochromatic solutions, and that the leading constant is sharp.
+We also establish a stability version of this result.
+For general $r$, we show that there are at least $C_r N^{1/S(r-1)}$ monochromatic solutions, where $S(r)$ is the Schur number for $r$ colours and $C_r$ is a constant.
+This bound is sharp up to logarithmic factors when $r \\leq 4$.
+We also obtain results for more general multiplicative equations of the form $x_1^{a_1} \\dotsb x_k^{a_k} = y$, where $a_1, \\dotsc, a_k$ are positive integers, at least one of which equals $1$.
+Our corresponding upper bounds are given in terms of certain 'interval Rado numbers' for additive equations.
+We pose a number of open problems concerning these numbers.
+"""
+cite='''@MISC{ACOS-23-multiplicative-schur,
+    title = {On the number of monochromatic solutions to multiplicative equations},
+    author = {Lucas Aragão and Jonathan Chapman and Miquel Ortega and Victor Souza},
+    archivePrefix = "arXiv",
+    primaryClass = "math.CO",
+    eprint = "2311.18742"
+    doi = {https://arxiv.org/abs/2311.18742},
+}'''
+
+
+
+[[publication]]
+label = "localised-maclaurin"
+selected = false
+conference = false
+title = "Localised graph Maclaurin inequalities"
+year = "2023"
+authors = ["lucas-a", "victor-s"]
+journal.name = "Annals of Combinatorics"
+journal.year = "2023"
+links.arxiv = "https://arxiv.org/abs/2301.13189"
+links.journal = "https://doi.org/10.1007/s00026-023-00672-0"
+abstract = """
+The Maclaurin inequalities for graphs are a broad generalisation of the classical theorems of Turán and Zykov.
+In a nutshell they provide an asymptotically sharp answer to the following question: what is the maximum number of cliques of size q in a $K_{r+1}$-free graph with a given number of cliques of size $s$?
+We prove an extensions of the graph Maclaurin inequalities with a weight function that captures the local structure of the graph.
+As a corollary, we settle a recent conjecture of Kirsch and Nir, which simultaneously encompass the previous localised results of Bradač, Malec and Tompkins and of Kirsch and Nir.
+"""
+cite='''@ARTICLE{AS-24-localised-maclaurin,
+    title = {Localised graph Maclaurin inequalities},
+    author = {Lucas Aragão and Victor Souza},
+    journal = {Annals of Combinatorics},
+    volume = {28},
+    pages = {1021-1033},
+    year = {2024},
+    publisher = {Springer},
+    doi = {https://doi.org/10.1007/s00026-023-00672-0},
+}'''
+
+
+
+[[publication]]
+label = "kuramoto-expander"
+selected = true
+conference = false
+title = "Expander graphs are globally synchronising"
+year = "2022"
+authors = ["pedro-a", "afonso-b", "martin-k", "victor-s", "steven-s", "alex-t"]
+links.arxiv = "https://arxiv.org/abs/2210.12788"
+links.quanta = "https://www.quantamagazine.org/new-proof-shows-that-expander-graphs-synchronize-20230724/"
+abstract = """
+The Kuramoto model is a prototypical model used for rigorous mathematical analysis in the field of synchronisation and nonlinear dynamics.
+A realisation of this model consists of a collection of identical oscillators with interactions given by a network, which we identify respectively with vertices and edges of a graph.
+In this paper, we show that a graph with sufficient expansion must be globally synchronizing, meaning that the Kuramoto model on such a graph will converge to the fully synchronised state with all the oscillators with same phase, for every initial state up to a set of measure zero.
+In particular, we show that for any $\\varepsilon > 0$ and $p \\geq (1 + \\varepsilon)(\\log n)/n$, the Kuramoto model on the Erdős-Rényi graph $G(n,p)$ is globally synchronizing with probability tending to one as $n$ goes to infinity.
+This improves on a previous result of Kassabov, Strogatz and Townsend and solves a conjecture of Ling, Xu and Bandeira.
+We also show that the Kuramoto model is globally synchronizing on any $d$-regular Ramanujan graph with $d \\geq 600$ and that, for the same range of degrees, a $d$-regular random graph is typically globally synchronizing.
+"""
+cite='''@MISC{ABKSST-22-expander-sync,
+    title = {Expander graphs are globally synchronizing},
+    author = {Pedro Abdalla and Afonso Bandeira and Martin Kassabov and Victor Souza and Steven Strogatz},
+    archivePrefix = "arXiv",
+    primaryClass = "math.CO",
+    eprint = "2210.12788"
+    doi = {https://arxiv.org/abs/2210.12788},
+}'''
+
+
+
+[[publication]]
+label = "egyptian-note"
+selected = false
+conference = false
+title = "A note on the number of Egyptian fractions"
+year = "2022"
+authors = ["noah-ll", "victor-s"]
+journal.name = "Integers"
+journal.year = "2023"
+links.arxiv = "https://arxiv.org/abs/2210.07921"
+links.journal = "http://math.colgate.edu/~integers/x89/x89.pdf"
+abstract = """
+Improving an estimate of Croot, Dobbs, Friedlander, Hetzel and Pappalardi, we show that for all $k \\geq 2$, the number of integers $1 \\leq a \\leq n$ such that the equation $$\\frac{a}{n} = \\frac{1}{m_1} + \\dotsc + \\frac{1}{m_k}$$ has a solution in positive integers $m_1, \\dotsc, m_k$ is bounded above by $n^{1 - 1/2^{k-2} + o(1)}$ as $n$ goes to infinity.
+"""
+cite='''@ARTICLE{LLS-23-egyptian-frac,
+    title = {A note on the number of Egyptian fractions},
+    author = {Noah Lebowitz-Lockard and Victor Souza},
+    journal = {INTEGERS},
+    volume = {23},
+    pages = {A89},
+    year = {2023},
+    publisher = {Colgate University},
+    doi = {https://doi.org/10.5281/zenodo.10160486},
+}'''
+
+
+
+[[publication]]
+label = "improved-dimension-divisibility"
+selected = false
+conference = false
+title = "Improved bounds for the dimension of divisibility"
+year = "2022"
+authors = ["victor-s", "leo-v"]
+journal.name = "European Journal of Combinatorics"
+journal.year = "2024"
+links.arxiv = "https://arxiv.org/abs/2202.04001"
+links.journal = "https://doi.org/10.1016/j.ejc.2023.103912"
+abstract = """
+The dimension of a partially-ordered set $P$ is the smallest integer $d$ such that one can embed $P$ into a product of $d$ linear orders.
+We prove that the dimension of the divisibility order on the interval $\\{1, \\dotsc, n\\}$ is bounded above by $C(\\log n)^2 (\\log \\log n)^{-2} \\log \\log \\log n$ as $n$ goes to infinity.
+This improves a recent result by Lewis and the first author, who showed an upper bound of $C(\\log n)^2 (\\log \\log n)^{-1}$ and a lower bound of $c(\\log n)^2 (\\log \\log n)^{-2}$, asymptotically.
+To obtain these bounds, we provide a refinement of a bound of Füredi and Kahn and exploit a connection between the dimension of the divisibility order and the maximum size of $r$-cover-free families.
+"""
+cite='''@ARTICLE{SV-24-dim-divisibility,
+    title = {Improved bounds for the dimension of divisibility},
+    author = {Victor Souza and Leo Versteegen},
+    journal = {European Journal of Combinatorics},
+    volume = {118},
+    pages = {103912},
+    year = {2024},
+    publisher = {Elsevier},
+    doi = {https://doi.org/10.1016/j.ejc.2023.103912},
+}'''
+
+
+
+[[publication]]
+label = "maker-breaker-percolation"
+selected = false
+conference = false
+title = "The Maker-Breaker percolation game on the square lattice"
+year = "2021"
+authors = ["vojtech-d", "adva-m", "victor-s"]
+links.arxiv = "https://arxiv.org/abs/2105.12864"
+abstract = """
+We study the $(m,b)$ Maker-Breaker percolation game on $\\mathbb{Z}^2$, introduced by Day and Falgas-Ravry.
+In this game, Maker and Breaker claim respectively $m$ and $b$ unclaimed edges of the square lattice $\\mathbb{Z}^2$.
+Breaker wins if the component of the origin becomes finite when his edges are deleted from $\\mathbb{Z}^2$.
+Maker if she can indefinitely avoid a win of Breaker.
+We show that Breaker has a winning strategy for the $(m,b)$ game whenever $b \\geq (2 - 1/14 + o(1))m$, breaking the ratio $2$ barrier proved by Day and Falgas-Ravry. <br><br>
+    
+Addressing further questions of Day and Falgas-Ravry, we show that Breaker can win the $(m,2m)$ game even if he allows Maker to claim $c$ edges before the game starts, for any integer $c$, and that he can moreover win rather quickly as a function of $c$. <br><br>
+    
+We also consider the game played on the so-called polluted board,
+obtained after performing Bernoulli bond percolation on $\\mathbb{Z}^2$ with parameter $p$.
+We show that for the $(1,1)$ game on the polluted board, Breaker almost surely has a winning strategy whenever $p \\leq 0.6298$.
+"""
+cite='''@MISC{DMS-21-mb-percolation,
+    title = {The Maker-Breaker percolation game on the square lattice},
+    author = {Vojtěch Dvořák and Adva Mond and Victor Souza},
+    archivePrefix = "arXiv",
+    primaryClass = "math.CO",
+    eprint = "2105.12864"
+    doi = {https://arxiv.org/abs/2105.12864},
+}'''
+
+
+
+[[publication]]
+label = "dimension-divisibility-order"
+selected = false
+conference = false
+title = "The order dimension of divisibility"
+year = "2020"
+authors = ["david-l", "victor-s"]
+journal.name = "Journal of Combinatorial Theory, Series A"
+journal.year = "2021"
+links.arxiv = "https://arxiv.org/abs/2001.08549"
+links.journal = "https://doi.org/10.1016/j.jcta.2020.105391"
+abstract="""
+The Dushnik-Miller dimension of a partially-ordered set $P$ is the smallest $d$ such that one can embed $P$ into a product of $d$ linear orders.
+We prove that the dimension of the divisibility order on the interval $\\{1,\\dotsc,n\\}$, is equal to $(\\log n)^2(\\log\\log n)^{\\Theta(1)}$ as $n$ goes to infinity.
+We prove similar bounds for the $2$-dimension of divisibility in $\\{1,\\dotsc,n\\}$, where the $2$-dimension of a poset $P$ is the smallest $d$ such that $P$ is isomorphic to a suborder of the subset lattice of $\\{1, \\dotsc, d\\}$.
+We also prove an upper bound for the $2$-dimension of posets of bounded degree and show that the $2$-dimension of the divisibility poset on the set $(\\alpha n, n]$ is $\\Theta_\\alpha(\\log n)$ for $\\alpha \\in (0,1)$.
+At the end we pose several problems.
+"""
+cite='''@ARTICLE{LS-21-dim-divisibility,
+    title = {The order dimension of divisibility},
+    author = {David Lewis and Victor Souza},
+    journal = {Journal of Combinatorial Theory, Series A},
+    volume = {179},
+    pages = {105391},
+    year = {2021},
+    publisher = {Elsevier},
+    doi = {https://doi.org/10.1016/j.jcta.2020.105391},
+}'''
+
+
+
+[[publication]]
+label = "typicall-small-sumset"
+selected = true
+conference = false
+title = "The typical structure of sets with small sumset"
+year = "2019"
+authors = ["marcelo-c", "mauricio-c", "rob-m", "tash-m", "victor-s"]
+journal.name = "International Mathematics Research Notices"
+journal.year = "2022"
+links.arxiv = "https://arxiv.org/abs/1910.11324"
+links.journal = "https://doi.org/10.1093/imrn/rnab021"
+abstract = """
+In this paper we determine the number and typical structure of sets of integers
+  with bounded doubling. In particular, improving recent results of Green and Morris,
+  and of Mazur, we show that the following holds for every fixed $\\lambda > 2$ and
+  every $k \\geq (\\log n)^4$: if $\\omega \\to \\infty$ as $n \\to \\infty$ (arbitrarily
+  slowly), then almost all sets $A \\subset [n]$ with $|A| = k$ and $|A+A| \\leq \\lambda k$
+  are contained in an arithmetic progression of length $\\lambda k/2 + \\omega$.
+"""
+cite='''@ARTICLE{CCMMS-22-small-sumset,
+    title = {The typical structure of sets with small sumset},
+    author = {Marcelo Campos and Maurício Collares and Robert Morris and Natasha Morrison and Victor Souza},
+    journal = {International Mathematics Research Notices},
+    volume = {2022},
+    number = {14},
+    pages = {11011--11055},
+    year = {2022},
+    publisher = {Oxford University Press},
+    doi = {https://doi.org/10.1093/imrn/rnab021},
+}'''
+
+[[publication]]
+label = "blowup-ramsey"
+selected = false
+conference = false
+title = "Blowup Ramsey numbers"
+year = "2019"
+authors = ["victor-s"]
+journal.name = "European Journal of Combinatorics"
+journal.year = "2021"
+links.arxiv = "https://arxiv.org/abs/1910.13912"
+links.journal = "https://doi.org/10.1016/j.ejc.2020.103238"
+abstract="""
+We study a generalisation of the bipartite Ramsey numbers to blowups of graphs.
+For a graph $G$, denote the $t$-blowup of $G$ by $G[t]$.
+We say that $G$ is $r$-Ramsey for $H$, and write $G \\xrightarrow{r} H$, if every $r$-colouring of the edges of $G$ has a monochromatic copy of $H$.
+We show that if $G \\xrightarrow{r} H$, then for all $t$, there exists $n$ such that $G[n] \\xrightarrow{r} H[t]$.
+In fact, we provide exponential lower and upper bounds for the minimum $n$ with $G[n] \\xrightarrow{r} H[t]$, and conjecture an upper bound of the form $c^t$, where $c$ depends on $H$ and $r$, but not on $G$.
+We also show that this conjecture holds for $G(n,p)$ with high probability, above the threshold for the event $G(n,p) \\xrightarrow{r} H$.
+"""
+cite='''@ARTICLE{S-21-blowup-ramsey,
+    title = {Blowup Ramsey numbers},
+    author = {Victor Souza},
+    journal = {European Journal of Combinatorics},
+    year = {2021},
+    volume = {92},
+    pages = {103238},
+    publisher = {Elsevier},
+    doi = {https://doi.org/10.1016/j.ejc.2020.103238},
+}'''
+
+[[publication]]
+label = "zero-sum"
+selected = false
+conference = true
+title = "On the zero-sum Ramsey problem over $\\mathbb{Z}_2^d$"
+year = "2022"
+authors = ["jose-a", "lucas-c", "roberto-p", "victor-s"]
+journal.name = "The 15th Latin American Theoretical Informatics Symposium"
+journal.year = "2022"
+links.proceedings = "https://doi.org/10.1007/978-3-031-20624-5_27"
+abstract="""
+Let $\\Gamma$ be a finite abelian group and let $G$ be a graph.
+The zero-sum Ramsey number $R(G, \\Gamma)$ is the least integer $N$ (if it exists) such that, for every edge-colouring $E(K_N) \\mapsto \\Gamma$, one can find a copy $G \\subseteq K_N$ where the sum of the colours of the edges of $G$ is zero. <br><br>
+
+A large body of research on this problem has emerged in the past few decades, paying special attention to the case where $\\Gamma$ is cyclic. In this work, we start a systematic study of $R(G, \\Gamma)$ for groups $\\Gamma$ of small exponent, in particular, $\\Gamma = \\mathbb{Z}_2^d$. For the Klein group $\\mathbb{Z}_2^2$, the smallest non-cyclic abelian group, we compute $R(G, \\mathbb{Z}_2^2)$ for all odd forests $G$ and show that $R(G, \\mathbb{Z}_2^2) \\leq n+2$ for all forests $G$ on at least $6$ vertices. We also show that $R(C_4, \\mathbb{Z}_2^d) = 2^d + 1$ for any $d \\geq 2$, and determine the order of magnitude of $R(K_{t,r}, \\mathbb{Z}_2^d)$ as $d \\to \\infty$ for all $t, r$. <br><br>
+
+We also consider the related setting where the ambient graph $K_N$ is substituted by the complete bipartite graph $K_{N,N}$. Denote the analogue bipartite zero-sum Ramsey number by $B(G, \\Gamma)$. We show that $B(C_4, \\mathbb{Z}_2^d) = 2^d + 1$ for all $d \\geq 1$ and $B(\\{C_4, C_6\\}, \\mathbb{Z}_2^d) = 2^{d/2} + 1$ for all even $d \\geq 2$. Additionally, we show that $B(K_{t,r}, \\mathbb{Z}_2^d)$ and $R(K_{t,r}, \\mathbb{Z}_2^d)$ have the same asymptotic behaviour as $d \\to \\infty$, for all $t, r$. Finally, we conjecture the value of $B(\\{C_4, \\dotsc, C_{2m}\\}, \\mathbb{Z}_2^d)$ and provide the corresponding lower bound.
+"""
+cite='''@INPROCEEDINGS{ACPS-22-zerosum-cube,
+    title = {On the zero-sum Ramsey problem over $\mathbb{Z}_2^d$},
+    author = {José Alvarado and Lucas Colucci and Roberto Parente and Victor Souza},
+    booktitle = {Latin 2022: Theoretical Informatics},
+    series = {Lecture Notes in Computer Science},
+    volime = {13568},
+    pages = {445-459},
+    year = {2022},
+    publisher = {Springer},
+    doi = {https://doi.org/10.1007/978-3-031-20624-5_27},
+}'''
+
+[[publication]]
+label = "hitting-arborescences"
+selected = false
+conference = true
+title = "Hitting times for arc-disjoint arborescences in random digraph processes"
+year = "2021"
+authors = ["mauricio-c", "yoshi-k", "taisa-m", "roberto-p", "victor-s"]
+journal.name = "XI Latin and American Algorithms, Graphs and Optimization Symposium"
+journal.year = "2021"
+links.proceedings = "https://doi.org/10.1016/j.procs.2021.11.046"
+abstract="""
+In this work, we study hitting times for the appearance of a spanning structure in the Erdős-Rényi random directed graph processes. Namely, we are concerned with the appearance of an arborescence, a spanning digraph in which, for a vertex $u$ called the root and any other vertex $v$, there is exactly one directed path from $u$ to $v$. Let $\\mathcal{D}(n,0)$, $\\mathcal{D}(n,1)$, $\\dotsc$, $\\mathcal{D}(n,n(n-1))$ be the random digraph process where for every $m \\in \\{0, \\dotsc, n(n-1)\\}$, $\\mathcal{D}(n,m)$ is a digraph with vertex set $\\{1, \\dotsc, n\\}$; $\\mathcal{D}(n,0)$ has no arcs and, for $1 \\leq m \\leq n(n-1)$, the digraph $\\mathcal{D}(n,m)$ is obtained by adding an arc to $\\mathcal{D}(n,m-1)$, chosen uniformly at random among the not present arcs. In this paper we determine the hitting time for the existence of $k$ arc-disjoint arborescences when $k=  k(n) \\ll \\sqrt{\\log n}$.
+"""
+cite='''@INPROCEEDINGS{CKMPS21-hitting-arborescence,
+    title = {Hitting times for arc-disjoint arborescences in random digraph processes},
+    author = {Maurício Collares and Yoshiharu Kohayakawa and Taísa Martins and Roberto Parente and Victor Souza},
+    booktitle = {Proceedins of the XI Latin and American Algorithms, Graphs and Optimization Symposium},
+    series = {Procedia Computer Science},
+    volume = {195},
+    pages = {376-384},
+    year = {2021},
+    publisher = {Elsevier},
+    doi = {https://doi.org/10.1016/j.procs.2021.11.046},
+}'''
