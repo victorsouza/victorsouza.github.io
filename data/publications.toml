@@ -289,7 +289,7 @@ authors = ["vojtech-d", "adva-m", "victor-s"]
 journal.name = "Journal of Combinatorial Theory, Series B"
 journal.year = "2026"
 links.arxiv = "https://arxiv.org/abs/2105.12864"
-links.journal = "https://doi.org/10.1016/j.ejc.2023.103912"
+links.journal = "https://doi.org/10.1016/j.jctb.2025.10.010"
 abstract = """
 We study the $(m,b)$ Maker-Breaker percolation game on $\\mathbb{Z}^2$, introduced by Day and Falgas-Ravry.
 In this game, Maker and Breaker claim respectively $m$ and $b$ unclaimed edges of the square lattice $\\mathbb{Z}^2$.
