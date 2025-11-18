@@ -14,9 +14,9 @@ To do this we overcome a significant barrier by exponentially separating the upp
 cite='''@MISC{MSV-25-sandglass,
     title = {The sandglass conjecture beyond cancellative pairs},
     author = {Adva Mond and Victor Souza and Leo Versteegen},
-    archivePrefix = "arXiv",
-    primaryClass = "math.CO",
-    eprint = "2508.21819"
+    archivePrefix = {arXiv},
+    primaryClass = {math.CO},
+    eprint = {2508.21819},
     doi = {https://arxiv.org/abs/2508.21819},
 }'''
 
@@ -37,9 +37,9 @@ We make major progress, settling conjectures of Day, Falgas-Ravry and Treglown a
 cite='''@MISC{FRMSS-25-extremal-multigraphs,
     title = {On problems in extremal multigraph theory},
     author = {Victor Falgas-Ravry and Adva Mond and Rik Sarkar and Victor Souza},
-    archivePrefix = "arXiv",
-    primaryClass = "math.CO",
-    eprint = "2505.14281"
+    archivePrefix = {arXiv},
+    primaryClass = {math.CO},
+    eprint = {2505.14281},
     doi = {https://arxiv.org/abs/2505.14281},
 }'''
 
@@ -52,7 +52,7 @@ conference = false
 title = "Intersections of random chords of a circle"
 year = "2025"
 authors = ["cynthia-b", "victor-s"]
-journal.name="To appear in The American Mathematical Monthly"
+journal.name = "To appear in The American Mathematical Monthly"
 links.arxiv = "https://arxiv.org/abs/2504.12866"
 abstract = """
 Where are the intersection points of diagonals of a regular $n$-gon located?
@@ -62,9 +62,9 @@ We investigate these and related new questions in geometric probability, extend 
 cite='''@MISC{BS-25-random-chords,
     title = {Intersections of random chords of a circle},
     author = {Cynthia Bortolotto and Victor Souza},
-    archivePrefix = "arXiv",
-    primaryClass = "math.MG",
-    eprint = "2504.12866"
+    archivePrefix = {arXiv},
+    primaryClass = {math.MG},
+    eprint = {2504.12866},
     doi = {https://arxiv.org/abs/2504.12866},
 }'''
 
@@ -91,9 +91,9 @@ We also make some progress on the higher dimensional versions of these questions
 cite='''@MISC{HPS-25-reverse-lo,
     title = {Double-jump phase transition for the reverse Littlewood--Offord problem},
     author = {Lawrence Hollom and Julien Portier and Victor Souza},
-    archivePrefix = "arXiv",
-    primaryClass = "math.CO",
-    eprint = "2503.24202"
+    archivePrefix = {arXiv},
+    primaryClass = {math.CO},
+    eprint = {2503.24202},
     doi = {https://arxiv.org/abs/2503.24202},
 }'''
 
@@ -126,9 +126,9 @@ These results extend also to the most general case, which we introduce, where ea
 cite='''@MISC{DMS-24-mb-random,
     title = {The Maker-Breaker percolation game on a random board},
     author = {Vojtěch Dvořák and Adva Mond and Victor Souza},
-    archivePrefix = "arXiv",
-    primaryClass = "math.PR",
-    eprint = "2402.17547"
+    archivePrefix = {arXiv},
+    primaryClass = {math.PR},
+    eprint = {2402.17547},
     doi = {https://arxiv.org/abs/2402.17547},
 }'''
 
@@ -141,7 +141,7 @@ conference = false
 title = "On the number of monochromatic solutions to multiplicative equations"
 year = "2023"
 authors = ["lucas-a", "jonathan-c", "miquel-o", "victor-s"]
-journal.name="To appear in Combinatorica"
+journal.name = "To appear in Combinatorica"
 links.arxiv = "https://arxiv.org/abs/2311.18742"
 abstract = """
 Given an $r$-colouring of the interval $\\{2, \\dotsc, N \\}$, what is the minimum number of monochromatic solutions of the equation $xy = z$?
@@ -156,9 +156,9 @@ We pose a number of open problems concerning these numbers.
 cite='''@MISC{ACOS-23-multiplicative-schur,
     title = {On the number of monochromatic solutions to multiplicative equations},
     author = {Lucas Aragão and Jonathan Chapman and Miquel Ortega and Victor Souza},
-    archivePrefix = "arXiv",
-    primaryClass = "math.CO",
-    eprint = "2311.18742"
+    archivePrefix = {arXiv},
+    primaryClass = {math.CO},
+    eprint = {2311.18742},
     doi = {https://arxiv.org/abs/2311.18742},
 }'''
 
@@ -214,9 +214,9 @@ We also show that the Kuramoto model is globally synchronizing on any $d$-regula
 cite='''@MISC{ABKSST-22-expander-sync,
     title = {Expander graphs are globally synchronizing},
     author = {Pedro Abdalla and Afonso Bandeira and Martin Kassabov and Victor Souza and Steven Strogatz},
-    archivePrefix = "arXiv",
-    primaryClass = "math.CO",
-    eprint = "2210.12788"
+    archivePrefix = {arXiv},
+    primaryClass = {math.CO},
+    eprint = {2210.12788},
     doi = {https://arxiv.org/abs/2210.12788},
 }'''
 
@@ -286,7 +286,10 @@ conference = false
 title = "The Maker-Breaker percolation game on the square lattice"
 year = "2021"
 authors = ["vojtech-d", "adva-m", "victor-s"]
+journal.name = "Journal of Combinatorial Theory, Series B"
+journal.year = "2026"
 links.arxiv = "https://arxiv.org/abs/2105.12864"
+links.journal = "https://doi.org/10.1016/j.ejc.2023.103912"
 abstract = """
 We study the $(m,b)$ Maker-Breaker percolation game on $\\mathbb{Z}^2$, introduced by Day and Falgas-Ravry.
 In this game, Maker and Breaker claim respectively $m$ and $b$ unclaimed edges of the square lattice $\\mathbb{Z}^2$.
@@ -300,13 +303,15 @@ We also consider the game played on the so-called polluted board,
 obtained after performing Bernoulli bond percolation on $\\mathbb{Z}^2$ with parameter $p$.
 We show that for the $(1,1)$ game on the polluted board, Breaker almost surely has a winning strategy whenever $p \\leq 0.6298$.
 """
-cite='''@MISC{DMS-21-mb-percolation,
+cite='''@MISC{DMS-26-mb-percolation,
     title = {The Maker-Breaker percolation game on the square lattice},
     author = {Vojtěch Dvořák and Adva Mond and Victor Souza},
-    archivePrefix = "arXiv",
-    primaryClass = "math.CO",
-    eprint = "2105.12864"
-    doi = {https://arxiv.org/abs/2105.12864},
+    journal = {Journal of Combinatorial Theory, Series B},
+    volume = {177},
+    pages = {31--66},
+    year = {2026},
+    publisher = {Elsevier},
+    doi = {https://doi.org/10.1016/j.jctb.2025.10.010},
 }'''
 
 
