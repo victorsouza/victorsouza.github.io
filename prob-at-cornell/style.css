@@ -1,0 +1,171 @@
+html {
+  background-image: url(img/so-white.png);
+}
+
+body {
+  font-size: 18px;
+  font-family: 'KaTeX_Main';
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem;
+  color: #222222;
+  background: white;
+  border-left: 1px solid #CBCBCB;
+  border-right: 1px solid #CBCBCB;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2em;
+}
+
+pagetitle{
+  display: flex;
+  align-items: center;
+  font-size: 72px;
+  color: #B31B1B;
+  font-family: 'Roboto Condensed';
+  font-variant: small-caps;
+  margin: auto;
+}
+
+/*logo {
+  background: url("img/cornell_seal_simple_web_b31b1b.svg");
+  width: clamp(300px, 10vw, 300px);
+  aspect-ratio: 1 / 1;
+  background-repeat: no-repeat;
+}*/
+
+intro {
+  display: block;
+}
+
+intro p {
+  text-indent: 2em;
+}
+
+section {
+  margin: 1em 0;
+}
+
+section_header {
+  display: block;
+  font-size: 1.8rem;
+  text-align: center;
+  margin: 2em 0;
+}
+
+seminar {
+  padding: 1rem;
+  border: 0px solid #CBCBCB;
+  border-radius: 2px;
+  margin: 0.5em 0;
+  display: block;
+}
+
+title_row {
+  font-size: 1.6rem;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+speaker_row {
+  font-style: normal;
+  font-size: 1.2rem;
+  display: block;
+  margin: 0.5em 0;
+}
+
+speaker {
+  color: #468081;
+  text-decoration: underline;
+}
+
+a {
+  color: #468081;
+}
+
+venue_row {
+  color: #004;
+  margin: 0.5em 0;
+  font-style: normal;
+  font-size: 1.2rem;
+}
+
+venue {
+  padding: 0.2em 0;
+  /*border: 1px solid black;*/
+}
+
+series_row {
+  /*display: block;*/
+  margin-bottom: 0.5rem;
+  overflow: hidden;
+}
+
+/*series_row :first-child{
+  margin-left: 0;
+}*/
+
+series {
+  background-color: #246900;
+  color: white;
+  margin-left: 0.5em;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  /*
+  
+  display: inline-block;
+  height: auto;*/
+}
+
+
+
+abstract_row {
+  display: block;
+  margin: 0.5em 0;
+}
+
+abstract {
+  font-style: normal;
+  display: block;
+  background: rgb(255, 252, 228);
+  border-radius: 3px;
+  margin: 0.5em 0;
+  overflow-y: hidden;
+  height: 0;
+}
+
+abstract_row > label {
+  color: white;
+  background-color: #468081;
+  border-radius: 3px;
+  padding: 0.2rem 0.4rem;
+}
+
+abstract_row > input.abs[type="checkbox"] + label::after {
+  content: " ↧";
+}
+
+abstract_row > input.abs[type="checkbox"]:checked + label::after {
+  content: " ↥";
+}
+
+
+abstract_row > input[type="checkbox"] {
+  position: absolute;
+  left: -100vw;
+}
+
+abstract_row > input.abs[type="checkbox"]:checked ~ abstract {
+  height: auto;
+  overflow: visible;
+  padding: 0.5em;
+}
+
+.katex {
+  font-size: 1em;
+}
