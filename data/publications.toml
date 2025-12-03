@@ -141,8 +141,10 @@ conference = false
 title = "On the number of monochromatic solutions to multiplicative equations"
 year = "2023"
 authors = ["lucas-a", "jonathan-c", "miquel-o", "victor-s"]
-journal.name = "To appear in Combinatorica"
+journal.name = "Combinatorica"
+journal.year = "2025"
 links.arxiv = "https://arxiv.org/abs/2311.18742"
+links.journal = "https://doi.org/10.1007/s00493-025-00183-x"
 abstract = """
 Given an $r$-colouring of the interval $\\{2, \\dotsc, N \\}$, what is the minimum number of monochromatic solutions of the equation $xy = z$?
 For $r=2$, we show that there are always asymptotically at least $(1/2\\sqrt{2}) N^{1/2} \\log N$ monochromatic solutions, and that the leading constant is sharp.
@@ -153,14 +155,18 @@ We also obtain results for more general multiplicative equations of the form $x_
 Our corresponding upper bounds are given in terms of certain 'interval Rado numbers' for additive equations.
 We pose a number of open problems concerning these numbers.
 """
-cite='''@MISC{ACOS-23-multiplicative-schur,
+cite='''@ARTICLE{ACOS-25-multiplicative-schur,
     title = {On the number of monochromatic solutions to multiplicative equations},
     author = {Lucas Aragão and Jonathan Chapman and Miquel Ortega and Victor Souza},
-    archivePrefix = {arXiv},
-    primaryClass = {math.CO},
-    eprint = {2311.18742},
-    doi = {https://arxiv.org/abs/2311.18742},
+    journal = {Combinatorica},
+    volume = {45},
+    number = {6},
+    pages = {64},
+    year = {2025},
+    publisher = {Springer},
+    doi = {https://doi.org/10.1007/s00493-025-00183-x},
 }'''
+
 
 
 
