@@ -409,15 +409,14 @@ INDEX_BODY = f"""
 <p>
   I am a <a href="https://as.cornell.edu/research/klarman-fellowships">Klarman Fellow</a> in the <a href='https://math.cornell.edu/'>Department of Mathematics</a> at Cornell University since July of 2025.
   I am delighted to be  hosted by <a href="https://math.cornell.edu/martin-kassabov">Martin Kassabov</a> and <a href="https://www.stevenstrogatz.com/">Steven Strogatz</a>.
+  In Cornell, I am one of the organisers of the <a href="/prob-at-cornell/">Probability Seminar</a>.
 </p>
 <p>
   I am also a Research Fellow at Sidney Sussex College, Cambridge.
   I previously held the position of Research Associate in the <a href="https://www.cst.cam.ac.uk/research/themes/algorithms-and-complexity">Algorithms and Complexity group</a> of the University of Cambridge, under the brilliant mentorship of <a href="https://www.cst.cam.ac.uk/people/tg508">Tom Gur</a>. 
 </p>
 <p>
-  I hold a PhD from the
-  <a href="https://www.dpmms.cam.ac.uk/">
-  Department of Pure Mathematics and Mathematical Statistics</a> at the University of Cambridge, where I was very fortunate of being supervised by Professor Béla Bollobás.
+  I hold a PhD from the <a href="https://www.dpmms.cam.ac.uk/"> Department of Pure Mathematics and Mathematical Statistics</a> at the University of Cambridge, where I was very fortunate of being supervised by Professor Béla Bollobás.
   Prior to that, I had the pleasure of being a master student of
   <a href="https://robiscounting.github.io/">Rob Morris</a> 
   at <a href="https://impa.br/">IMPA</a> surounded by the forests of Rio de Janeiro.
