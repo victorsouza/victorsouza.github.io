@@ -207,8 +207,10 @@ conference = false
 title = "Expander graphs are globally synchronising"
 year = "2022"
 authors = ["pedro-a", "afonso-b", "martin-k", "victor-s", "steven-s", "alex-t"]
-journal.name = "To appear in Advances in Mathematics"
+journal.name = "Advances in Mathematics"
+journal.year = "2026"
 links.arxiv = "https://arxiv.org/abs/2210.12788"
+links.journal = "https://doi.org/10.1016/j.aim.2025.110773"
 links.quanta = "https://www.quantamagazine.org/new-proof-shows-that-expander-graphs-synchronize-20230724/"
 abstract = """
 The Kuramoto model is a prototypical model used for rigorous mathematical analysis in the field of synchronisation and nonlinear dynamics.
