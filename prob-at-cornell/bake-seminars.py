@@ -29,7 +29,7 @@ OUTPUT_HTML_FILE = "index.html"
 INPUT_FILE = "seminars.ods"
 CSS_FILE = "style.css"
 
-MISSING_TITLE = "(To be announced)"
+MISSING_TITLE = "(Title to be announced)"
 
 # Whether abstracts are expanded by default on Upcoming or Archive sections
 EXPAND_ABSTRACT_UPCOMING = True
@@ -39,11 +39,11 @@ EXPAND_ABSTRACT_ARCHIVE = False
 SHOW_SEMINAR_SERIES = False
 
 # Text snippets
-PAGE_TITLE = "Probability Seminars at Cornell"
-PAGE_HEADER = "Probability Seminars at Cornell"
+PAGE_TITLE = "Cornell Probability Seminar"
+PAGE_HEADER = "Cornell Probability Seminar"
 DESCRIPTION = """
 <p>
-Welcome to the experimental and yet unnoficial page for the Probability Seminars of the Department of Mathematics at Cornell. The current organizers of the seminar are <a href="https://elalaoui.stat.cornell.edu/">Ahmed El Alaoui</a>, <a href="https://lionellevine.github.io/">Lionel Levine</a>, <a href="https://math.cornell.edu/philippe-sosoe">Philippe Sosoe</a>, and <a href="https://souza.id/">Victor Souza</a>.
+Welcome to the experimental and yet unofficial page for the Probability Seminars of the Department of Mathematics at Cornell. The current organizers of the seminar are <a href="https://elalaoui.stat.cornell.edu/">Ahmed El Alaoui</a>, <a href="https://lionellevine.github.io/">Lionel Levine</a>, <a href="https://math.cornell.edu/philippe-sosoe">Philippe Sosoe</a>, and <a href="https://souza.id/">Victor Souza</a>.
 </p>
 """
 
@@ -243,6 +243,7 @@ HTML += f"""<!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href='https://fonts.googleapis.com/css?family=Roboto Condensed' rel='stylesheet'>
 {KATEX}
 <title>{PAGE_TITLE}</title>
