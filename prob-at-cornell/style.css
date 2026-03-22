@@ -40,10 +40,13 @@ pagetitle{
 
 intro {
   display: block;
+  max-width: 72ch;
+  margin: auto;
 }
 
 intro p {
-  text-indent: 2em;
+  text-indent: 4ch;
+  text-align: justify;
 }
 
 section {
@@ -52,9 +55,9 @@ section {
 
 section_header {
   display: block;
-  font-size: 1.8rem;
+  font-size: 2.8rem;
   text-align: center;
-  margin: 2em 0;
+  /*margin: 2em 0;*/
 }
 
 seminar {
@@ -122,49 +125,58 @@ series {
   height: auto;*/
 }
 
-
-
 abstract_row {
   display: block;
+  width: auto;
   margin: 0.5em 0;
 }
 
-abstract {
+abstract_row > details {
   font-style: normal;
+  text-align: justify;
   display: block;
-  background: rgb(255, 252, 228);
-  border-radius: 3px;
-  margin: 0.5em 0;
-  overflow-y: hidden;
-  height: 0;
 }
 
-abstract_row > label {
+abstract_row > details > summary {
   color: white;
   background-color: #468081;
-  border-radius: 3px;
   padding: 0.2rem 0.4rem;
+  width: fit-content;
+  list-style-type: '↥ ';
+  border-radius: 8px;
 }
 
-abstract_row > input.abs[type="checkbox"] + label::after {
-  content: " ↧";
+abstract_row > details[open] > summary {
+  list-style-type: '↧ ';
+  border-radius: 8px 8px 0 0;
 }
 
-abstract_row > input.abs[type="checkbox"]:checked + label::after {
-  content: " ↥";
+abstract_row > details > abstract {
+  background-color: rgb(255, 252, 238);
+  display: block;
+  padding: 0.2em 1em;
+  border-left: solid 2pt #468081;
+  border-right: solid 2pt #468081;
+  border-radius: 0 8px 8px 8px;
 }
 
-
-abstract_row > input[type="checkbox"] {
-  position: absolute;
-  left: -100vw;
+archive > details {
+  border-top: 1pt solid black;
+  display: block;
+  margin: 1em 0 1em 0;
+  padding: 1em 0 0 0;
 }
 
-abstract_row > input.abs[type="checkbox"]:checked ~ abstract {
-  height: auto;
-  overflow: visible;
-  padding: 0.5em;
+archive > details > summary{
+  font-size: 2.8rem;
+  text-align: center;
+  list-style-type: '↥ ';
 }
+
+archive > details[open] > summary {
+  list-style-type: '↧ ';
+}
+
 
 .katex {
   font-size: 1em;
