@@ -30,6 +30,7 @@ INPUT_FILE = "seminars.ods"
 CSS_FILE = "style.css"
 
 MISSING_TITLE = "(Title to be announced)"
+EMPTY_UPCOMING = "<p>No upcoming events currently determined.</p>"
 
 # Whether abstracts are expanded by default on Upcoming or Archive sections
 EXPAND_ABSTRACT_UPCOMING = True
@@ -116,7 +117,15 @@ def academic_year(date):
 
 # Read the spreadsheet into a records buffer
 try:
-  records = pyexcel.get_records(file_name=INPUT_FILE)
+  #records = pyexcel.get_records(file_name=INPUT_FILE)
+  books = pyexcel.get_book(file_name=INPUT_FILE)
+  records = []
+  for sheet in reversed(books):
+      headers = sheet.row[0]
+      for row in sheet.row[1:]:
+          r = dict(zip(headers, row))
+          r["Book"] = sheet.name
+          records.append(r)
 except Exception as e:
   print(f"An unexpected error occurred: {e}")
   sys.exit()
@@ -278,7 +287,7 @@ HTML += f"""
 HTML += f"""
 <section>
 <section_header>Upcoming Seminars</section_header>
-{"\n".join(reversed(UPCOMING))}
+{"\n".join(reversed(UPCOMING)) if UPCOMING else EMPTY_UPCOMING}
 </section>
 """
 
