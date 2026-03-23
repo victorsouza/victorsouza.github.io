@@ -1,0 +1,41 @@
+name: Update seminars
+
+on:
+  # Run once per day at two in the mourning
+  schedule:
+    - cron: "0 2 * * *"
+  # Allow manual run
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.14"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install pyexcel
+
+      - name: Bake the seminar page
+        run: python bake-seminars.py -v
+        working-directory: seminars
+
+      - name: Commit and push if changed
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add seminars/index.html
+          git add seminars/seminars.ods
+          if ! git diff --cached --quiet; then
+            git commit -m "Update seminars"
+            git push
+          else
+            echo "No changes"
+          fi
+
