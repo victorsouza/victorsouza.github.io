@@ -245,6 +245,7 @@ HTML += f"""<!DOCTYPE html>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href='https://fonts.googleapis.com/css?family=Roboto Condensed' rel='stylesheet'>
+<link href="https://cdn.jsdelivr.net/gh/vsalvino/computer-modern@main/fonts/serif.css" rel="stylesheet">
 {KATEX}
 <title>{PAGE_TITLE}</title>
 <link rel="stylesheet" href="{CSS_FILE}">

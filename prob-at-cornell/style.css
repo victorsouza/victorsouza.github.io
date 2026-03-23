@@ -9,7 +9,7 @@ html {
 body {
   max-width: 1000px;
   font-size: 1rem;
-  font-family: 'KaTeX_Main';
+  font-family: "Computer Modern Serif";
   margin: auto;
   padding: 2rem;
   color: #222222;
@@ -30,7 +30,7 @@ pagetitle{
   font-size: 3.6rem;
   text-align: center;
   color: #B31B1B;
-  font-family: 'Roboto Condensed';
+  font-family: "Roboto Condensed";
   font-variant: small-caps;
   margin: auto;
 }
@@ -44,7 +44,7 @@ pagetitle{
 
 intro {
   display: block;
-  max-width: 72ch;
+  max-width: 74ch;
   margin: auto;
 }
 
