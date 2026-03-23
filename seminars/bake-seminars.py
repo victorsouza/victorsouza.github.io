@@ -43,7 +43,13 @@ PAGE_TITLE = "Cornell Probability Seminar"
 PAGE_HEADER = "Cornell Probability Seminar"
 DESCRIPTION = """
 <p>
-Welcome to the experimental and yet unofficial page for the Probability Seminars of the Department of Mathematics at Cornell. The current organizers of the seminar are <a href="https://elalaoui.stat.cornell.edu/">Ahmed El Alaoui</a>, <a href="https://lionellevine.github.io/">Lionel Levine</a>, <a href="https://math.cornell.edu/philippe-sosoe">Philippe Sosoe</a>, and <a href="https://souza.id/">Victor Souza</a>.
+Welcome to the experimental and yet unofficial page for the Probability Seminars of the <a href="https://math.cornell.edu">Department of Mathematics at Cornell</a>. The current organizers of the seminar are <a href="https://elalaoui.stat.cornell.edu/">Ahmed El Alaoui</a>, <a href="https://lionellevine.github.io/">Lionel Levine</a>, <a href="https://math.cornell.edu/philippe-sosoe">Philippe Sosoe</a>, and <a href="https://souza.id/">Victor Souza</a>.
+</p>
+"""
+
+ABOUT = """
+<p>
+Here we can add some historical remarks about the seminar, like when it was initiated, by whom, and the people that organised it in the past.
 </p>
 """
 
@@ -260,6 +266,14 @@ HTML += f"""<!DOCTYPE html>
 </intro>
 """
 
+# Append About section
+HTML += f"""
+<section>
+<section_header>About</section_header>
+{ABOUT}
+</section>
+"""
+
 # Append Upcoming Seminars
 HTML += f"""
 <section>
@@ -272,9 +286,6 @@ HTML += f"""
 HTML += f"""
 <archive>
 """
-
-# USE THIS TO MAKE CURRENT YEAR ARCHIVE OPEN
-#
 
 # Append each year separately
 for year in sorted(ARCHIVE.keys(), reverse = True):
@@ -290,9 +301,17 @@ for year in sorted(ARCHIVE.keys(), reverse = True):
 </details>
 """
 
+# Append end of Archive
 HTML += """
 </archive>
 </section>
+"""
+
+# Append footer
+HTML += """
+<footer>
+  Page designed by <a href="https://souza.id/">Victor Souza</a>
+</footer>
 """
 
 # Append end of HTML

@@ -48,7 +48,7 @@ intro {
   margin: auto;
 }
 
-intro p {
+p {
   text-indent: 4ch;
   text-align: justify;
 }
@@ -147,13 +147,13 @@ abstract_row > details > summary {
   background-color: #468081;
   padding: 0.2rem 0.4rem;
   width: fit-content;
-  list-style-type: '↧ ';
+  list-style-type: '↦ ';
   border-radius: 8px;
   cursor: pointer;
 }
 
 abstract_row > details[open] > summary {
-  list-style-type: '↥ ';
+  list-style-type: '↧ ';
   border-radius: 8px 8px 0 0;
 }
 
@@ -176,14 +176,31 @@ archive > details {
 archive > details > summary{
   font-size: 2.8rem;
   text-align: center;
-  list-style-type: '↧ ';
+  list-style-type: '↦ ';
   cursor: pointer;
 }
 
-archive > details[open] > summary {
-  list-style-type: '↥ ';
+archive > details > summary:hover{
+  color: #468081;
 }
 
+archive > details[open] > summary {
+  list-style-type: '↧ ';
+}
+
+footer {
+  display: block;
+  margin: auto;
+  width: auto;
+  text-align: center;
+  font-size: 0.8rem;
+  margin: 1em 0;
+  padding-top: 2em;
+  border-top: solid 1pt black;
+}
+
+footer::before{ content: "⟨ "; }
+footer::after{ content: " ⟩"; }
 
 .katex {
   font-size: 1em;
