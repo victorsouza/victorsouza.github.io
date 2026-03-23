@@ -1,9 +1,10 @@
 name: Update seminars
 
 on:
-  # Run once per day at two in the mourning
+  # Run once per day at one in the mourning
   schedule:
-    - cron: "0 2 * * *"
+    - cron: "0 1 * * *"
+      timezone: "America/New_York"
   # Allow manual run
   workflow_dispatch:
 
