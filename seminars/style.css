@@ -186,6 +186,11 @@ archive > details > summary:hover{
 
 archive > details[open] > summary {
   list-style-type: '↧ ';
+  position: sticky;
+  top: 0;
+  background-color: white;
+  padding-bottom: 1rem;
+  border-bottom: solid 1pt black;
 }
 
 footer {
