@@ -226,8 +226,8 @@ for r in records:
   <venue_row>
     <venue>
       <date>{date_text}</date>
-      at <time>{time_text}</time>
-      in <location>{r["Room"]}</location>
+      {f"at <time>{time_text}</time>" if time else ""}
+      {f"in <location>{r["Room"]}</location>" if r["Room"] else ""}
     </venue>
     {f'<series_row>{series_text}</series_row>' if SHOW_SEMINAR_SERIES else ''}
   </venue_row>
@@ -299,9 +299,9 @@ HTML += f"""
 # Append each year separately
 for year in sorted(ARCHIVE.keys(), reverse = True):
   if year == 1999:
-    daterange = "1999&mdash;2000"
+    daterange = "1999 &mdash; 2000"
   else:
-    daterange = f"{year} &mdash; {(year+1)%100}"
+    daterange = f"{year} &mdash; {(year+1)%100:02}"
 
   HTML += f"""
 <details {"open" if academic_year(today) == year else ""}>
