@@ -156,13 +156,16 @@ for r in records:
   # Handle Date
   date = r["Date"]
   if isinstance(date, datetime.date):
-    date_text = date.strftime("%A, %-d")
-    day = date.day
-    if 4 <= day <= 20 or 24 <= day <= 30:
-      date_text += "th"
+    if r["Date Unknown"]:
+      date_text = date.strftime("%B %Y")
     else:
-      date_text += ["st", "nd", "rd"][day % 10 - 1]
-    date_text += date.strftime(" of %B %Y")
+      date_text = date.strftime("%A, %-d")
+      day = date.day
+      if 4 <= day <= 20 or 24 <= day <= 30:
+        date_text += "th"
+      else:
+        date_text += ["st", "nd", "rd"][day % 10 - 1]
+      date_text += date.strftime(" of %B %Y")
   else:
     date_text = date
   
