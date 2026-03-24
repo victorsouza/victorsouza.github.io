@@ -302,9 +302,9 @@ HTML += f"""
 # Append each year separately
 for year in sorted(ARCHIVE.keys(), reverse = True):
   if year == 1999:
-    daterange = "1999 &mdash; 2000"
+    daterange = "1999&nbsp;&mdash;&nbsp;2000"
   else:
-    daterange = f"{year} &mdash; {(year+1)%100:02}"
+    daterange = f"{year}&nbsp;&mdash;&nbsp;{(year+1)%100:02}"
 
   HTML += f"""
 <details {"open" if academic_year(today) == year else ""}>
