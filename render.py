@@ -200,6 +200,7 @@ C 28.739922 22.819922 28.820312 21.65 28.820312 21 C 28.820312 18.35 27.269531 1
 
 FONTS = """
 <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://cdn.jsdelivr.net/gh/vsalvino/computer-modern@main/fonts/serif.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Glass+Antiqua&display=swap" rel="stylesheet">

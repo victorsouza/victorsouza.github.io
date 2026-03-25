@@ -77,6 +77,7 @@ conference = false
 title = "Double-jump phase transition for the reverse Littlewood--Offord problem"
 year = "2025"
 authors = ["lawrence-h", "julien-p", "victor-s"]
+journal.name = "To appear in the Journal of the London Mathematical Society"
 links.arxiv = "https://arxiv.org/abs/2503.24202"
 abstract = """
 Erdős conjectured in 1945 that for any unit vectors $v_1, \\dotsc, v_n$ in $\\mathbb{R}^2$ and signs $\\varepsilon_1, \\dotsc, \\varepsilon_n$ taken independently and uniformly in $\\{-1,1\\}$, the random Rademacher sum $\\sigma = \\varepsilon_1 v_1 + \\dotsb + \\varepsilon_n v_n$ satisfies $\\|\\sigma\\|_2 \\leq 1$  with probability $\\Omega(1/n)$.
