@@ -410,7 +410,7 @@ INDEX_BODY = f"""
 <p>
   I am a <a href="https://as.cornell.edu/research/klarman-fellowships">Klarman Fellow</a> in the <a href='https://math.cornell.edu/'>Department of Mathematics</a> at Cornell University since July of 2025.
   I am delighted to be  hosted by <a href="https://math.cornell.edu/martin-kassabov">Martin Kassabov</a> and <a href="https://www.stevenstrogatz.com/">Steven Strogatz</a>.
-  In Cornell, I am one of the organisers of the <a href="/prob-at-cornell/">Probability Seminar</a>.
+  In Cornell, I am one of the organisers of the <a href="/seminars/">Probability Seminar</a>.
 </p>
 <p>
   I am also a Research Fellow at Sidney Sussex College, Cambridge.
