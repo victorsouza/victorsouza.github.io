@@ -50,7 +50,11 @@ Welcome to the experimental and yet unofficial page for the Probability Seminars
 
 ABOUT = """
 <p>
-Here we can add some historical remarks about the seminar, like when it was initiated, by whom, and the people that organised it in the past.
+James Oliver, the second Chair of Mathematics at Cornell, from 1874 to 1895, organized a seminar on economics with the goal of study applications of probability theory to economics. One of his close friend, Economics Professor Walter F. Willcox, supervised the statistical work for the US census of 1900. Henry L. Rietz, the first president of the Institute of Mathematical Statistics, earned his Ph.D. at Cornell in 1902 (working on group theory).
+</p>
+
+<p>
+The first Cornell faculty who can be called a probabilist is Mark Kac who arrived at Cornell in dramatic haphazarded circumstances in 1939. He was joined in 1945 by William Feller who stayed until leaving for Princeton in 1950.  Gilbert Hunt, Jacob Wolfowitz, and his student Jack Kiefer joined Cornell Mathematics in the early 1950s. Murray Rosenblatt (1949), David B. Ray (1953), and Harry Kesten (1958) earned their Ph.D. at Cornell under Mark Kac. In the early 1960s, Kac left Cornell and Harry Kesten and Frank Spitzer arrived as well as Leonard Gross. Kiosi Itô worked at Cornell between 1969 and 1975. Eugene Dynkin replaced Itô in 1975. In 1985 Richard  T. Durrett joined Dynkin, Gross, Kesten, and Spitzer to form one of the most visible Probability group in the world. We do not know exactly when the Monday afternoon probability seminar at 4pm was established but it goes back at least 40 years and possibly many more.
 </p>
 """
 
@@ -278,19 +282,19 @@ HTML += f"""<!DOCTYPE html>
 </intro>
 """
 
-# Append About section
-HTML += f"""
-<section>
-<section_header>About</section_header>
-{ABOUT}
-</section>
-"""
-
 # Append Upcoming Seminars
 HTML += f"""
 <section>
 <section_header>Upcoming Seminars</section_header>
 {"\n".join(reversed(UPCOMING)) if UPCOMING else EMPTY_UPCOMING}
+</section>
+"""
+
+# Append About section
+HTML += f"""
+<section>
+<section_header>Probability in Cornell</section_header>
+{ABOUT}
 </section>
 """
 

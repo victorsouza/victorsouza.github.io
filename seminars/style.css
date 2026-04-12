@@ -11,12 +11,14 @@ body {
   font-size: 1rem;
   font-family: "Computer Modern Serif";
   margin: auto;
-  padding: 2rem;
+  padding: 2rem 1rem;
   color: #222222;
   background: white;
   border-left: 1px solid #CBCBCB;
   border-right: 1px solid #CBCBCB;
 }
+
+@media (min-width: 768px) { body { padding: 2rem; } }
 
 
 
@@ -27,13 +29,16 @@ header {
 
 pagetitle{
   display: block;
-  font-size: 3.6rem;
+  font-size: 3rem;
   text-align: center;
   color: #B31B1B;
   font-family: "Roboto Condensed";
   font-variant: small-caps;
   margin: auto;
 }
+
+/*@media (min-width: 768px) { html { font-size: 18px; } }*/
+@media (min-width: 1200px) { pagetitle { font-size: 3.6rem; } }
 
 /*logo {
   background: url("img/cornell_seal_simple_web_b31b1b.svg");
@@ -50,8 +55,10 @@ intro {
 
 p {
   text-indent: 4ch;
-  text-align: justify;
 }
+
+@media (min-width: 768px) { p { text-align: justify; } }*/
+
 
 section {
   margin: 1em 0;
