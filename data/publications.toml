@@ -107,8 +107,10 @@ conference = false
 title = "The Maker-Breaker percolation game on a random board"
 year = "2024"
 authors = ["vojtech-d", "adva-m", "victor-s"]
-journal.name = "To appear in the Annals of Probability"
+journal.name = "Annals of Probability"
+journal.year = "2026"
 links.arxiv = "https://arxiv.org/abs/2402.17547"
+links.journal = "https://doi.org/10.1214/25-AOP1796"
 abstract = """
 The $(m,b)$ Maker-Breaker percolation game on $(\\mathbb{Z}^2)_p$, introduced by Day and Falgas-Ravry, is played in the following way.
 Before the game starts, each edge of $\\mathbb{Z}^2$ is removed independently with probability $1-p$.
@@ -124,14 +126,18 @@ In fact, we prove similar results in various settings, including other lattices 
 
 These results extend also to the most general case, which we introduce, where each edge is given to Maker with probability $\\alpha$ and to Breaker with probability $\\beta$ before the game starts.
 """
-cite='''@MISC{DMS-24-mb-random,
-    title = {The Maker-Breaker percolation game on a random board},
+cite='''@ARTICLE{DMS-26-mb-random,
+    title = {The Maker--Breaker percolation game on a random board},
     author = {Vojtěch Dvořák and Adva Mond and Victor Souza},
-    archivePrefix = {arXiv},
-    primaryClass = {math.PR},
-    eprint = {2402.17547},
-    doi = {https://arxiv.org/abs/2402.17547},
+    journal = {Annals of Probability},
+    volume = {54},
+    number = {3},
+    pages = {1530--1563},
+    year = {2026},
+    publisher = {Institute of Mathematical Statistics},
+    doi = {https://doi.org/10.1214/25-AOP1796},
 }'''
+
 
 
 
