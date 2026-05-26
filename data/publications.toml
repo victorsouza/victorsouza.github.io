@@ -52,22 +52,25 @@ conference = false
 title = "Intersections of random chords of a circle"
 year = "2025"
 authors = ["cynthia-b", "victor-s"]
-journal.name = "To appear in The American Mathematical Monthly"
+journal.name = "The American Mathematical Monthly"
+journal.year = "2026"
 links.arxiv = "https://arxiv.org/abs/2504.12866"
+links.journal = "https://doi.org/10.1080/00029890.2026.2662833"
 abstract = """
 Where are the intersection points of diagonals of a regular $n$-gon located?
 What is the distribution of the intersection point of two random chords of a circle?
 We investigate these and related new questions in geometric probability, extend a largely forgotten result of Karamata, and elucidate its connection to the Bertrand paradox.
 """
-cite='''@MISC{BS-25-random-chords,
-    title = {Intersections of random chords of a circle},
+cite='''@MISC{BS-26-random-chords,
+    title = {Intersections of Random Chords of a Circle},
     author = {Cynthia Bortolotto and Victor Souza},
-    archivePrefix = {arXiv},
-    primaryClass = {math.MG},
-    eprint = {2504.12866},
-    doi = {https://arxiv.org/abs/2504.12866},
+    journal = {The American Mathematical Monthly},
+    volume = {0},
+    number = {0},
+    pages = {1--20},
+    publisher = {Taylor \& Francis},
+    doi = {https://doi.org/10.1080/00029890.2026.2662833},
 }'''
-
 
 
 [[publication]]
@@ -77,8 +80,10 @@ conference = false
 title = "Double-jump phase transition for the reverse Littlewood--Offord problem"
 year = "2025"
 authors = ["lawrence-h", "julien-p", "victor-s"]
-journal.name = "To appear in the Journal of the London Mathematical Society"
+journal.name = "Journal of the London Mathematical Society"
+journal.year = "2026"
 links.arxiv = "https://arxiv.org/abs/2503.24202"
+links.journal = "http://dx.doi.org/10.1112/jlms.70539"
 abstract = """
 Erdős conjectured in 1945 that for any unit vectors $v_1, \\dotsc, v_n$ in $\\mathbb{R}^2$ and signs $\\varepsilon_1, \\dotsc, \\varepsilon_n$ taken independently and uniformly in $\\{-1,1\\}$, the random Rademacher sum $\\sigma = \\varepsilon_1 v_1 + \\dotsb + \\varepsilon_n v_n$ satisfies $\\|\\sigma\\|_2 \\leq 1$  with probability $\\Omega(1/n)$.
 While this conjecture is false for even $n$, Beck has proved that $\\|\\sigma\\|_2 \\leq \\sqrt{2}$ always holds with probability $\\Omega(1/n)$.
@@ -89,13 +94,15 @@ This shows that when $n$ is odd, the minimum probability that $\\|\\sigma\\|_2 \
 Additionally, and using a different construction, we give a negative answer to a question of Beck and two other questions of He, Juškevičius, Narayanan, and Spiro, concerning the optimal constructions minimising the probability that $\\|\\sigma\\|_2 \\leq \\sqrt{2}$.
 We also make some progress on the higher dimensional versions of these questions.
 """
-cite='''@MISC{HPS-25-reverse-lo,
+cite='''@MISC{HPS-26-reverse-lo,
     title = {Double-jump phase transition for the reverse Littlewood--Offord problem},
     author = {Lawrence Hollom and Julien Portier and Victor Souza},
-    archivePrefix = {arXiv},
-    primaryClass = {math.CO},
-    eprint = {2503.24202},
-    doi = {https://arxiv.org/abs/2503.24202},
+    journal = {Journal of the London Mathematical Society},
+    volume = {113},
+    number = {5},
+    pages = {e70539},
+    publisher = {Wiley},
+    doi = {http://dx.doi.org/10.1112/jlms.70539},
 }'''
 
 
