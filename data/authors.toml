@@ -191,3 +191,17 @@ surname = "Martins"
 citename = "T. Martins"
 fullname = "Taísa Martins"
 website = "https://www.professores.uff.br/tlmartins/"
+
+[[author]]
+label = "gabriel-d"
+surname = "Dahia"
+citename = "G. Dahia"
+fullname = "Gabriel Dahia"
+website = "https://gdahia.github.io/"
+
+[[author]]
+label = "joaopedro-m"
+surname = "Marciano"
+citename = "J. P. Marciano"
+fullname = "João Pedro Marciano"
+website = "https://scholar.google.com/citations?user=Ob2Wo2oAAAAJ&hl=en"

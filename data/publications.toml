@@ -1,4 +1,27 @@
 [[publication]]
+label = "dense-sumsets"
+selected = true
+conference = false
+title = "Dense sets without large sumsets"
+year = "2026"
+authors = ["gabriel-d", "joaopedro-m", "victor-s"]
+links.arxiv = "https://arxiv.org/abs/2607.15269"
+abstract = """
+We prove, for all fixed $0 < \\delta < 1$, and all sufficiently large $n$, that there exists $S \\subseteq [n]$ with $|S| \\ge \\delta n$ such that $A + B \\not \\subseteq S$ for all ${A, B \\subseteq \\mathbb{N}}$ satisfying
+$$\\min\\big\\{|A|, |B|\\big\\} \\ge \\big(3 + o(1)\\big) \\frac{\\log n }{ \\log (1 / \\delta)}.$$
+A very recent result of Hernández and Hetzel shows that our bound is sharp up to a factor of 3, and together our results settle a conjecture of Kra, Moreira, Richter, and Robertson.
+In fact, we prove that a $\\delta$-dense random subset of $[n]$ is a valid choice for $S$ with high probability, and that one can take $n^{-\\alpha} \\le \\delta \\le 1 - c$ where $c > 0$ is fixed and $\\alpha > 0$ depends only on the $o(1)$ error, answering another question of the same authors in a strong form.
+"""
+cite='''@MISC{DMS-26-dense-sumsets,
+    title = {Dense sets without large sumsets},
+    author = {Gabriel Dahia and João Pedro Marciano and Victor Souza},
+    archivePrefix = {arXiv},
+    primaryClass = {math.CO},
+    eprint = {2607.15269},
+    doi = {https://arxiv.org/abs/2607.15269},
+}'''
+
+[[publication]]
 label = "sandglass"
 selected = false
 conference = false
