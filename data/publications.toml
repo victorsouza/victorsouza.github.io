@@ -28,7 +28,7 @@ conference = false
 title = "The sandglass conjecture beyond cancellative pairs"
 year = "2025"
 authors = ["adva-m", "victor-s", "leo-v"]
-links.arxiv = "https://arxiv.org/abs/2505.14281"
+links.arxiv = "https://arxiv.org/abs/2508.21819"
 abstract = """
 The sandglass conjecture, posed by Simonyi, states that if a pair $(\\mathcal{A}, \\mathcal{B})$ of families of subsets of $[n]$ is recovering then $|\\mathcal{A}| |\\mathcal{B}| \\leq 2^n$.
 We improve the best known upper bound to $|\\mathcal{A}| |\\mathcal{B}| \\leq 2.2543^n$.
