@@ -1,4 +1,27 @@
 [[publication]]
+label = "tensor-centroids"
+selected = true
+conference = false
+title = "Disjoint and nearly disjoint sums of matrix multiplication tensors and their centroids"
+year = "2026"
+authors = ["martin-k", "jm-l", "victor-s", "philip-s"]
+links.arxiv = "https://arxiv.org/abs/2608.27434"
+abstract = """
+This paper addresses <em>centroids</em>, which are fundamental invariants of tensors. Our main results are as follows: (i) The construction of explicit tensors with very large centroids, whereas previously it had been conjectured that none such exist. (ii) An upper bound on the dimension of the centroid that is essentially attained by our examples. (iii) The development of a geometric technique to write down border rank decomposition of tensors using centroids and "extended centroids". (iv) The technique is applied to tensors of this paper to prove they are of minimal border rank. The technique is versatile and enables us to geometrically derive and improve upon previous <em>ad hoc</em> decompositions. (v) The construction of symmetric tensors with large centroids and proof that they are <em>wild</em> in the sense of Buczyńska-Buczyński. <br><br>
+
+Our results also pave the way for new upper bounds on the exponent of matrix multiplication. The geometric technique also constructs new "better" tensors for Strassen's laser method from old, and we apply this to the tensors of Strassen and Schönhage to get better tensors in the sense that they give better upper bounds on the exponent than the original tensors.
+"""
+cite='''@MISC{KLSS-26-tensor-centroids,
+    title = {Disjoint and nearly disjoint sums of matrix multiplication tensors and their centroids},
+    author = {Martin Kassabov and J.M. Landsberg and Victor Souza and Philip Speegle},
+    archivePrefix = {arXiv},
+    primaryClass = {math.AG},
+    eprint = {2608.27434},
+    doi = {https://arxiv.org/abs/2608.27434},
+}'''
+
+
+[[publication]]
 label = "dense-sumsets"
 selected = true
 conference = false
@@ -395,7 +418,7 @@ cite='''@ARTICLE{LS-21-dim-divisibility,
 
 [[publication]]
 label = "typicall-small-sumset"
-selected = true
+selected = false
 conference = false
 title = "The typical structure of sets with small sumset"
 year = "2019"

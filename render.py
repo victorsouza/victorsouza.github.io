@@ -365,7 +365,7 @@ INDEX_BODY = f"""
     <a href='https://www.cornell.edu/'>Cornell University</a> <br>
 
     <br>
-    505 Mallot Hall <br>
+    505 Malott Hall <br>
     Ithaca, 14853 NY <br>
     United States <br>
     <br>

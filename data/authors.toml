@@ -205,3 +205,18 @@ surname = "Marciano"
 citename = "J. P. Marciano"
 fullname = "João Pedro Marciano"
 website = "https://scholar.google.com/citations?user=Ob2Wo2oAAAAJ&hl=en"
+
+
+[[author]]
+label = "jm-l"
+surname = "Landsberg"
+citename = "J. M. Landsberg"
+fullname = "J. M. Landsberg"
+website = "https://people.tamu.edu/~jml/index.html"
+
+[[author]]
+label = "philip-s"
+surname = "Speegle"
+citename = "P. Speegle"
+fullname = "Philip Speegle"
+#website = "https://pspeegle.github.io/"
